@@ -126,11 +126,29 @@ async function fetchScreenCompanies(page, base) {
 
   for (let p = 1; p <= maxPages; p++) {
     process.stdout.write(`Reading screen page ${p} ... `);
-    await page.goto(`${base}/?page=${p}`, { waitUntil: "domcontentloaded", timeout: 60000 });
-    const $ = cheerio.load(await page.content());
-    const table = $("table.data-table").first();
-    if (!table.length) {
-      console.log("no table");
+    // Screener.in throttles rapid pagination through a large screen — an empty
+    // page mid-run is almost always a transient throttle, NOT the end of the
+    // results. Retry the same page a few times (waiting for the row selector,
+    // with backoff) before concluding we're done. Without this a single
+    // throttled page silently truncated the universe (e.g. 950 of 1451
+    // companies when Screener paused at "page 39 of 59").
+    let $ = null;
+    let table = null;
+    let rowCount = 0;
+    for (let attempt = 1; attempt <= 4; attempt++) {
+      await page.goto(`${base}/?page=${p}`, { waitUntil: "domcontentloaded", timeout: 60000 });
+      await page.waitForSelector("table.data-table tbody tr", { timeout: 8000 }).catch(() => {});
+      $ = cheerio.load(await page.content());
+      table = $("table.data-table").first();
+      rowCount = table.length ? table.find("tbody tr").length : 0;
+      if (rowCount) break;
+      if (attempt < 4) {
+        process.stdout.write(`(empty, retry ${attempt}) `);
+        await sleep(attempt * 2500);
+      }
+    }
+    if (!rowCount) {
+      console.log("no table after retries");
       if (p === 1) throw new Error("No data table on screen page 1.");
       break;
     }
@@ -148,7 +166,7 @@ async function fetchScreenCompanies(page, base) {
     if (m) totalPages = Number(m[1]);
     console.log(`${added} companies (page ${p} of ${totalPages})`);
     if (p >= totalPages) break;
-    await sleep(300);
+    await sleep(1200);
   }
   return companies;
 }
