@@ -40,7 +40,7 @@ on:
         description: "Safety cap on screen pages to read"
         required: false
         type: string
-        default: "30"
+        default: "80"
       start_at:
         description: "Resume index for fundamentals (0 = start from the first company)"
         required: false
