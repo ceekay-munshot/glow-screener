@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-08-27T10:04:15.724Z",
+  "pcr": {
+    "value": 1.5,
+    "source": "NSE option-chain (via Firecrawl LLM extract)",
+    "basis": "LLM-extracted",
+    "fetched_at": "2026-08-26T02:05:54.866Z",
+    "stale": true
+  },
+  "impact_cost": null,
+  "_debug": {
+    "api_key_set": true,
+    "api_key_prefix": "fc-203...",
+    "calls": [
+      {
+        "at": "2026-08-27T10:04:16.087Z",
+        "url": "https://www.nseindia.com/option-chain",
+        "fc_status": 402,
+        "fc_body_sample": "{\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\"}",
+        "outcome": "fc_extract_http_error"
+      },
+      {
+        "at": "2026-08-27T10:04:16.740Z",
+        "url": "https://www.nseindia.com/option-chain",
+        "fc_status": 402,
+        "fc_body_sample": "{\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\"}",
+        "outcome": "fc_http_error"
+      }
+    ]
+  }
+}

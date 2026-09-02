@@ -1,0 +1,10 @@
+{
+  "label": "Glow Manual picks",
+  "note": "Placeholder — no manual basket configured yet for Glow Screener. Populate picksByMonth['YYYY-MM'] when Glow Ventures provides a basket.",
+  "generated_at": "2026-09-02T00:00:00.000Z",
+  "source": "Glow Ventures (to be configured)",
+  "anchorByMonth": {},
+  "entryByMonth": {},
+  "picksByMonth": {},
+  "picks": []
+}

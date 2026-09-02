@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-08-27T10:04:41.508Z",
+  "source_count": 4,
+  "curated_baseline_count": 5,
+  "total_entities_seen": 5,
+  "flagged_companies": {
+    "ADANIENT": {
+      "primary_name": "Adani Enterprises",
+      "order_type": "sebi-investigation",
+      "snippet": "Ongoing SEBI investigation into Adani group entities — disclosures of related-party transactions and offshore-holding allegations following the 2023 Hindenburg report; SEBI status reports filed with Supreme Court through 2024-25.",
+      "source_url": null,
+      "source_label": "SEBI status report to Supreme Court (2024-25)",
+      "origins": [
+        "curated"
+      ],
+      "mentions": [
+        {
+          "source": "SEBI status report to Supreme Court (2024-25)",
+          "origin": "curated",
+          "order_type": "sebi-investigation",
+          "snippet": "Ongoing SEBI investigation into Adani group entities — disclosures of related-party transactions and offshore-holding allegations following the 2023 Hindenburg report; SEBI status reports filed with S"
+        }
+      ],
+      "first_seen_at": "2026-08-27T10:04:41.508Z"
+    },
+    "ADANIGREEN": {
+      "primary_name": "Adani Green Energy",
+      "order_type": "sebi-investigation",
+      "snippet": "Subject entity in ongoing SEBI investigation into Adani group related-party / offshore-holding disclosures.",
+      "source_url": null,
+      "source_label": "SEBI status report to Supreme Court (2024-25)",
+      "origins": [
+        "curated"
+      ],
+      "mentions": [
+        {
+          "source": "SEBI status report to Supreme Court (2024-25)",
+          "origin": "curated",
+          "order_type": "sebi-investigation",
+          "snippet": "Subject entity in ongoing SEBI investigation into Adani group related-party / offshore-holding disclosures."
+        }
+      ],
+      "first_seen_at": "2026-08-27T10:04:41.508Z"
+    },
+    "ADANIPORTS": {
+      "primary_name": "Adani Ports & SEZ",
+      "order_type": "sebi-investigation",
+      "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions.",
+      "source_url": null,
+      "source_label": "SEBI status report to Supreme Court (2024-25)",
+      "origins": [
+        "curated"
+      ],
+      "mentions": [
+        {
+          "source": "SEBI status report to Supreme Court (2024-25)",
+          "origin": "curated",
+          "order_type": "sebi-investigation",
+          "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
+        }
+      ],
+      "first_seen_at": "2026-08-27T10:04:41.508Z"
+    },
+    "ADANIPOWER": {
+      "primary_name": "Adani Power",
+      "order_type": "sebi-investigation",
+      "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions.",
+      "source_url": null,
+      "source_label": "SEBI status report to Supreme Court (2024-25)",
+      "origins": [
+        "curated"
+      ],
+      "mentions": [
+        {
+          "source": "SEBI status report to Supreme Court (2024-25)",
+          "origin": "curated",
+          "order_type": "sebi-investigation",
+          "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
+        }
+      ],
+      "first_seen_at": "2026-08-27T10:04:41.508Z"
+    },
+    "ZEEL": {
+      "primary_name": "Zee Entertainment",
+      "order_type": "show-cause",
+      "snippet": "SEBI orders restricting Zee promoters from directorship + show-cause on alleged fund diversion (orders issued 2023, appeals + follow-ups ongoing through 2024-25).",
+      "source_url": null,
+      "source_label": "SEBI orders + SAT appeals (2023-25)",
+      "origins": [
+        "curated"
+      ],
+      "mentions": [
+        {
+          "source": "SEBI orders + SAT appeals (2023-25)",
+          "origin": "curated",
+          "order_type": "show-cause",
+          "snippet": "SEBI orders restricting Zee promoters from directorship + show-cause on alleged fund diversion (orders issued 2023, appeals + follow-ups ongoing through 2024-25)."
+        }
+      ],
+      "first_seen_at": "2026-08-27T10:04:41.508Z"
+    }
+  },
+  "unmatched_sample": [],
+  "sources": [
+    {
+      "url": "https://www.livemint.com/topic/sebi",
+      "label": "Mint — SEBI topic (news)",
+      "mode": "news",
+      "at": "2026-08-27T10:04:34.539Z",
+      "fc_status": 402,
+      "outcome": "fc_http_error",
+      "error_body": "{\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\"}"
+    },
+    {
+      "url": "https://www.business-standard.com/topic/sebi",
+      "label": "Business Standard — SEBI topic (news)",
+      "mode": "news",
+      "at": "2026-08-27T10:04:39.222Z",
+      "fc_status": 402,
+      "outcome": "fc_http_error",
+      "error_body": "{\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\"}"
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/topic/sebi",
+      "label": "Economic Times — SEBI topic (news)",
+      "mode": "news",
+      "at": "2026-08-27T10:04:40.290Z",
+      "fc_status": 402,
+      "outcome": "fc_http_error",
+      "error_body": "{\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\"}"
+    },
+    {
+      "url": "https://www.sebi.gov.in/enforcement/orders.html",
+      "label": "SEBI — orders listing (backup)",
+      "mode": "regulator",
+      "at": "2026-08-27T10:04:40.933Z",
+      "fc_status": 402,
+      "outcome": "fc_http_error",
+      "error_body": "{\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\"}"
+    }
+  ]
+}
