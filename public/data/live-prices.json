@@ -1,7 +1,78 @@
 {
-  "generated_at": "2026-09-03T13:37:33.480Z",
+  "generated_at": "2026-09-03T14:17:59.476Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
-  "ticker_count": 0,
-  "prices": {}
+  "ticker_count": 5,
+  "prices": {
+    "JAGSNPHARM": {
+      "current": 243.02,
+      "open": 237.4,
+      "prevClose": 236.5,
+      "dayHigh": 249.57,
+      "dayLow": 237.01,
+      "week52High": 264.5,
+      "week52Low": 155,
+      "ma50": 231.8,
+      "ma200": 202.89,
+      "vol10d": 101807,
+      "marketCap": 16028972490.2,
+      "yearlyChangePct": -2.17
+    },
+    "DIFFNKG": {
+      "current": 477.6,
+      "open": 476,
+      "prevClose": 476.8,
+      "dayHigh": 482.7,
+      "dayLow": 469.3,
+      "week52High": 493.2,
+      "week52Low": 216.8,
+      "ma50": 404.66,
+      "ma200": 324.89,
+      "vol10d": 1027795,
+      "marketCap": 17731501525,
+      "yearlyChangePct": 25.03
+    },
+    "PREMIERPOL": {
+      "current": 92.35,
+      "open": 90.07,
+      "prevClose": 89.79,
+      "dayHigh": 94,
+      "dayLow": 89.6,
+      "week52High": 97.99,
+      "week52Low": 38,
+      "ma50": 75.31,
+      "ma200": 57.78,
+      "vol10d": 420506,
+      "marketCap": 9672967406.43,
+      "yearlyChangePct": 91.16
+    },
+    "FERMENTA": {
+      "current": 502.8,
+      "open": 535,
+      "prevClose": 522.75,
+      "dayHigh": 539,
+      "dayLow": 495,
+      "week52High": 579.65,
+      "week52Low": 256.4,
+      "ma50": 449.81,
+      "ma200": 352.95,
+      "vol10d": 11537,
+      "marketCap": 14415621576.42,
+      "yearlyChangePct": 56.89
+    },
+    "20MICRONS": {
+      "current": 217.2,
+      "open": 210.5,
+      "prevClose": 211.45,
+      "dayHigh": 223.2,
+      "dayLow": 210.5,
+      "week52High": 207.5,
+      "week52Low": 198.5,
+      "ma50": 204.3,
+      "ma200": 204.3,
+      "vol10d": 0,
+      "marketCap": 7664228343.91,
+      "yearlyChangePct": 0
+    }
+  }
 }
