@@ -6,9 +6,14 @@ name: Auditor opinions refresh (Muns agent)
 # or older than 30 days. Result lands in public/data/auditor-opinions.json.
 
 on:
-  workflow_run:
-    workflows: ["Daily refresh (all scrapers)"]
-    types: [completed]
+  # Auto-trigger after the daily refresh is DISABLED for Glow Screener: the
+  # Muns auditor agent needs MUNS_ACCESS_SECRET, which is not configured here.
+  # Left as manual-only so it never auto-fails. To restore automatic auditor
+  # refreshes later, add MUNS_ACCESS_SECRET and un-comment the workflow_run
+  # block below.
+  # workflow_run:
+  #   workflows: ["Daily refresh (all scrapers)"]
+  #   types: [completed]
   workflow_dispatch:
     inputs:
       force_refresh:
