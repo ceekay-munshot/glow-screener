@@ -76,7 +76,7 @@ function ruleADTV(c) {
   const val = `ADTV ₹${adtv} Cr (20-day average)`;
   if (adtv >= 10) return { points: 2, max: 2, status: "pass", value: val, note: "ADTV ≥ ₹10 Cr — comfortable liquidity for institutional positions." };
   if (adtv >= 5) return { points: 1, max: 2, status: "partial", value: val, note: "ADTV ₹5–10 Cr — moderate liquidity, fine for retail/mid-AUM portfolios." };
-  return { points: 0, max: 2, status: "hard_fail", value: val, note: "ADTV < ₹5 Cr — illiquid, hard fail per client framework. Stock excluded from Glow basket." };
+  return { points: 0, max: 2, status: "fail", value: val, note: "ADTV < ₹5 Cr — illiquid, 0 pts." };
 }
 
 function ruleImpactCost(c) {

@@ -143,7 +143,7 @@ function ruleCFO(c) {
       return { points: 2, max: 2, status: "pass", value: val0, note: "Both reported years positive (only 2 years of CFO history available — full 10-year check pending)." };
     }
     if (ly != null && ly < 0) {
-      return { points: 0, max: 2, status: "hard_fail", value: val0, note: "Negative CFO in latest year — hard fail regardless of PAT." };
+      return { points: 0, max: 2, status: "fail", value: val0, note: "Negative CFO in latest year — 0 pts regardless of PAT." };
     }
     return { points: 0, max: 2, status: "fail", value: val0, note: "CFO not positive." };
   }
@@ -153,7 +153,7 @@ function ruleCFO(c) {
   const latestNeg = recent.at(-1) < 0;
   const val = `${yrsCovered}y of CFO: ${recent.map((n) => Math.round(n).toLocaleString()).join(" → ")}`;
   if (latestNeg) {
-    return { points: 0, max: 2, status: "hard_fail", value: val, note: `Negative CFO in latest year (₹${Math.round(recent.at(-1)).toLocaleString()} Cr) — hard fail regardless of PAT.` };
+    return { points: 0, max: 2, status: "fail", value: val, note: `Negative CFO in latest year (₹${Math.round(recent.at(-1)).toLocaleString()} Cr) — 0 pts regardless of PAT.` };
   }
   if (negativeYears === 0 && yrsCovered >= 10) {
     return { points: 2, max: 2, status: "pass", value: val, note: "Positive CFO for the full 10-year window — matches client's most stringent test." };
@@ -264,7 +264,7 @@ function ruleDebtEquity(c) {
   if (v < 0.5) return { points: 2, max: 2, status: "pass", value: v.toString(), note: "D/E < 0.5 — comfortably low leverage." };
   if (v <= 1.0) return { points: 1, max: 2, status: "partial", value: v.toString(), note: "D/E 0.5–1.0 — moderate leverage." };
   if (v <= 2.0) return { points: 0, max: 2, status: "fail", value: v.toString(), note: "D/E > 1.0 — elevated leverage." };
-  return { points: 0, max: 2, status: "hard_fail", value: v.toString(), note: "D/E > 2 — extreme leverage, hard fail per client framework (stock excluded from Glow basket)." };
+  return { points: 0, max: 2, status: "fail", value: v.toString(), note: "D/E > 2 — extreme leverage, 0 pts." };
 }
 
 function ruleInterestCoverage(c) {
@@ -276,7 +276,7 @@ function ruleInterestCoverage(c) {
   if (v == null) return naWithReason(c, "icr", 2);
   if (v > 3) return { points: 2, max: 2, status: "pass", value: v.toString(), note: "Interest coverage > 3 — debt comfortably serviced." };
   if (v >= 1.5) return { points: 1, max: 2, status: "partial", value: v.toString(), note: "Coverage 1.5–3 — tight." };
-  return { points: 0, max: 2, status: "hard_fail", value: v.toString(), note: "Coverage < 1.5 — debt serviceability risk." };
+  return { points: 0, max: 2, status: "fail", value: v.toString(), note: "Coverage < 1.5 — debt serviceability risk." };
 }
 
 function ruleCurrentRatio(c) {
@@ -314,7 +314,7 @@ function rulePledge(c) {
     if (rising) return { points: 0, max: 2, status: "fail", value: fmtPct(v), note: `Promoter pledge ${fmtPct(v)} and rising — red flag per client framework.` + trendNote };
     return { points: 1, max: 2, status: "partial", value: fmtPct(v), note: "Promoter pledge 5–20%." + trendNote };
   }
-  return { points: 0, max: 2, status: "hard_fail", value: fmtPct(v), note: "Promoter pledge > 20% — hard fail." + trendNote };
+  return { points: 0, max: 2, status: "fail", value: fmtPct(v), note: "Promoter pledge > 20% — 0 pts." + trendNote };
 }
 
 function rulePromoterHolding(c) {
@@ -454,11 +454,11 @@ function ruleGovernanceIssues(c) {
     return { points: 2, max: 2, status: "pass", value: "No active SEBI proceedings",
       note: "No SEBI enforcement orders or press-release mentions naming this company as an active noticee." };
   }
-  // Active proceeding flagged → hard fail per client spec.
+  // Active proceeding flagged → 0 pts per client spec.
   const typeLabel = flag.order_type ? ` (${flag.order_type})` : "";
   const snippet = flag.snippet ? ` — "${String(flag.snippet).slice(0, 120)}"` : "";
   return {
-    points: 0, max: 2, status: "hard_fail",
+    points: 0, max: 2, status: "fail",
     value: `Active SEBI proceeding${typeLabel}`,
     note: `${flag.primary_name || c.Company} flagged in SEBI ${flag.source_label || "enforcement listing"}${snippet}. Hard fail per client framework.`,
   };
@@ -512,7 +512,7 @@ function ruleAuditorOpinion(c) {
       note: "Auditor opinion not disclosed in the latest annual report." };
   }
   const detail = buildAuditorDetail(c);
-  // Adverse opinion or disclaimer → hard fail per client framework — BUT only
+  // Adverse opinion or disclaimer → 0 pts per client framework — BUT only
   // when it's a genuine auditor verdict. The extraction agent DEFAULTS to
   // "Disclaimer of Opinion" whenever it can't find or read a company's annual
   // report, which wrongly red-flagged ~110 blue-chips (Colgate, P&G, ICICI AMC…).
@@ -524,7 +524,7 @@ function ruleAuditorOpinion(c) {
       return { points: 0, max: 2, status: "na", value: op,
         note: "Auditor opinion couldn't be extracted (no annual report found for this company) — not counted as a red flag." };
     }
-    return { points: 0, max: 2, status: "hard_fail", value: op,
+    return { points: 0, max: 2, status: "fail", value: op,
       note: `${op} per the most recent annual report. Hard fail per client framework.${detail}` };
   }
   // Qualified opinion or emphasis-of-matter → 1 pt partial.

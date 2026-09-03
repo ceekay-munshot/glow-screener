@@ -20,7 +20,7 @@ function rulePriceAbove200DMA(c) {
   if (c.cmp == null || c.sma200 == null) return { ...NA, max: 2, note: "Less than 200 trading days of history — primary trend cannot be evaluated." };
   const val = `CMP ${fmtNum(c.cmp,0)} vs 200 DMA ${fmtNum(c.sma200,0)}`;
   if (c.above_200dma) return { points: 2, max: 2, status: "pass", value: val, note: "Above 200 DMA — primary trend filter passes." };
-  return { points: 0, max: 2, status: "hard_fail", value: val, note: "Below 200 DMA — primary trend filter fail. Client framework: 'Price < 200 DMA = immediate fail — stock exits pipeline.' Excluded from Glow basket." };
+  return { points: 0, max: 2, status: "fail", value: val, note: "Below 200 DMA — primary trend filter fail." };
 }
 
 function ruleGoldenCross(c) {
