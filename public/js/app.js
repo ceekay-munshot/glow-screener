@@ -4603,7 +4603,7 @@ async function renderActive() {
       return;
     }
 
-    const view = buildActiveView(viewSnaps, anchorDate, todayDate, cadence, niftyOn, manualPicks, nifty500On, liveMarkDate);
+    const view = buildActiveView(viewSnaps, anchorDate, todayDate, cadence, niftyOn, manualPicks, nifty500On, smallcap250On, liveMarkDate);
 
     // Alerts section (lives inside the Strategy tab, not a separate tab).
     if (!customTechByTicker) {
@@ -4724,7 +4724,7 @@ function manualEntryPrice(p) {
   return null;
 }
 
-function buildActiveView(snapshots, anchorDate, todayDate, cadence, niftyOn, manualPicks, nifty500On = () => null, liveMarkDate = null) {
+function buildActiveView(snapshots, anchorDate, todayDate, cadence, niftyOn, manualPicks, nifty500On = () => null, smallcap250On = () => null, liveMarkDate = null) {
   cohortEntryOverride = resolveEntryOverride(anchorDate);
   if (cadence === "daily") {
     const sim = simulateActiveBasket(snapshots, anchorDate, simPrefs);
