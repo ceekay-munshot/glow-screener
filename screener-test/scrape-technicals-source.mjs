@@ -215,6 +215,11 @@ const page = await context.newPage();
 const RESUME_FRESH_HOURS = Number(process.env.TECHNICALS_SOURCE_RESUME_HOURS || 18);
 
 let ok = 0, fail = 0, skipped = 0, resumed = 0;
+// Consecutive-empty counter. TradingView rate-limits the runner IP after a
+// burst: once tripped, pages come back blank, so empties arrive in a run.
+// We use the streak to tell an isolated genuine "no page" (thin/delisted
+// stock — skip fast) from a rate-limit block (back off, let it reset, recover).
+let consecEmpty = 0;
 for (const slug of ordered) {
   const existing = out.companies[slug];
   if (existing?.scraped_at) {
@@ -227,13 +232,18 @@ for (const slug of ordered) {
   const url = `https://in.tradingview.com/symbols/NSE-${slug}/technicals/`;
   process.stdout.write(`[${ok + fail + skipped + resumed + 1}/${ordered.length}] ${slug.padEnd(14)} `);
   try {
-    // Try up to twice: a real TradingView page can be slow to render its
-    // JS tables (worse when TradingView throttles a long run), so an empty
-    // first read is usually "not loaded yet", NOT "no page". Retry once with
-    // a longer settle before concluding the ticker has no data.
+    // A real TradingView page can be slow to render its JS tables, and when
+    // the IP is rate-limited pages come back blank. Retry before concluding
+    // "no data": a quick retry for an isolated empty, but longer backoffs
+    // while a block-streak is building so the rate limit resets and the next
+    // companies recover. A long sustained streak = an IP block this run
+    // can't clear, so stop the costly backoffs — resume + the next run's
+    // fresh IP covers the rest.
+    const inBlock = consecEmpty >= 2 && consecEmpty < 12;
+    const maxAttempts = inBlock ? 3 : 2;
     let parsed = null;
     let indicatorCount = 0;
-    for (let attempt = 1; attempt <= 2; attempt++) {
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
       await page.goto(url, { waitUntil: "domcontentloaded", timeout: NAV_TIMEOUT_MS });
       // Wait for the page's JS-driven tables to populate. The signal:
       // "Moving Averages" or "Oscillators" headings show up in the rendered DOM.
@@ -250,13 +260,19 @@ for (const slug of ordered) {
         Object.keys(parsed.oscillators || {}).length +
         Object.keys(parsed.moving_averages || {}).length;
       if (indicatorCount >= 3) break;
-      if (attempt === 1) { process.stdout.write("(empty, retry) "); await sleep(2_000); }
+      if (attempt < maxAttempts) {
+        const backMs = inBlock ? 15_000 * attempt : 2_000;
+        process.stdout.write(`(empty, retry ${Math.round(backMs / 1000)}s) `);
+        await sleep(backMs);
+      }
     }
     if (indicatorCount < 3) {
+      consecEmpty++;
       console.log(`extraction empty (${indicatorCount} fields) — skip`);
       skipped++;
       continue;
     }
+    consecEmpty = 0;   // a success clears the block-streak
     out.companies[slug] = { ...parsed, url, scraped_at: new Date().toISOString() };
     checkpointSave();   // persist after every success — survives timeouts/crashes
     console.log(`OK · ${indicatorCount} indicators · summary=${parsed.summary?.verdict || "—"}`);

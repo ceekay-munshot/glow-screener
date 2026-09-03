@@ -59,7 +59,10 @@ jobs:
           # The resume mechanic skips entries scraped in the last 18h, so a daily
           # cron with BATCH_SIZE=0 only does new + stale companies on most runs.
           TECHNICALS_SOURCE_BATCH: ${{ inputs.batch_size || '0' }}
-          TECHNICALS_SOURCE_THROTTLE: "2000"
+          # 3s base spacing keeps the request rate under TradingView's
+          # rate-limit trip point; the scraper's adaptive backoff handles any
+          # block that still forms mid-run.
+          TECHNICALS_SOURCE_THROTTLE: "3000"
           TECHNICALS_SOURCE_TIMEOUT: "25000"
         run: node screener-test/scrape-technicals-source.mjs
 
