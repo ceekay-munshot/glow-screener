@@ -4588,6 +4588,16 @@ async function renderActive() {
       for (const d of nifty500DatesSorted) { if (d <= date) last = nifty500ClosesByDate[d]; else break; }
       return last;
     }
+    // Nifty Smallcap 250 — the like-for-like public small-cap benchmark line.
+    const smallcap250ClosesByDate = benchmark?.indices?.["NIFTYSMLCAP250.NS"]?.closes || null;
+    const smallcap250DatesSorted = smallcap250ClosesByDate ? Object.keys(smallcap250ClosesByDate).sort() : null;
+    function smallcap250On(date) {
+      if (!smallcap250ClosesByDate) return null;
+      if (smallcap250ClosesByDate[date] != null) return smallcap250ClosesByDate[date];
+      let last = null;
+      for (const d of smallcap250DatesSorted) { if (d <= date) last = smallcap250ClosesByDate[d]; else break; }
+      return last;
+    }
 
     // Strategy mode (top-level: active vs passive) decides the buildView
     // contract. Active mode passes the user-chosen cadence; Passive mode
@@ -4764,12 +4774,14 @@ function buildActiveView(snapshots, anchorDate, todayDate, cadence, niftyOn, man
     const segments = buildActiveSegmentChain(snapshots, anchorDate, 1);
     const nifty500Curve = buildNiftyCurve(dates, nifty500On);
     const nifty500Ret = nifty500Curve.length ? (nifty500Curve[nifty500Curve.length - 1].retPct ?? null) : null;
+    const smallcap250Curve = buildNiftyCurve(dates, smallcap250On);
+    const smallcap250Ret = smallcap250Curve.length ? (smallcap250Curve[smallcap250Curve.length - 1].retPct ?? null) : null;
     const { aiStockCurves, manualStockCurves } = buildBasketStockCurves(segments, manualPicks, snapshots, anchorDate, dates, picks, manualRows, liveMarkDate);
     return {
       kind: "daily",
       sim, picks, hitSummary, segments,
       equityCurve, niftyCurve, manualCurve,
-      nifty500Curve, nifty500Ret, aiStockCurves, manualStockCurves,
+      nifty500Curve, nifty500Ret, smallcap250Curve, smallcap250Ret, aiStockCurves, manualStockCurves,
       manualPicks: manualRows, manualSummary, manualBooked,
       periodLabel: `Daily rebalance from ${fmtDateDMY(anchorDate)}`,
       finalReturn, niftyRet,
@@ -4809,6 +4821,8 @@ function buildActiveView(snapshots, anchorDate, todayDate, cadence, niftyOn, man
   const niftyRet = niftyCurve.length ? niftyCurve[niftyCurve.length - 1].retPct : null;
   const nifty500Curve = buildNiftyCurve(dates, nifty500On);
   const nifty500Ret = nifty500Curve.length ? (nifty500Curve[nifty500Curve.length - 1].retPct ?? null) : null;
+  const smallcap250Curve = buildNiftyCurve(dates, smallcap250On);
+  const smallcap250Ret = smallcap250Curve.length ? (smallcap250Curve[smallcap250Curve.length - 1].retPct ?? null) : null;
   const { aiStockCurves, manualStockCurves } = buildBasketStockCurves(segments, manualPicks, snapshots, anchorDate, dates, picks, manualRows, liveMarkDate);
   const capital = simPrefs.capital ?? ACTIVE_INITIAL_CAPITAL;
   const finalValue = capital * (1 + finalReturn / 100);
@@ -4819,7 +4833,7 @@ function buildActiveView(snapshots, anchorDate, todayDate, cadence, niftyOn, man
     kind: cadence,
     segments, picks, hitSummary,
     equityCurve, niftyCurve, manualCurve,
-    nifty500Curve, nifty500Ret, aiStockCurves, manualStockCurves,
+    nifty500Curve, nifty500Ret, smallcap250Curve, smallcap250Ret, aiStockCurves, manualStockCurves,
     manualPicks: manualRows, manualSummary, manualBooked,
     periodLabel: `${cadenceLabel} from ${fmtDateDMY(anchorDate)}${cadence === "passive" ? "" : ` · ${segments.length} segment${segments.length === 1 ? "" : "s"}`}`,
     finalReturn, niftyRet,
@@ -5550,6 +5564,7 @@ function renderStrategyCommandBar(view, cadence, mode, hits) {
   const manualDD = view.manualFinalReturn != null ? curveMaxDrawdown(view.manualCurve || []) : null;
   const niftyDD = (view.niftyCurve && view.niftyCurve.length) ? curveMaxDrawdown(view.niftyCurve) : null;
   const nifty500DD = (view.nifty500Curve && view.nifty500Curve.length) ? curveMaxDrawdown(view.nifty500Curve) : null;
+  const smallcap250DD = (view.smallcap250Curve && view.smallcap250Curve.length) ? curveMaxDrawdown(view.smallcap250Curve) : null;
   const stat = (label, ret, dd, labelCls) => {
     if (ret == null) return "";
     const rc = ret >= 0 ? "text-emerald-600" : "text-rose-600";
@@ -5584,6 +5599,7 @@ function renderStrategyCommandBar(view, cadence, mode, hits) {
           ${stat("Manual", view.manualFinalReturn, manualDD, "text-amber-700")}
           ${stat("Nifty 50", view.niftyRet, niftyDD, "text-slate-500")}
           ${stat("Nifty 500", view.nifty500Ret, nifty500DD, "text-sky-600")}
+          ${stat("Smallcap 250", view.smallcap250Ret, smallcap250DD, "text-purple-600")}
         </div>
         <div class="h-9 w-px bg-slate-200 hidden sm:block"></div>
         <div class="flex items-center gap-2">
@@ -5679,7 +5695,7 @@ function renderSimPanel(view) {
 const ACTIVE_CHART = {
   W: 820, H: 240,
   M: { left: 50, right: 18, top: 16, bottom: 32 },
-  color: { ai: "#6366f1", manual: "#f59e0b", nifty: "#94a3b8", nifty500: "#0ea5e9" },
+  color: { ai: "#6366f1", manual: "#f59e0b", nifty: "#94a3b8", nifty500: "#0ea5e9", smallcap250: "#a855f7" },
 };
 // Categorical palette for the per-stock ("Stocks") chart mode — AI names get
 // indigo/violet family tones, Manual names get amber/orange, so the two
@@ -5817,21 +5833,26 @@ function renderStrategyKpis(view) {
   const manualCurve = view.manualCurve || [];
   const niftyCurve = view.niftyCurve || [];
   const nifty500Curve = view.nifty500Curve || [];
+  const smallcap250Curve = view.smallcap250Curve || [];
   const aiUp = curveMaxUpside(aiCurve);
   const manualUp = curveMaxUpside(manualCurve);
   const niftyUp = curveMaxUpside(niftyCurve);
   const nifty500Up = curveMaxUpside(nifty500Curve);
+  const smallcap250Up = curveMaxUpside(smallcap250Curve);
   const aiDD = curveMaxDrawdown(aiCurve);
   const manualDD = curveMaxDrawdown(manualCurve);
   const niftyDD = curveMaxDrawdown(niftyCurve);
   const nifty500DD = curveMaxDrawdown(nifty500Curve);
+  const smallcap250DD = curveMaxDrawdown(smallcap250Curve);
   const aiFinal = view.finalReturn;
   const manualFinal = view.manualFinalReturn;
   const niftyFinal = view.niftyRet;
   const nifty500Final = view.nifty500Ret;
+  const smallcap250Final = view.smallcap250Ret;
   const manualVsAi = (manualFinal != null && aiFinal != null) ? manualFinal - aiFinal : null;
   const aiVsNifty = (aiFinal != null && niftyFinal != null) ? aiFinal - niftyFinal : null;
   const aiVsNifty500 = (aiFinal != null && nifty500Final != null) ? aiFinal - nifty500Final : null;
+  const aiVsSmallcap250 = (aiFinal != null && smallcap250Final != null) ? aiFinal - smallcap250Final : null;
 
   const fmtPct = (v) => v == null ? "—" : `${v >= 0 ? "+" : ""}${v.toFixed(2)}%`;
   const cls = (v) => v == null ? "text-slate-500" : v >= 0 ? "text-emerald-700" : "text-rose-700";
@@ -5877,6 +5898,7 @@ function renderStrategyKpis(view) {
         ${row("bg-amber-500", "Manual basket", manualFinal)}
         ${row("bg-slate-400", "Nifty 50", niftyFinal)}
         ${row("bg-sky-500", "Nifty 500", nifty500Final)}
+        ${row("bg-purple-500", "Smallcap 250", smallcap250Final)}
       </div>
       ${liveStamp}
     </div>`;
@@ -5892,6 +5914,7 @@ function renderStrategyKpis(view) {
         ${row("bg-indigo-500", "AI", aiUp)}
         ${row("bg-slate-400", "Nifty 50", niftyUp)}
         ${row("bg-sky-500", "Nifty 500", nifty500Up)}
+        ${row("bg-purple-500", "Smallcap 250", smallcap250Up)}
       </div>    </div>`;
 
   const cardDrawdown = `
@@ -5905,6 +5928,7 @@ function renderStrategyKpis(view) {
         ${row("bg-indigo-500", "AI", aiDD)}
         ${row("bg-slate-400", "Nifty 50", niftyDD)}
         ${row("bg-sky-500", "Nifty 500", nifty500DD)}
+        ${row("bg-purple-500", "Smallcap 250", smallcap250DD)}
       </div>    </div>`;
 
   const alphaRow = (dotCls, label, value) => `
@@ -5926,6 +5950,7 @@ function renderStrategyKpis(view) {
         ${alphaRow("bg-amber-500", "Manual − AI", manualVsAi)}
         ${alphaRow("bg-slate-400", "AI − Nifty 50", aiVsNifty)}
         ${alphaRow("bg-sky-500", "AI − Nifty 500", aiVsNifty500)}
+        ${alphaRow("bg-purple-500", "AI − Smallcap 250", aiVsSmallcap250)}
       </div>    </div>`;
 
   return `
@@ -5983,14 +6008,17 @@ function renderActiveCumulativeChart(view) {
   }
   const niftyByDate = new Map((view.niftyCurve || []).map((p) => [p.date, p.retPct]));
   const nifty500ByDate = new Map((view.nifty500Curve || []).map((p) => [p.date, p.retPct]));
+  const smallcap250ByDate = new Map((view.smallcap250Curve || []).map((p) => [p.date, p.retPct]));
   const manualByDate = new Map((view.manualCurve || []).map((p) => [p.date, p.retPct]));
   const hasManual = view.manualCurve && view.manualCurve.some((p) => p.retPct != null);
   const hasN500 = view.nifty500Curve && view.nifty500Curve.some((p) => p.retPct != null);
+  const hasSmallcap = view.smallcap250Curve && view.smallcap250Curve.some((p) => p.retPct != null);
   const allVals = [];
   for (const p of pts) {
     allVals.push(p.retPct);
     const n = niftyByDate.get(p.date); if (n != null) allVals.push(n);
     const n5 = nifty500ByDate.get(p.date); if (n5 != null) allVals.push(n5);
+    const sc = smallcap250ByDate.get(p.date); if (sc != null) allVals.push(sc);
     const m = manualByDate.get(p.date); if (m != null) allVals.push(m);
   }
   const yMin = Math.min(0, ...allVals);
@@ -6013,6 +6041,7 @@ function renderActiveCumulativeChart(view) {
   const activePath = buildLine((p) => p.retPct);
   const niftyPath = buildLine((p) => niftyByDate.get(p.date));
   const nifty500Path = buildLine((p) => nifty500ByDate.get(p.date));
+  const smallcap250Path = buildLine((p) => smallcap250ByDate.get(p.date));
   const manualPath = buildLine((p) => manualByDate.get(p.date));
 
   const first = [xAt(0), yAt(pts[0].retPct)];
@@ -6038,7 +6067,8 @@ function renderActiveCumulativeChart(view) {
     <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-0.5" style="background:${color.ai}"></span>AI basket</span>
     ${hasManual ? `<span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-0.5" style="background:${color.manual}"></span>Manual basket</span>` : ""}
     <span class="inline-flex items-center gap-1.5" title="Benchmark"><span class="w-2.5 h-0.5 border-t border-dashed" style="border-color:${color.nifty}"></span>Nifty 50</span>
-    ${hasN500 ? `<span class="inline-flex items-center gap-1.5" title="Benchmark — Nifty 500 index">​<span class="w-2.5 h-0.5 border-t border-dashed" style="border-color:${color.nifty500}"></span>Nifty 500</span>` : ""}`;
+    ${hasN500 ? `<span class="inline-flex items-center gap-1.5" title="Benchmark — Nifty 500 index">​<span class="w-2.5 h-0.5 border-t border-dashed" style="border-color:${color.nifty500}"></span>Nifty 500</span>` : ""}
+    ${hasSmallcap ? `<span class="inline-flex items-center gap-1.5" title="Benchmark — Nifty Smallcap 250 (like-for-like small-cap index)"><span class="w-2.5 h-0.5 border-t border-dashed" style="border-color:${color.smallcap250}"></span>Smallcap 250</span>` : ""}`;
 
   const body = `
       <div id="active-chart-container" class="relative">
@@ -6053,6 +6083,7 @@ function renderActiveCumulativeChart(view) {
           <path d="${areaPath}" fill="url(#activeStrategyArea)" />
           ${niftyPath ? `<path d="${niftyPath}" fill="none" stroke="${color.nifty}" stroke-width="1.6" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" />` : ""}
           ${nifty500Path ? `<path d="${nifty500Path}" fill="none" stroke="${color.nifty500}" stroke-width="1.6" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" />` : ""}
+          ${smallcap250Path ? `<path d="${smallcap250Path}" fill="none" stroke="${color.smallcap250}" stroke-width="1.6" stroke-dasharray="2 3" stroke-linecap="round" stroke-linejoin="round" />` : ""}
           ${manualPath ? `<path d="${manualPath}" fill="none" stroke="${color.manual}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />` : ""}
           <path d="${activePath}" fill="none" stroke="${color.ai}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" />
           ${xTicks}
@@ -6061,6 +6092,7 @@ function renderActiveCumulativeChart(view) {
           <circle id="active-chart-dot-manual" cx="0" cy="0" r="3.5" fill="#fff" stroke="${color.manual}" stroke-width="2" opacity="0" />
           <circle id="active-chart-dot-nifty" cx="0" cy="0" r="3.5" fill="#fff" stroke="${color.nifty}" stroke-width="2" opacity="0" />
           <circle id="active-chart-dot-nifty500" cx="0" cy="0" r="3.5" fill="#fff" stroke="${color.nifty500}" stroke-width="2" opacity="0" />
+          <circle id="active-chart-dot-smallcap250" cx="0" cy="0" r="3.5" fill="#fff" stroke="${color.smallcap250}" stroke-width="2" opacity="0" />
           <rect id="active-chart-capture" x="0" y="0" width="${W}" height="${H}" fill="transparent" />
         </svg>
         <div id="active-chart-tooltip" class="hidden absolute z-10 pointer-events-none -translate-x-1/2 -translate-y-[calc(100%+10px)] bg-slate-900/95 backdrop-blur text-white text-[11px] rounded-xl shadow-2xl ring-1 ring-slate-700/60 px-3 py-2 whitespace-nowrap"></div>
@@ -6258,6 +6290,7 @@ function setupActiveChartHover(view) {
   const dotManual = document.getElementById("active-chart-dot-manual");
   const dotNifty = document.getElementById("active-chart-dot-nifty");
   const dotNifty500 = document.getElementById("active-chart-dot-nifty500");
+  const dotSmallcap250 = document.getElementById("active-chart-dot-smallcap250");
   const tip = document.getElementById("active-chart-tooltip");
   if (!container || !svg || !capture || !tip) return;
 
@@ -6268,12 +6301,14 @@ function setupActiveChartHover(view) {
   if (pts.length < 2) return;
   const niftyByDate = new Map((view.niftyCurve || []).map((p) => [p.date, p.retPct]));
   const nifty500ByDate = new Map((view.nifty500Curve || []).map((p) => [p.date, p.retPct]));
+  const smallcap250ByDate = new Map((view.smallcap250Curve || []).map((p) => [p.date, p.retPct]));
   const manualByDate = new Map((view.manualCurve || []).map((p) => [p.date, p.retPct]));
   const allVals = [];
   for (const p of pts) {
     allVals.push(p.retPct);
     const n = niftyByDate.get(p.date); if (n != null) allVals.push(n);
     const n5 = nifty500ByDate.get(p.date); if (n5 != null) allVals.push(n5);
+    const sc = smallcap250ByDate.get(p.date); if (sc != null) allVals.push(sc);
     const m = manualByDate.get(p.date); if (m != null) allVals.push(m);
   }
   const yMin = Math.min(0, ...allVals);
@@ -6298,6 +6333,9 @@ function setupActiveChartHover(view) {
     const n5Val = nifty500ByDate.get(p.date);
     if (n5Val != null && dotNifty500) { dotNifty500.setAttribute("cx", aiPx); dotNifty500.setAttribute("cy", yAt(n5Val)); dotNifty500.setAttribute("opacity", "1"); }
     else if (dotNifty500) dotNifty500.setAttribute("opacity", "0");
+    const scVal = smallcap250ByDate.get(p.date);
+    if (scVal != null && dotSmallcap250) { dotSmallcap250.setAttribute("cx", aiPx); dotSmallcap250.setAttribute("cy", yAt(scVal)); dotSmallcap250.setAttribute("opacity", "1"); }
+    else if (dotSmallcap250) dotSmallcap250.setAttribute("opacity", "0");
 
     // Position the tooltip at the point's ACTUAL screen location using the
     // SVG's live coordinate matrix. Deriving it from rect.width / W breaks
@@ -6323,6 +6361,7 @@ function setupActiveChartHover(view) {
       ${mVal != null ? `<div class="mt-0.5 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full" style="background:${color.manual}"></span><span class="text-slate-300">Manual</span><span class="ml-auto font-bold tabular-nums ${cls(mVal)}">${fmt(mVal)}</span></div>` : ""}
       ${nVal != null ? `<div class="mt-0.5 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full" style="background:${color.nifty}"></span><span class="text-slate-300">Nifty 50</span><span class="ml-auto font-bold tabular-nums ${cls(nVal)}">${fmt(nVal)}</span></div>` : ""}
       ${n5Val != null ? `<div class="mt-0.5 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full" style="background:${color.nifty500}"></span><span class="text-slate-300">Nifty 500</span><span class="ml-auto font-bold tabular-nums ${cls(n5Val)}">${fmt(n5Val)}</span></div>` : ""}
+      ${scVal != null ? `<div class="mt-0.5 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full" style="background:${color.smallcap250}"></span><span class="text-slate-300">Smallcap 250</span><span class="ml-auto font-bold tabular-nums ${cls(scVal)}">${fmt(scVal)}</span></div>` : ""}
     `;
     tip.classList.remove("hidden");
     tip.style.left = tipX + "px";
