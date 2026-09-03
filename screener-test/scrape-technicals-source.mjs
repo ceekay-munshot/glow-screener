@@ -227,21 +227,31 @@ for (const slug of ordered) {
   const url = `https://in.tradingview.com/symbols/NSE-${slug}/technicals/`;
   process.stdout.write(`[${ok + fail + skipped + resumed + 1}/${ordered.length}] ${slug.padEnd(14)} `);
   try {
-    await page.goto(url, { waitUntil: "domcontentloaded", timeout: NAV_TIMEOUT_MS });
-    // Wait for the page's JS-driven tables to populate. The signal:
-    // "Moving Averages" or "Oscillators" headings show up in the rendered DOM.
-    await page.waitForFunction(
-      () => /Moving Averages|Oscillators|Relative Strength Index/i.test(document.body.innerText),
-      null,
-      { timeout: NAV_TIMEOUT_MS },
-    ).catch(() => null);
-    await sleep(PAGE_WAIT_MS);
+    // Try up to twice: a real TradingView page can be slow to render its
+    // JS tables (worse when TradingView throttles a long run), so an empty
+    // first read is usually "not loaded yet", NOT "no page". Retry once with
+    // a longer settle before concluding the ticker has no data.
+    let parsed = null;
+    let indicatorCount = 0;
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      await page.goto(url, { waitUntil: "domcontentloaded", timeout: NAV_TIMEOUT_MS });
+      // Wait for the page's JS-driven tables to populate. The signal:
+      // "Moving Averages" or "Oscillators" headings show up in the rendered DOM.
+      await page.waitForFunction(
+        () => /Moving Averages|Oscillators|Relative Strength Index/i.test(document.body.innerText),
+        null,
+        { timeout: NAV_TIMEOUT_MS },
+      ).catch(() => null);
+      await sleep(attempt === 1 ? PAGE_WAIT_MS : PAGE_WAIT_MS + 3_000);
 
-    const bodyText = await page.evaluate(() => document.body.innerText);
-    const parsed = parsePageText(bodyText);
-    const indicatorCount =
-      Object.keys(parsed.oscillators || {}).length +
-      Object.keys(parsed.moving_averages || {}).length;
+      const bodyText = await page.evaluate(() => document.body.innerText);
+      parsed = parsePageText(bodyText);
+      indicatorCount =
+        Object.keys(parsed.oscillators || {}).length +
+        Object.keys(parsed.moving_averages || {}).length;
+      if (indicatorCount >= 3) break;
+      if (attempt === 1) { process.stdout.write("(empty, retry) "); await sleep(2_000); }
+    }
     if (indicatorCount < 3) {
       console.log(`extraction empty (${indicatorCount} fields) — skip`);
       skipped++;

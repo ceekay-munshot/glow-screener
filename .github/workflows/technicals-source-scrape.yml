@@ -59,8 +59,8 @@ jobs:
           # The resume mechanic skips entries scraped in the last 18h, so a daily
           # cron with BATCH_SIZE=0 only does new + stale companies on most runs.
           TECHNICALS_SOURCE_BATCH: ${{ inputs.batch_size || '0' }}
-          TECHNICALS_SOURCE_THROTTLE: "1500"
-          TECHNICALS_SOURCE_TIMEOUT: "15000"
+          TECHNICALS_SOURCE_THROTTLE: "2000"
+          TECHNICALS_SOURCE_TIMEOUT: "25000"
         run: node screener-test/scrape-technicals-source.mjs
 
       - name: Commit refreshed technicals-source.json
