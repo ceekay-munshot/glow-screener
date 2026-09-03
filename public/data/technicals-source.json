@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T06:29:26.948Z",
+  "generated_at": "2026-09-03T06:48:16.007Z",
   "source": "TradingView technical-analysis pages (via Playwright)",
   "companies": {
     "ATULAUTO": {
@@ -3262,9 +3262,3651 @@
       },
       "url": "https://in.tradingview.com/symbols/NSE-AVATAR/technicals/",
       "scraped_at": "2026-09-03T06:29:26.948Z"
+    },
+    "AMBAAUTO": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 2,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 61.54,
+        "stoch_k": 60.34,
+        "cci_20": 60.08,
+        "adx_14": 45.04,
+        "momentum_10": 5.85,
+        "macd_level": 4.8,
+        "stoch_rsi_fast": 8.84,
+        "williams_r": 37.66,
+        "ultimate_osc": 49.92
+      },
+      "moving_averages": {
+        "ema_10": 110.86,
+        "sma_10": 111.32,
+        "ema_20": 107.36,
+        "sma_20": 108.21,
+        "ema_30": 104.41,
+        "sma_30": 102.4,
+        "ema_50": 102,
+        "sma_50": 94.87,
+        "ichimoku_base": 98.15,
+        "vwma_20": 108.3,
+        "hull_9": 111.93
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AMBAAUTO/technicals/",
+      "scraped_at": "2026-09-03T06:30:27.639Z"
+    },
+    "AMBALALSA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 55.38,
+        "stoch_k": 31.32,
+        "cci_20": 29.03,
+        "adx_14": 36.11,
+        "momentum_10": 3.74,
+        "macd_level": 1.65,
+        "stoch_rsi_fast": 4.25,
+        "williams_r": 75.64,
+        "ultimate_osc": 45.76
+      },
+      "moving_averages": {
+        "ema_10": 44.22,
+        "sma_10": 44.12,
+        "ema_20": 43.31,
+        "sma_20": 44.91,
+        "ema_30": 41.94,
+        "sma_30": 41.95,
+        "ema_50": 39.76,
+        "sma_50": 37.83,
+        "ichimoku_base": 40.57,
+        "vwma_20": 45.67,
+        "hull_9": 44.41
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AMBALALSA/technicals/",
+      "scraped_at": "2026-09-03T06:30:33.081Z"
+    },
+    "AMBIKCO": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 47.2,
+        "stoch_k": 45.8,
+        "cci_20": 16.1,
+        "adx_14": 10.7,
+        "momentum_10": 2,
+        "macd_level": 17.3,
+        "stoch_rsi_fast": 56.3,
+        "williams_r": 50.3,
+        "ultimate_osc": 42.1
+      },
+      "moving_averages": {
+        "ema_10": 1640.2,
+        "sma_10": 1642.3,
+        "ema_20": 1653.3,
+        "sma_20": 1645.9,
+        "ema_30": 1662.8,
+        "sma_30": 1677.2,
+        "ema_50": 1662.5,
+        "sma_50": 1698.3,
+        "ema_100": 1615.7,
+        "sma_100": 1636.7,
+        "ema_200": 1544.3,
+        "sma_200": 1460.8,
+        "ichimoku_base": 1751.1,
+        "vwma_20": 1683.6,
+        "hull_9": 1631.3
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AMBIKCO/technicals/",
+      "scraped_at": "2026-09-03T06:30:38.503Z"
+    },
+    "AMCL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 38.75,
+        "stoch_k": 26.1,
+        "cci_20": 73.61,
+        "adx_14": 21.07,
+        "momentum_10": 10.05,
+        "macd_level": 12.8,
+        "stoch_rsi_fast": 72.82,
+        "williams_r": 72.97,
+        "ultimate_osc": 51.64
+      },
+      "moving_averages": {
+        "ema_10": 363.54,
+        "sma_10": 360.55,
+        "ema_20": 372.37,
+        "sma_20": 373.23,
+        "ema_30": 381.69,
+        "sma_30": 383.65,
+        "ema_50": 397.27,
+        "sma_50": 398.38,
+        "ema_100": 407.68,
+        "sma_100": 442.9,
+        "ema_200": 369.93,
+        "sma_200": 396.09,
+        "ichimoku_base": 380,
+        "vwma_20": 362.87,
+        "hull_9": 359.84
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AMCL/technicals/",
+      "scraped_at": "2026-09-03T06:30:43.894Z"
+    },
+    "AMNPLST": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 2,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 33.44,
+        "stoch_k": 21.2,
+        "cci_20": 127.83,
+        "adx_14": 17.36,
+        "momentum_10": 4.98,
+        "macd_level": 3.95,
+        "stoch_rsi_fast": 18.78,
+        "williams_r": 81.58,
+        "ultimate_osc": 35.38
+      },
+      "moving_averages": {
+        "ema_10": 183.56,
+        "sma_10": 184.88,
+        "ema_20": 187.02,
+        "sma_20": 188.31,
+        "ema_30": 188.96,
+        "sma_30": 191.42,
+        "ema_50": 189.95,
+        "sma_50": 193.22,
+        "ema_100": 188.04,
+        "sma_100": 188.23,
+        "ema_200": 190.22,
+        "sma_200": 181.05,
+        "ichimoku_base": 191.67,
+        "vwma_20": 188.85,
+        "hull_9": 178.04
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AMNPLST/technicals/",
+      "scraped_at": "2026-09-03T06:30:49.310Z"
+    },
+    "AMRUTANJAN": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 2,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 46.71,
+        "stoch_k": 28.12,
+        "cci_20": 19.21,
+        "adx_14": 14.66,
+        "momentum_10": 13.55,
+        "macd_level": 3.91,
+        "stoch_rsi_fast": 38.8,
+        "williams_r": 62.93,
+        "ultimate_osc": 38.04
+      },
+      "moving_averages": {
+        "ema_10": 509.77,
+        "sma_10": 515.67,
+        "ema_20": 512.48,
+        "sma_20": 510.79,
+        "ema_30": 515.56,
+        "sma_30": 512.66,
+        "ema_50": 522.04,
+        "sma_50": 522.71,
+        "ema_100": 539.03,
+        "sma_100": 539.48,
+        "ema_200": 572.91,
+        "sma_200": 577.81,
+        "ichimoku_base": 516.35,
+        "vwma_20": 516.09,
+        "hull_9": 497.5
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AMRUTANJAN/technicals/",
+      "scraped_at": "2026-09-03T06:30:54.781Z"
+    },
+    "ANAWIL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 4
+      },
+      "oscillators": {
+        "rsi_14": 67.84,
+        "stoch_k": 15.25,
+        "cci_20": 25.92,
+        "momentum_10": 49,
+        "williams_r": 81.15
+      },
+      "moving_averages": {
+        "ema_10": 404.15,
+        "sma_10": 418.8,
+        "ema_20": 405.13,
+        "sma_20": 405.13,
+        "vwma_20": 387.75,
+        "hull_9": 380.03
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ANAWIL/technicals/",
+      "scraped_at": "2026-09-03T06:31:00.170Z"
+    },
+    "ANDHRAPAP": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 58.84,
+        "stoch_k": 52.83,
+        "cci_20": 248.72,
+        "adx_14": 25.68,
+        "momentum_10": 2.35,
+        "macd_level": 0.01,
+        "stoch_rsi_fast": 78.3,
+        "williams_r": 16,
+        "ultimate_osc": 51.51
+      },
+      "moving_averages": {
+        "ema_10": 61.01,
+        "sma_10": 60.71,
+        "ema_20": 60.88,
+        "sma_20": 60.55,
+        "ema_30": 60.99,
+        "sma_30": 60.94,
+        "ema_50": 61.36,
+        "sma_50": 61.28,
+        "ema_100": 62.52,
+        "sma_100": 62.93,
+        "ema_200": 65.55,
+        "sma_200": 64.28,
+        "ichimoku_base": 61.86,
+        "vwma_20": 60.63,
+        "hull_9": 61.54
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ANDHRAPAP/technicals/",
+      "scraped_at": "2026-09-03T06:31:05.633Z"
+    },
+    "ANDHRSUGAR": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 57.51,
+        "stoch_k": 31.79,
+        "cci_20": 0.84,
+        "adx_14": 31.8,
+        "momentum_10": 3.33,
+        "macd_level": 2.43,
+        "stoch_rsi_fast": 15.7,
+        "williams_r": 58.36,
+        "ultimate_osc": 41.41
+      },
+      "moving_averages": {
+        "ema_10": 98.42,
+        "sma_10": 98.31,
+        "ema_20": 96.89,
+        "sma_20": 98.77,
+        "ema_30": 95.09,
+        "sma_30": 94.26,
+        "ema_50": 92.41,
+        "sma_50": 90,
+        "ema_100": 88.48,
+        "sma_100": 89.51,
+        "ema_200": 84.96,
+        "sma_200": 81.63,
+        "ichimoku_base": 93.65,
+        "vwma_20": 99.69,
+        "hull_9": 98.71
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ANDHRSUGAR/technicals/",
+      "scraped_at": "2026-09-03T06:31:11.074Z"
+    },
+    "ANDREWYU": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 43.98,
+        "stoch_k": 48.29,
+        "cci_20": 21.38,
+        "adx_14": 21.37,
+        "momentum_10": 2.33,
+        "macd_level": 1.29,
+        "stoch_rsi_fast": 83.53,
+        "williams_r": 34.11,
+        "ultimate_osc": 47.81
+      },
+      "moving_averages": {
+        "ema_10": 28.28,
+        "sma_10": 27.78,
+        "ema_20": 29.27,
+        "sma_20": 29.41,
+        "ema_30": 29.96,
+        "sma_30": 31.18,
+        "ema_50": 30.19,
+        "sma_50": 32.01,
+        "ema_100": 29.03,
+        "sma_100": 28.78,
+        "ema_200": 27.1,
+        "sma_200": 25.61,
+        "ichimoku_base": 32.61,
+        "vwma_20": 33.77,
+        "hull_9": 28.27
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ANDREWYU/technicals/",
+      "scraped_at": "2026-09-03T06:31:16.502Z"
+    },
+    "ANLON": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 51.92,
+        "stoch_k": 46.03,
+        "cci_20": 0.91,
+        "adx_14": 14.64,
+        "momentum_10": 28.95,
+        "macd_level": 1.64,
+        "stoch_rsi_fast": 35.32,
+        "williams_r": 43.58,
+        "ultimate_osc": 41.33
+      },
+      "moving_averages": {
+        "ema_10": 644.44,
+        "sma_10": 647,
+        "ema_20": 643.95,
+        "sma_20": 649.02,
+        "ema_30": 642.28,
+        "sma_30": 636.22,
+        "ema_50": 634.58,
+        "sma_50": 638.3,
+        "ema_100": 597.22,
+        "sma_100": 609.35,
+        "ema_200": 535.31,
+        "sma_200": 497.02,
+        "ichimoku_base": 644.48,
+        "vwma_20": 644.35,
+        "hull_9": 636.13
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ANLON/technicals/",
+      "scraped_at": "2026-09-03T06:31:22.025Z"
+    },
+    "ANNAPURNA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 1,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 49.94,
+        "stoch_k": 13.65,
+        "cci_20": 90.37,
+        "adx_14": 15.63,
+        "momentum_10": 6.22,
+        "macd_level": 1.31,
+        "stoch_rsi_fast": 6.22,
+        "williams_r": 82.82,
+        "ultimate_osc": 38.21
+      },
+      "moving_averages": {
+        "ema_10": 147.17,
+        "sma_10": 147.21,
+        "ema_20": 146.94,
+        "sma_20": 151.6,
+        "ema_30": 145.51,
+        "sma_30": 144.94,
+        "ema_50": 144.22,
+        "sma_50": 139.49,
+        "ema_100": 149.98,
+        "sma_100": 144.22,
+        "ema_200": 173.27,
+        "sma_200": 170.83,
+        "ichimoku_base": 147.38,
+        "vwma_20": 153.72,
+        "hull_9": 144.8
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ANNAPURNA/technicals/",
+      "scraped_at": "2026-09-03T06:31:27.433Z"
+    },
+    "ANONDITA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 53.8,
+        "stoch_k": 40.8,
+        "cci_20": 101.2,
+        "adx_14": 16.9,
+        "momentum_10": 21,
+        "macd_level": 8.1,
+        "stoch_rsi_fast": 67.6,
+        "williams_r": 44.2,
+        "ultimate_osc": 44.9
+      },
+      "moving_averages": {
+        "ema_10": 1066.3,
+        "sma_10": 1059.4,
+        "ema_20": 1070.1,
+        "sma_20": 1068.1,
+        "ema_30": 1077,
+        "sma_30": 1070.6,
+        "ema_50": 1081,
+        "sma_50": 1104.8,
+        "ema_100": 1033.8,
+        "sma_100": 1086.5,
+        "ema_200": 862.9,
+        "sma_200": 897,
+        "ichimoku_base": 1085.8,
+        "vwma_20": 1069.3,
+        "hull_9": 1074.6
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ANONDITA/technicals/",
+      "scraped_at": "2026-09-03T06:32:34.610Z"
+    },
+    "ANUHPHR": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 52.57,
+        "stoch_k": 44.44,
+        "cci_20": 36.58,
+        "adx_14": 19.69,
+        "momentum_10": 4.04,
+        "macd_level": 0.57,
+        "stoch_rsi_fast": 56.75,
+        "williams_r": 57.03,
+        "ultimate_osc": 48.87
+      },
+      "moving_averages": {
+        "ema_10": 79.97,
+        "sma_10": 80.07,
+        "ema_20": 79.36,
+        "sma_20": 78.45,
+        "ema_30": 79.16,
+        "sma_30": 78.88,
+        "ema_50": 79.01,
+        "sma_50": 79.21,
+        "ema_100": 78.94,
+        "sma_100": 79.26,
+        "ema_200": 80.29,
+        "sma_200": 78.23,
+        "ichimoku_base": 80.69,
+        "vwma_20": 79.97,
+        "hull_9": 80.58
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ANUHPHR/technicals/",
+      "scraped_at": "2026-09-03T06:32:40.040Z"
+    },
+    "APCL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 3,
+        "neutral_count": 5
+      },
+      "oscillators": {
+        "rsi_14": 43.34,
+        "stoch_k": 16.3,
+        "cci_20": 107.69,
+        "adx_14": 9.48,
+        "momentum_10": 3.17,
+        "macd_level": 1.11,
+        "stoch_rsi_fast": 5.76,
+        "williams_r": 82.65,
+        "ultimate_osc": 26.96
+      },
+      "moving_averages": {
+        "ema_10": 101.18,
+        "sma_10": 101.1,
+        "ema_20": 102.04,
+        "sma_20": 102.42,
+        "ema_30": 102.8,
+        "sma_30": 102.69,
+        "ema_50": 104.52,
+        "sma_50": 103.52,
+        "ema_100": 108.83,
+        "sma_100": 109.55,
+        "ema_200": 116.05,
+        "sma_200": 117.29,
+        "ichimoku_base": 103.99,
+        "vwma_20": 103.5,
+        "hull_9": 99.97
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-APCL/technicals/",
+      "scraped_at": "2026-09-03T06:32:45.451Z"
+    },
+    "APEX": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 2,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 38.06,
+        "stoch_k": 7.03,
+        "cci_20": 98.23,
+        "adx_14": 15.55,
+        "momentum_10": 31.75,
+        "macd_level": 5.02,
+        "stoch_rsi_fast": 4.32,
+        "williams_r": 94.75,
+        "ultimate_osc": 25.72
+      },
+      "moving_averages": {
+        "ema_10": 379.15,
+        "sma_10": 382.07,
+        "ema_20": 383.83,
+        "sma_20": 387.08,
+        "ema_30": 386.72,
+        "sma_30": 383.83,
+        "ema_50": 391.98,
+        "sma_50": 389.95,
+        "ema_100": 393.15,
+        "sma_100": 417.45,
+        "ema_200": 369.71,
+        "sma_200": 373.39,
+        "ichimoku_base": 401.73,
+        "vwma_20": 416.37,
+        "hull_9": 367
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-APEX/technicals/",
+      "scraped_at": "2026-09-03T06:32:50.909Z"
+    },
+    "APEXECO": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 54.6,
+        "stoch_k": 29.2,
+        "cci_20": 6.39,
+        "adx_14": 18.99,
+        "momentum_10": 4.8,
+        "macd_level": 1.81,
+        "stoch_rsi_fast": 36.71,
+        "williams_r": 50.57,
+        "ultimate_osc": 45.95
+      },
+      "moving_averages": {
+        "ema_10": 257.91,
+        "sma_10": 253.11,
+        "ema_20": 260.55,
+        "sma_20": 265.85,
+        "ema_30": 259.74,
+        "sma_30": 265.11,
+        "ema_50": 251.61,
+        "sma_50": 261.42,
+        "ema_100": 225.19,
+        "sma_100": 217.97,
+        "ema_200": 191.23,
+        "sma_200": 171.99,
+        "ichimoku_base": 269.58,
+        "vwma_20": 271.78,
+        "hull_9": 258.57
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-APEXECO/technicals/",
+      "scraped_at": "2026-09-03T06:32:56.819Z"
+    },
+    "APOLSINHOT": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 1,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 53.5,
+        "stoch_k": 70,
+        "cci_20": 62.5,
+        "adx_14": 24.5,
+        "momentum_10": 19.2,
+        "macd_level": 1.1,
+        "stoch_rsi_fast": 77.2,
+        "williams_r": 23.3,
+        "ultimate_osc": 58.4
+      },
+      "moving_averages": {
+        "ema_10": 1219.6,
+        "sma_10": 1216.6,
+        "ema_20": 1217,
+        "sma_20": 1214.9,
+        "ema_30": 1217.9,
+        "sma_30": 1211.7,
+        "ema_50": 1218.8,
+        "sma_50": 1222.1,
+        "ema_100": 1217.2,
+        "sma_100": 1210.9,
+        "ema_200": 1237.2,
+        "sma_200": 1213.9,
+        "ichimoku_base": 1232.7,
+        "vwma_20": 1216.5,
+        "hull_9": 1229.2
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-APOLSINHOT/technicals/",
+      "scraped_at": "2026-09-03T06:33:02.245Z"
+    },
+    "APRAMEYA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 2,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 37.81,
+        "stoch_k": 25.64,
+        "cci_20": 110.69,
+        "adx_14": 22.98,
+        "momentum_10": 6.05,
+        "macd_level": 6.36,
+        "stoch_rsi_fast": 52.3,
+        "williams_r": 82.86,
+        "ultimate_osc": 41.54
+      },
+      "moving_averages": {
+        "ema_10": 128.09,
+        "sma_10": 130.52,
+        "ema_20": 133.07,
+        "sma_20": 134.24,
+        "ema_30": 137.2,
+        "sma_30": 138.99,
+        "ema_50": 145.63,
+        "sma_50": 143.62,
+        "ema_100": 166.59,
+        "sma_100": 171.39,
+        "ema_200": 186.26,
+        "sma_200": 220.28,
+        "ichimoku_base": 133.38,
+        "vwma_20": 134.97,
+        "hull_9": 121.59
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-APRAMEYA/technicals/",
+      "scraped_at": "2026-09-03T06:33:07.622Z"
+    },
+    "APS": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 45.64,
+        "stoch_k": 42.92,
+        "cci_20": 0.69,
+        "adx_14": 30.39,
+        "momentum_10": 9.75,
+        "macd_level": 4.81,
+        "stoch_rsi_fast": 65.63,
+        "williams_r": 54.29,
+        "ultimate_osc": 48.04
+      },
+      "moving_averages": {
+        "ema_10": 252.48,
+        "sma_10": 256.42,
+        "ema_20": 254.78,
+        "sma_20": 249.46,
+        "ema_30": 259.54,
+        "sma_30": 256.07,
+        "ema_50": 270.54,
+        "sma_50": 271.1,
+        "ema_100": 294.35,
+        "sma_100": 307.09,
+        "ema_200": 331.88,
+        "sma_200": 330.26,
+        "ichimoku_base": 254.25,
+        "vwma_20": 249.22,
+        "hull_9": 248.34
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-APS/technicals/",
+      "scraped_at": "2026-09-03T06:33:13.516Z"
+    },
+    "APSISAERO": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 0,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 85.42,
+        "stoch_k": 100,
+        "cci_20": 148.69,
+        "adx_14": 62.74,
+        "momentum_10": 67.7,
+        "macd_level": 39.09,
+        "stoch_rsi_fast": 74.01,
+        "williams_r": 0,
+        "ultimate_osc": 84.39
+      },
+      "moving_averages": {
+        "ema_10": 550.26,
+        "sma_10": 549.29,
+        "ema_20": 520.73,
+        "sma_20": 518.69,
+        "ema_30": 495.01,
+        "sma_30": 490.59,
+        "ema_50": 451.52,
+        "sma_50": 438.27,
+        "ema_100": 362.61,
+        "sma_100": 356.56,
+        "ichimoku_base": 506.6,
+        "vwma_20": 523.86,
+        "hull_9": 582.87
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-APSISAERO/technicals/",
+      "scraped_at": "2026-09-03T06:33:18.914Z"
+    },
+    "APTECHT": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 44.74,
+        "stoch_k": 30.57,
+        "cci_20": 65.69,
+        "adx_14": 23.22,
+        "momentum_10": 1.16,
+        "macd_level": 1.25,
+        "stoch_rsi_fast": 50.24,
+        "williams_r": 58.06,
+        "ultimate_osc": 40.77
+      },
+      "moving_averages": {
+        "ema_10": 91.74,
+        "sma_10": 91.45,
+        "ema_20": 92.57,
+        "sma_20": 92.78,
+        "ema_30": 93.54,
+        "sma_30": 92.96,
+        "ema_50": 95.08,
+        "sma_50": 95.51,
+        "ema_100": 96.55,
+        "sma_100": 99.77,
+        "ema_200": 101.73,
+        "sma_200": 94.54,
+        "ichimoku_base": 94.5,
+        "vwma_20": 92.87,
+        "hull_9": 91.44
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-APTECHT/technicals/",
+      "scraped_at": "2026-09-03T06:33:24.409Z"
+    },
+    "AQYLON": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 1,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 32.02,
+        "stoch_k": 17.12,
+        "cci_20": 137.48,
+        "adx_14": 48.48,
+        "momentum_10": 3.38,
+        "macd_level": 2.41,
+        "stoch_rsi_fast": 40.61,
+        "williams_r": 84.86,
+        "ultimate_osc": 36.96
+      },
+      "moving_averages": {
+        "ema_10": 22.32,
+        "sma_10": 23.03,
+        "ema_20": 23.88,
+        "sma_20": 23.62,
+        "ema_30": 25.89,
+        "sma_30": 24.35,
+        "ema_50": 31.17,
+        "sma_50": 29.71,
+        "ema_100": 47.02,
+        "sma_100": 41.56,
+        "ichimoku_base": 24.21,
+        "vwma_20": 23.9,
+        "hull_9": 20.08
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AQYLON/technicals/",
+      "scraped_at": "2026-09-03T06:33:29.819Z"
+    },
+    "ARCHIDPLY": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 61.83,
+        "stoch_k": 40.4,
+        "cci_20": 55.71,
+        "adx_14": 44.13,
+        "momentum_10": 10.78,
+        "macd_level": 5.54,
+        "stoch_rsi_fast": 11.48,
+        "williams_r": 58.1,
+        "ultimate_osc": 40.5
+      },
+      "moving_averages": {
+        "ema_10": 104.27,
+        "sma_10": 106.54,
+        "ema_20": 100.13,
+        "sma_20": 100.21,
+        "ema_30": 96.68,
+        "sma_30": 94.07,
+        "ema_50": 92.27,
+        "sma_50": 88.71,
+        "ema_100": 87.94,
+        "sma_100": 85,
+        "ema_200": 87.8,
+        "sma_200": 84.84,
+        "ichimoku_base": 102.39,
+        "vwma_20": 103.47,
+        "hull_9": 103.8
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ARCHIDPLY/technicals/",
+      "scraped_at": "2026-09-03T06:33:35.314Z"
+    },
+    "ARDEE": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 3
+      },
+      "oscillators": {
+        "rsi_14": 32.67,
+        "stoch_k": 6.41,
+        "momentum_10": 5.18,
+        "williams_r": 93.04
+      },
+      "moving_averages": {
+        "ema_10": 58.44,
+        "sma_10": 58.01,
+        "hull_9": 56.28
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ARDEE/technicals/",
+      "scraped_at": "2026-09-03T06:33:40.702Z"
+    },
+    "ARFIN": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 1,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 57.32,
+        "stoch_k": 79.45,
+        "cci_20": 150.66,
+        "adx_14": 15.3,
+        "momentum_10": 5.99,
+        "macd_level": 0.01,
+        "stoch_rsi_fast": 89.09,
+        "williams_r": 11.45,
+        "ultimate_osc": 54.33
+      },
+      "moving_averages": {
+        "ema_10": 86.29,
+        "sma_10": 85.88,
+        "ema_20": 85.98,
+        "sma_20": 85.19,
+        "ema_30": 86.28,
+        "sma_30": 86.19,
+        "ema_50": 86.89,
+        "sma_50": 87.01,
+        "ema_100": 85.85,
+        "sma_100": 90.12,
+        "ema_200": 76.79,
+        "sma_200": 80.93,
+        "ichimoku_base": 86.22,
+        "vwma_20": 85.14,
+        "hull_9": 87.99
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ARFIN/technicals/",
+      "scraped_at": "2026-09-03T06:33:46.128Z"
+    },
+    "ATLANTAA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 53.15,
+        "stoch_k": 58.18,
+        "cci_20": 5.75,
+        "adx_14": 21.75,
+        "momentum_10": 1.03,
+        "macd_level": 0.05,
+        "stoch_rsi_fast": 76.51,
+        "williams_r": 46.46,
+        "ultimate_osc": 42.02
+      },
+      "moving_averages": {
+        "ema_10": 38.94,
+        "sma_10": 38.44,
+        "ema_20": 38.87,
+        "sma_20": 39.59,
+        "ema_30": 38.87,
+        "sma_30": 38.57,
+        "ema_50": 39.02,
+        "sma_50": 38.57,
+        "ema_100": 39.57,
+        "sma_100": 40.03,
+        "ema_200": 40.16,
+        "sma_200": 40.93,
+        "ichimoku_base": 42.26,
+        "vwma_20": 42.8,
+        "hull_9": 40.15
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-ATLANTAA/technicals/",
+      "scraped_at": "2026-09-03T06:33:51.681Z"
+    },
+    "AVG": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 6,
+        "sell_count": 1,
+        "neutral_count": 4
+      },
+      "oscillators": {
+        "rsi_14": 27.22,
+        "stoch_k": 6.98,
+        "cci_20": 117.9,
+        "adx_14": 32.68,
+        "momentum_10": 17.57,
+        "macd_level": 7,
+        "stoch_rsi_fast": 4.57,
+        "williams_r": 91.67,
+        "ultimate_osc": 39.4
+      },
+      "moving_averages": {
+        "ema_10": 179.85,
+        "sma_10": 179.96,
+        "ema_20": 186.4,
+        "sma_20": 189.73,
+        "ema_30": 189.33,
+        "sma_30": 194.46,
+        "ema_50": 189.44,
+        "sma_50": 198.59,
+        "ema_100": 184.02,
+        "sma_100": 180.72,
+        "ema_200": 188.05,
+        "sma_200": 169.35,
+        "ichimoku_base": 190.05,
+        "vwma_20": 192.27,
+        "hull_9": 170.28
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AVG/technicals/",
+      "scraped_at": "2026-09-03T06:33:57.108Z"
+    },
+    "AVONMORE": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 60.02,
+        "stoch_k": 49.45,
+        "cci_20": 31.19,
+        "adx_14": 53.71,
+        "momentum_10": 0.13,
+        "macd_level": 0.66,
+        "stoch_rsi_fast": 1.35,
+        "williams_r": 62.25,
+        "ultimate_osc": 39.95
+      },
+      "moving_averages": {
+        "ema_10": 13.3,
+        "sma_10": 13.52,
+        "ema_20": 12.83,
+        "sma_20": 12.84,
+        "ema_30": 12.4,
+        "sma_30": 12.1,
+        "ema_50": 11.93,
+        "sma_50": 11.25,
+        "ema_100": 11.99,
+        "sma_100": 11.32,
+        "ema_200": 13.19,
+        "sma_200": 13.46,
+        "ichimoku_base": 12.55,
+        "vwma_20": 12.79,
+        "hull_9": 13.19
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AVONMORE/technicals/",
+      "scraped_at": "2026-09-03T06:34:02.567Z"
+    },
+    "AVTNPL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 0,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 71.38,
+        "stoch_k": 73.24,
+        "cci_20": 94.4,
+        "adx_14": 44.48,
+        "momentum_10": 5.18,
+        "macd_level": 4.58,
+        "stoch_rsi_fast": 24.24,
+        "williams_r": 24.01,
+        "ultimate_osc": 49.79
+      },
+      "moving_averages": {
+        "ema_10": 87.89,
+        "sma_10": 88.09,
+        "ema_20": 84.28,
+        "sma_20": 83.41,
+        "ema_30": 81.57,
+        "sma_30": 79.16,
+        "ema_50": 78.09,
+        "sma_50": 75.64,
+        "ema_100": 73.83,
+        "sma_100": 72.21,
+        "ema_200": 71.13,
+        "sma_200": 68.57,
+        "ichimoku_base": 83.05,
+        "vwma_20": 86.81,
+        "hull_9": 90.57
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AVTNPL/technicals/",
+      "scraped_at": "2026-09-03T06:34:07.959Z"
+    },
+    "AWFIS": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 1,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 38.57,
+        "stoch_k": 22.55,
+        "cci_20": 131.82,
+        "adx_14": 10.91,
+        "momentum_10": 7.4,
+        "macd_level": 6.42,
+        "stoch_rsi_fast": 36.6,
+        "williams_r": 85.29,
+        "ultimate_osc": 30.62
+      },
+      "moving_averages": {
+        "ema_10": 261.25,
+        "sma_10": 263.14,
+        "ema_20": 265.92,
+        "sma_20": 265.79,
+        "ema_30": 270.47,
+        "sma_30": 269.7,
+        "ema_50": 279.17,
+        "sma_50": 280.44,
+        "ema_100": 302.44,
+        "sma_100": 306.68,
+        "ema_200": 358.94,
+        "sma_200": 354.31,
+        "ichimoku_base": 268.88,
+        "vwma_20": 267.23,
+        "hull_9": 255.92
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AWFIS/technicals/",
+      "scraped_at": "2026-09-03T06:34:13.373Z"
+    },
+    "AWHCL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 5,
+        "sell_count": 0,
+        "neutral_count": 6
+      },
+      "oscillators": {
+        "rsi_14": 29.51,
+        "stoch_k": 12.59,
+        "cci_20": 107.53,
+        "adx_14": 54.04,
+        "momentum_10": 6.4,
+        "macd_level": 13.3,
+        "stoch_rsi_fast": 53.75,
+        "williams_r": 81.69,
+        "ultimate_osc": 43.1
+      },
+      "moving_averages": {
+        "ema_10": 381.34,
+        "sma_10": 381.39,
+        "ema_20": 390.46,
+        "sma_20": 386.97,
+        "ema_30": 399.92,
+        "sma_30": 401.42,
+        "ema_50": 415.2,
+        "sma_50": 424.35,
+        "ema_100": 439.01,
+        "sma_100": 453.32,
+        "ema_200": 468.92,
+        "sma_200": 467.04,
+        "ichimoku_base": 404.65,
+        "vwma_20": 390.66,
+        "hull_9": 374.14
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AWHCL/technicals/",
+      "scraped_at": "2026-09-03T06:34:18.772Z"
+    },
+    "AXITA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 0,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 69.34,
+        "stoch_k": 65.79,
+        "cci_20": 104.46,
+        "adx_14": 32,
+        "momentum_10": 0.71,
+        "macd_level": 0.17,
+        "stoch_rsi_fast": 72.23,
+        "williams_r": 40.31,
+        "ultimate_osc": 31.18
+      },
+      "moving_averages": {
+        "ema_10": 7.88,
+        "sma_10": 7.95,
+        "ema_20": 7.73,
+        "sma_20": 7.62,
+        "ema_30": 7.66,
+        "sma_30": 7.53,
+        "ema_50": 7.64,
+        "sma_50": 7.51,
+        "ema_100": 7.83,
+        "sma_100": 7.77,
+        "ema_200": 8.21,
+        "sma_200": 8.52,
+        "ichimoku_base": 7.87,
+        "vwma_20": 7.83,
+        "hull_9": 7.96
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AXITA/technicals/",
+      "scraped_at": "2026-09-03T06:34:24.196Z"
+    },
+    "AXTEL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 0,
+        "neutral_count": 1
+      },
+      "oscillators": {
+        "momentum_10": 7.15
+      },
+      "moving_averages": {
+        "ema_10": 401.28,
+        "sma_10": 401.92,
+        "hull_9": 392.61
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AXTEL/technicals/",
+      "scraped_at": "2026-09-03T06:34:29.629Z"
+    },
+    "AYMSYNTEX": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 2,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 77.51,
+        "stoch_k": 86.99,
+        "cci_20": 245,
+        "adx_14": 22.87,
+        "momentum_10": 52.95,
+        "macd_level": 13.11,
+        "stoch_rsi_fast": 100,
+        "williams_r": 11.44,
+        "ultimate_osc": 60.52
+      },
+      "moving_averages": {
+        "ema_10": 282.19,
+        "sma_10": 272.35,
+        "ema_20": 270.22,
+        "sma_20": 266.54,
+        "ema_30": 263.31,
+        "sma_30": 259.75,
+        "ema_50": 253.69,
+        "sma_50": 251.19,
+        "ema_100": 237.4,
+        "sma_100": 236.26,
+        "ema_200": 220.6,
+        "sma_200": 205.06,
+        "ichimoku_base": 280.96,
+        "vwma_20": 285.19,
+        "hull_9": 316.24
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AYMSYNTEX/technicals/",
+      "scraped_at": "2026-09-03T06:34:35.021Z"
+    },
+    "AZADIND": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 0,
+        "neutral_count": 1
+      },
+      "oscillators": {
+        "momentum_10": 0.23
+      },
+      "moving_averages": {
+        "ema_10": 90.65,
+        "sma_10": 91.19,
+        "hull_9": 89.28
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-AZADIND/technicals/",
+      "scraped_at": "2026-09-03T06:34:40.436Z"
+    },
+    "BAFNAPH": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 4,
+        "neutral_count": 4
+      },
+      "oscillators": {
+        "rsi_14": 70.09,
+        "stoch_k": 88.35,
+        "cci_20": 117.8,
+        "adx_14": 34.4,
+        "momentum_10": 67.3,
+        "macd_level": 16.29,
+        "stoch_rsi_fast": 90.78,
+        "williams_r": 15.78,
+        "ultimate_osc": 74.07
+      },
+      "moving_averages": {
+        "ema_10": 289.75,
+        "sma_10": 284.33,
+        "ema_20": 276.46,
+        "sma_20": 272.53,
+        "ema_30": 266.07,
+        "sma_30": 268.6,
+        "ema_50": 247,
+        "sma_50": 247.87,
+        "ema_100": 212.81,
+        "sma_100": 196.45,
+        "ema_200": 178.29,
+        "sma_200": 163.75,
+        "ichimoku_base": 275.73,
+        "vwma_20": 280.87,
+        "hull_9": 317.95
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BAFNAPH/technicals/",
+      "scraped_at": "2026-09-03T06:34:45.828Z"
+    },
+    "BAGDIGITAL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 45.98,
+        "stoch_k": 34.43,
+        "cci_20": 65.2,
+        "adx_14": 39.65,
+        "momentum_10": 0.75,
+        "macd_level": 0.5,
+        "stoch_rsi_fast": 52.25,
+        "williams_r": 81.82,
+        "ultimate_osc": 35.44
+      },
+      "moving_averages": {
+        "ema_10": 106.87,
+        "sma_10": 105.98,
+        "ema_20": 107.26,
+        "sma_20": 107.68,
+        "ema_30": 107.57,
+        "sma_30": 107.59,
+        "ema_50": 108.15,
+        "sma_50": 107.92,
+        "ema_100": 109.84,
+        "sma_100": 108.92,
+        "ichimoku_base": 114.28,
+        "vwma_20": 107.96,
+        "hull_9": 108.28
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BAGDIGITAL/technicals/",
+      "scraped_at": "2026-09-03T06:34:51.228Z"
+    },
+    "BAHETI": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 72.24,
+        "stoch_k": 72.62,
+        "cci_20": 93.34,
+        "adx_14": 44.13,
+        "momentum_10": 55.3,
+        "macd_level": 30.74,
+        "stoch_rsi_fast": 16.23,
+        "williams_r": 19.47,
+        "ultimate_osc": 48.52
+      },
+      "moving_averages": {
+        "ema_10": 836.67,
+        "sma_10": 840.36,
+        "ema_20": 813.57,
+        "sma_20": 812.5,
+        "ema_30": 793.56,
+        "sma_30": 784.11,
+        "ema_50": 760.84,
+        "sma_50": 756.51,
+        "ema_100": 706.8,
+        "sma_100": 683.11,
+        "ema_200": 651.09,
+        "sma_200": 629.42,
+        "ichimoku_base": 792.5,
+        "vwma_20": 807.66,
+        "hull_9": 852.37
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BAHETI/technicals/",
+      "scraped_at": "2026-09-03T06:34:56.628Z"
+    },
+    "BAJAJHCARE": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 53.83,
+        "stoch_k": 56.81,
+        "cci_20": 119.37,
+        "adx_14": 11.11,
+        "momentum_10": 6.7,
+        "macd_level": 0.74,
+        "stoch_rsi_fast": 79.17,
+        "williams_r": 31.96,
+        "ultimate_osc": 48.27
+      },
+      "moving_averages": {
+        "ema_10": 327.65,
+        "sma_10": 325.74,
+        "ema_20": 327.75,
+        "sma_20": 326.23,
+        "ema_30": 328.35,
+        "sma_30": 327.24,
+        "ema_50": 328.23,
+        "sma_50": 335.15,
+        "ema_100": 331.54,
+        "sma_100": 323.4,
+        "ema_200": 354.68,
+        "sma_200": 347.09,
+        "ichimoku_base": 330.3,
+        "vwma_20": 328.07,
+        "hull_9": 332.61
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BAJAJHCARE/technicals/",
+      "scraped_at": "2026-09-03T06:35:02.026Z"
+    },
+    "BAJAJINDEF": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 1,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 45.54,
+        "stoch_k": 27.49,
+        "cci_20": 11.08,
+        "adx_14": 20.41,
+        "momentum_10": 8.65,
+        "macd_level": 2.66,
+        "stoch_rsi_fast": 67.88,
+        "williams_r": 74.02,
+        "ultimate_osc": 32.9
+      },
+      "moving_averages": {
+        "ema_10": 223.01,
+        "sma_10": 223.34,
+        "ema_20": 224.34,
+        "sma_20": 222.49,
+        "ema_30": 226.85,
+        "sma_30": 225.89,
+        "ema_50": 232.58,
+        "sma_50": 233.4,
+        "ema_100": 246.53,
+        "sma_100": 253.69,
+        "ema_200": 268.05,
+        "sma_200": 274.26,
+        "ichimoku_base": 230.83,
+        "vwma_20": 223.24,
+        "hull_9": 221.46
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BAJAJINDEF/technicals/",
+      "scraped_at": "2026-09-03T06:35:07.400Z"
+    },
+    "BAJAJST": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 42.23,
+        "stoch_k": 32.7,
+        "cci_20": 53.07,
+        "adx_14": 14.09,
+        "momentum_10": 5.45,
+        "macd_level": 9.27,
+        "stoch_rsi_fast": 83.23,
+        "williams_r": 55.39,
+        "ultimate_osc": 37.97
+      },
+      "moving_averages": {
+        "ema_10": 355.07,
+        "sma_10": 353.46,
+        "ema_20": 361.62,
+        "sma_20": 361.06,
+        "ema_30": 367.92,
+        "sma_30": 371.52,
+        "ema_50": 378.15,
+        "sma_50": 383.65,
+        "ichimoku_base": 382.43,
+        "vwma_20": 367.26,
+        "hull_9": 352.77
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BAJAJST/technicals/",
+      "scraped_at": "2026-09-03T06:35:12.782Z"
+    },
+    "BALAJEE": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 2,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 36.86,
+        "stoch_k": 16.64,
+        "cci_20": 73.87,
+        "adx_14": 23.6,
+        "momentum_10": 0.73,
+        "macd_level": 0.43,
+        "stoch_rsi_fast": 32.64,
+        "williams_r": 85.06,
+        "ultimate_osc": 34.18
+      },
+      "moving_averages": {
+        "ema_10": 26.36,
+        "sma_10": 26.36,
+        "ema_20": 26.67,
+        "sma_20": 26.75,
+        "ema_30": 26.97,
+        "sma_30": 26.89,
+        "ema_50": 27.51,
+        "sma_50": 27.62,
+        "ema_100": 28.94,
+        "sma_100": 29.27,
+        "ema_200": 33.07,
+        "sma_200": 31.85,
+        "ichimoku_base": 27.33,
+        "vwma_20": 26.87,
+        "hull_9": 26.06
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BALAJEE/technicals/",
+      "scraped_at": "2026-09-03T06:35:18.190Z"
+    },
+    "BALAJIPHOS": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 1,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 82.92,
+        "stoch_k": 88.44,
+        "cci_20": 293.54,
+        "adx_14": 35.44,
+        "momentum_10": 29.15,
+        "macd_level": 4.62,
+        "stoch_rsi_fast": 100,
+        "williams_r": 6.94,
+        "ultimate_osc": 71.42
+      },
+      "moving_averages": {
+        "ema_10": 101.4,
+        "sma_10": 97.18,
+        "ema_20": 96.38,
+        "sma_20": 93.26,
+        "ema_30": 94.82,
+        "sma_30": 92.02,
+        "ema_50": 95.19,
+        "sma_50": 91.69,
+        "ema_100": 101.51,
+        "sma_100": 99.81,
+        "ema_200": 112.13,
+        "sma_200": 117.76,
+        "ichimoku_base": 103.25,
+        "vwma_20": 99.48,
+        "hull_9": 116.83
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BALAJIPHOS/technicals/",
+      "scraped_at": "2026-09-03T06:35:23.600Z"
+    },
+    "BALAJITELE": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 1,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 51.97,
+        "stoch_k": 18.78,
+        "cci_20": 34.31,
+        "adx_14": 39.12,
+        "momentum_10": 0.53,
+        "macd_level": 1.1,
+        "stoch_rsi_fast": 5.22,
+        "williams_r": 76.35,
+        "ultimate_osc": 40.38
+      },
+      "moving_averages": {
+        "ema_10": 92.62,
+        "sma_10": 93.89,
+        "ema_20": 91.91,
+        "sma_20": 92.51,
+        "ema_30": 91.22,
+        "sma_30": 89.68,
+        "ema_50": 90.77,
+        "sma_50": 89.58,
+        "ema_100": 91.78,
+        "sma_100": 92.57,
+        "ema_200": 93.46,
+        "sma_200": 96.07,
+        "ichimoku_base": 92.67,
+        "vwma_20": 93.58,
+        "hull_9": 90.92
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BALAJITELE/technicals/",
+      "scraped_at": "2026-09-03T06:35:29.098Z"
+    },
+    "BANSWRAS": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 46.17,
+        "stoch_k": 40.28,
+        "cci_20": 0.11,
+        "adx_14": 15.06,
+        "momentum_10": 2.04,
+        "macd_level": 1.96,
+        "stoch_rsi_fast": 72.31,
+        "williams_r": 59.61,
+        "ultimate_osc": 38.53
+      },
+      "moving_averages": {
+        "ema_10": 117.96,
+        "sma_10": 118.21,
+        "ema_20": 119.33,
+        "sma_20": 118.94,
+        "ema_30": 120.63,
+        "sma_30": 121.19,
+        "ema_50": 122.01,
+        "sma_50": 124.18,
+        "ema_100": 122.02,
+        "sma_100": 123.72,
+        "ema_200": 122.22,
+        "sma_200": 118.08,
+        "ichimoku_base": 124.33,
+        "vwma_20": 118.04,
+        "hull_9": 117.11
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BANSWRAS/technicals/",
+      "scraped_at": "2026-09-03T06:35:34.586Z"
+    },
+    "BASILIC": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 49.91,
+        "stoch_k": 73.44,
+        "cci_20": 34.37,
+        "adx_14": 17.4,
+        "momentum_10": 3.1,
+        "macd_level": 1.59,
+        "stoch_rsi_fast": 82.68,
+        "williams_r": 23.68,
+        "ultimate_osc": 49.38
+      },
+      "moving_averages": {
+        "ema_10": 191.38,
+        "sma_10": 190.21,
+        "ema_20": 192.06,
+        "sma_20": 191.36,
+        "ema_30": 193.6,
+        "sma_30": 193.51,
+        "ema_50": 197.41,
+        "sma_50": 196.65,
+        "ema_100": 210.64,
+        "sma_100": 210.44,
+        "ema_200": 243.34,
+        "sma_200": 241.56,
+        "ichimoku_base": 191.85,
+        "vwma_20": 187.1,
+        "hull_9": 196.32
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BASILIC/technicals/",
+      "scraped_at": "2026-09-03T06:35:40.165Z"
+    },
+    "BATLIBOI": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 54.8,
+        "stoch_k": 54.57,
+        "cci_20": 120.88,
+        "adx_14": 28.17,
+        "momentum_10": 5.77,
+        "macd_level": 0.85,
+        "stoch_rsi_fast": 54.14,
+        "williams_r": 38.61,
+        "ultimate_osc": 50.36
+      },
+      "moving_averages": {
+        "ema_10": 88.25,
+        "sma_10": 87.48,
+        "ema_20": 87.58,
+        "sma_20": 87.58,
+        "ema_30": 86.93,
+        "sma_30": 87.22,
+        "ema_50": 84.58,
+        "sma_50": 85.94,
+        "ema_100": 74.83,
+        "sma_100": 80.57,
+        "ema_200": 58.63,
+        "sma_200": 48.72,
+        "ichimoku_base": 93.93,
+        "vwma_20": 89.71,
+        "hull_9": 90.19
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BATLIBOI/technicals/",
+      "scraped_at": "2026-09-03T06:35:45.590Z"
+    },
+    "BBTCL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 2,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 52.92,
+        "stoch_k": 17.49,
+        "cci_20": 25.77,
+        "adx_14": 34.38,
+        "momentum_10": 14.64,
+        "macd_level": 1.24,
+        "stoch_rsi_fast": 18.37,
+        "williams_r": 64.45,
+        "ultimate_osc": 38.39
+      },
+      "moving_averages": {
+        "ema_10": 230.63,
+        "sma_10": 232.21,
+        "ema_20": 230.67,
+        "sma_20": 233.05,
+        "ema_30": 228.97,
+        "sma_30": 229.65,
+        "ema_50": 224.83,
+        "sma_50": 224.3,
+        "ema_100": 215.86,
+        "sma_100": 214.61,
+        "ema_200": 206.4,
+        "sma_200": 200.96,
+        "ichimoku_base": 239.01,
+        "vwma_20": 239.09,
+        "hull_9": 221.81
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BBTCL/technicals/",
+      "scraped_at": "2026-09-03T06:35:50.990Z"
+    },
+    "BCG": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 2,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 39.3,
+        "stoch_k": 4.73,
+        "cci_20": 76.02,
+        "adx_14": 30.28,
+        "momentum_10": 0.38,
+        "macd_level": 0.17,
+        "stoch_rsi_fast": 5.93,
+        "williams_r": 93.39,
+        "ultimate_osc": 33.67
+      },
+      "moving_averages": {
+        "ema_10": 9.07,
+        "sma_10": 9.04,
+        "ema_20": 9.21,
+        "sma_20": 9.32,
+        "ema_30": 9.31,
+        "sma_30": 9.33,
+        "ema_50": 9.47,
+        "sma_50": 9.48,
+        "ema_100": 9.75,
+        "sma_100": 9.76,
+        "ema_200": 10.53,
+        "sma_200": 10.19,
+        "ichimoku_base": 9.05,
+        "vwma_20": 9.51,
+        "hull_9": 8.95
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BCG/technicals/",
+      "scraped_at": "2026-09-03T06:35:56.384Z"
+    },
+    "BCLIND": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 48.64,
+        "stoch_k": 25.45,
+        "cci_20": 71.42,
+        "adx_14": 32.08,
+        "momentum_10": 0.85,
+        "macd_level": 0.1,
+        "stoch_rsi_fast": 7.25,
+        "williams_r": 70.95,
+        "ultimate_osc": 32.11
+      },
+      "moving_averages": {
+        "ema_10": 36.61,
+        "sma_10": 36.89,
+        "ema_20": 36.61,
+        "sma_20": 36.78,
+        "ema_30": 36.47,
+        "sma_30": 36.53,
+        "ema_50": 36.11,
+        "sma_50": 35.99,
+        "ema_100": 35.23,
+        "sma_100": 35.41,
+        "ema_200": 35.27,
+        "sma_200": 32.87,
+        "ichimoku_base": 36.64,
+        "vwma_20": 37.07,
+        "hull_9": 35.92
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BCLIND/technicals/",
+      "scraped_at": "2026-09-03T06:36:01.752Z"
+    },
+    "BCONCEPTS": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 1,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 45.14,
+        "stoch_k": 64.19,
+        "cci_20": 13.34,
+        "adx_14": 25.11,
+        "momentum_10": 10.28,
+        "macd_level": 4.86,
+        "stoch_rsi_fast": 95.57,
+        "williams_r": 22.57,
+        "ultimate_osc": 57.07
+      },
+      "moving_averages": {
+        "ema_10": 163.54,
+        "sma_10": 162.37,
+        "ema_20": 166.35,
+        "sma_20": 163.48,
+        "ema_30": 170.23,
+        "sma_30": 171.11,
+        "ema_50": 177.85,
+        "sma_50": 180.66,
+        "ema_100": 197.53,
+        "sma_100": 198.42,
+        "ema_200": 235.12,
+        "sma_200": 242.79,
+        "ichimoku_base": 174.47,
+        "vwma_20": 162.94,
+        "hull_9": 165.68
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BCONCEPTS/technicals/",
+      "scraped_at": "2026-09-03T06:36:07.369Z"
+    },
+    "BEDMUTHA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 44.72,
+        "stoch_k": 25.08,
+        "cci_20": 84.96,
+        "adx_14": 15.55,
+        "momentum_10": 2.06,
+        "macd_level": 1.15,
+        "stoch_rsi_fast": 31.46,
+        "williams_r": 74.75,
+        "ultimate_osc": 49.63
+      },
+      "moving_averages": {
+        "ema_10": 107.64,
+        "sma_10": 107.13,
+        "ema_20": 108.77,
+        "sma_20": 110.23,
+        "ema_30": 109.24,
+        "sma_30": 110.24,
+        "ema_50": 109.75,
+        "sma_50": 109.48,
+        "ema_100": 111.5,
+        "sma_100": 110.37,
+        "ema_200": 117.81,
+        "sma_200": 113.68,
+        "ichimoku_base": 112.98,
+        "vwma_20": 110.58,
+        "hull_9": 106.79
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BEDMUTHA/technicals/",
+      "scraped_at": "2026-09-03T06:36:12.859Z"
+    },
+    "BGRENERGY": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 39,
+        "stoch_k": 17.52,
+        "cci_20": 97.56,
+        "adx_14": 29.23,
+        "momentum_10": 10.65,
+        "macd_level": 10,
+        "stoch_rsi_fast": 48.15,
+        "williams_r": 92.45,
+        "ultimate_osc": 43.1
+      },
+      "moving_averages": {
+        "ema_10": 245.07,
+        "sma_10": 245.48,
+        "ema_20": 252.04,
+        "sma_20": 250.06,
+        "ema_30": 259.15,
+        "sma_30": 260,
+        "ema_50": 270.43,
+        "sma_50": 275.58,
+        "ema_100": 285.59,
+        "sma_100": 294.15,
+        "ema_200": 284.38,
+        "sma_200": 316.56,
+        "ichimoku_base": 265.95,
+        "vwma_20": 249.29,
+        "hull_9": 234.74
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BGRENERGY/technicals/",
+      "scraped_at": "2026-09-03T06:42:58.981Z"
+    },
+    "BHAGERIA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 0,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 85.96,
+        "stoch_k": 100,
+        "cci_20": 215.91,
+        "adx_14": 29.49,
+        "momentum_10": 83.44,
+        "macd_level": 15.92,
+        "stoch_rsi_fast": 100,
+        "williams_r": 0,
+        "ultimate_osc": 82.02
+      },
+      "moving_averages": {
+        "ema_10": 249.53,
+        "sma_10": 242.6,
+        "ema_20": 233.91,
+        "sma_20": 223.4,
+        "ema_30": 226.7,
+        "sma_30": 219.77,
+        "ema_50": 217.79,
+        "sma_50": 217.06,
+        "ema_100": 203.67,
+        "sma_100": 197.45,
+        "ema_200": 192.27,
+        "sma_200": 182.05,
+        "ichimoku_base": 242.08,
+        "vwma_20": 254.03,
+        "hull_9": 284.99
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BHAGERIA/technicals/",
+      "scraped_at": "2026-09-03T06:43:04.439Z"
+    },
+    "BHAGYANGR": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 46.61,
+        "stoch_k": 41.72,
+        "cci_20": 57.98,
+        "adx_14": 11.68,
+        "momentum_10": 7.8,
+        "macd_level": 0.26,
+        "stoch_rsi_fast": 23.63,
+        "williams_r": 63.44,
+        "ultimate_osc": 43.29
+      },
+      "moving_averages": {
+        "ema_10": 382.56,
+        "sma_10": 384.68,
+        "ema_20": 383.57,
+        "sma_20": 383.53,
+        "ema_30": 382.43,
+        "sma_30": 386.13,
+        "ema_50": 373.26,
+        "sma_50": 387.19,
+        "ema_100": 335.42,
+        "sma_100": 340.3,
+        "ema_200": 272.68,
+        "sma_200": 247.19,
+        "ichimoku_base": 383.15,
+        "vwma_20": 386.01,
+        "hull_9": 378.63
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BHAGYANGR/technicals/",
+      "scraped_at": "2026-09-03T06:43:09.882Z"
+    },
+    "BHARATRAS": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 26.5,
+        "stoch_k": 6.7,
+        "cci_20": 161,
+        "adx_14": 21.7,
+        "momentum_10": 113.3,
+        "macd_level": 30.6,
+        "stoch_rsi_fast": 0,
+        "williams_r": 92.2,
+        "ultimate_osc": 30.3
+      },
+      "moving_averages": {
+        "ema_10": 1245.7,
+        "sma_10": 1253.2,
+        "ema_20": 1273,
+        "sma_20": 1291.7,
+        "ema_30": 1289.3,
+        "sma_30": 1297,
+        "ema_50": 1315.1,
+        "sma_50": 1312.2,
+        "ema_100": 1400.7,
+        "sma_100": 1372.1,
+        "ema_200": 1624.5,
+        "sma_200": 1647.9,
+        "ichimoku_base": 1306,
+        "vwma_20": 1284.3,
+        "hull_9": 1199
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BHARATRAS/technicals/",
+      "scraped_at": "2026-09-03T06:43:15.325Z"
+    },
+    "BHARATSE": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 2,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 41.64,
+        "stoch_k": 7.44,
+        "cci_20": 133.74,
+        "adx_14": 14.26,
+        "momentum_10": 15.66,
+        "macd_level": 2.01,
+        "stoch_rsi_fast": 1.05,
+        "williams_r": 92.99,
+        "ultimate_osc": 38.26
+      },
+      "moving_averages": {
+        "ema_10": 221.79,
+        "sma_10": 222.1,
+        "ema_20": 224.66,
+        "sma_20": 229.8,
+        "ema_30": 224.43,
+        "sma_30": 226.04,
+        "ema_50": 220.55,
+        "sma_50": 226.39,
+        "ema_100": 209.02,
+        "sma_100": 205.8,
+        "ema_200": 189.13,
+        "sma_200": 188.02,
+        "ichimoku_base": 229.6,
+        "vwma_20": 235.69,
+        "hull_9": 215.49
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BHARATSE/technicals/",
+      "scraped_at": "2026-09-03T06:43:20.763Z"
+    },
+    "BHARATWIRE": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 2,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 35.39,
+        "stoch_k": 20.92,
+        "cci_20": 169.58,
+        "adx_14": 24.74,
+        "momentum_10": 10.6,
+        "macd_level": 5.69,
+        "stoch_rsi_fast": 17.33,
+        "williams_r": 70.31,
+        "ultimate_osc": 35.77
+      },
+      "moving_averages": {
+        "ema_10": 182.12,
+        "sma_10": 183.43,
+        "ema_20": 186.67,
+        "sma_20": 187.02,
+        "ema_30": 190.15,
+        "sma_30": 191.41,
+        "ema_50": 194.75,
+        "sma_50": 197.73,
+        "ema_100": 197.33,
+        "sma_100": 208.57,
+        "ema_200": 195.62,
+        "sma_200": 190.99,
+        "ichimoku_base": 189.11,
+        "vwma_20": 186.37,
+        "hull_9": 173.67
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BHARATWIRE/technicals/",
+      "scraped_at": "2026-09-03T06:43:26.204Z"
+    },
+    "BI": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 57.83,
+        "stoch_k": 39.21,
+        "cci_20": 23.62,
+        "adx_14": 41.74,
+        "momentum_10": 9.19,
+        "macd_level": 6.18,
+        "stoch_rsi_fast": 0.86,
+        "williams_r": 75.7,
+        "ultimate_osc": 44.81
+      },
+      "moving_averages": {
+        "ema_10": 88.27,
+        "sma_10": 90.71,
+        "ema_20": 84.03,
+        "sma_20": 84.13,
+        "ema_30": 79.94,
+        "sma_30": 76.01,
+        "ema_50": 74.86,
+        "sma_50": 70.26,
+        "ichimoku_base": 84.51,
+        "vwma_20": 92.39,
+        "hull_9": 86.53
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BI/technicals/",
+      "scraped_at": "2026-09-03T06:43:31.626Z"
+    },
+    "BIGBLOC": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 2,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 28.89,
+        "stoch_k": 9.86,
+        "cci_20": 102.19,
+        "adx_14": 16.48,
+        "momentum_10": 1.7,
+        "macd_level": 1.42,
+        "stoch_rsi_fast": 29.42,
+        "williams_r": 98,
+        "ultimate_osc": 27.21
+      },
+      "moving_averages": {
+        "ema_10": 42.23,
+        "sma_10": 42.27,
+        "ema_20": 43.34,
+        "sma_20": 43.69,
+        "ema_30": 44.22,
+        "sma_30": 44.61,
+        "ema_50": 45.59,
+        "sma_50": 45.94,
+        "ema_100": 48.09,
+        "sma_100": 48.75,
+        "ema_200": 52.42,
+        "sma_200": 53.72,
+        "ichimoku_base": 45.4,
+        "vwma_20": 43.85,
+        "hull_9": 40.9
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BIGBLOC/technicals/",
+      "scraped_at": "2026-09-03T06:43:37.035Z"
+    },
+    "BIL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 1,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 71.07,
+        "stoch_k": 61.03,
+        "cci_20": 180.64,
+        "adx_14": 40.58,
+        "momentum_10": 73.95,
+        "macd_level": 28.17,
+        "stoch_rsi_fast": 94.26,
+        "williams_r": 33.31,
+        "ultimate_osc": 41.79
+      },
+      "moving_averages": {
+        "ema_10": 868.79,
+        "sma_10": 861.7,
+        "ema_20": 846.57,
+        "sma_20": 848.94,
+        "ema_30": 829.25,
+        "sma_30": 821.81,
+        "ema_50": 805.99,
+        "sma_50": 792.05,
+        "ema_100": 782.42,
+        "sma_100": 764.6,
+        "ema_200": 768.99,
+        "sma_200": 766.6,
+        "ichimoku_base": 842,
+        "vwma_20": 859.02,
+        "hull_9": 899.34
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BIL/technicals/",
+      "scraped_at": "2026-09-03T06:43:42.469Z"
+    },
+    "BIMETAL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 0,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 50.13,
+        "stoch_k": 48.86,
+        "cci_20": 15.42,
+        "adx_14": 22.23,
+        "momentum_10": 14.35,
+        "macd_level": 3.73,
+        "stoch_rsi_fast": 74.61,
+        "williams_r": 50.76,
+        "ultimate_osc": 54.68
+      },
+      "moving_averages": {
+        "ema_10": 634.61,
+        "sma_10": 630.35,
+        "ema_20": 636.81,
+        "sma_20": 636.17,
+        "ema_30": 639,
+        "sma_30": 641.42,
+        "ema_50": 635.2,
+        "sma_50": 650.43,
+        "ema_100": 597.29,
+        "sma_100": 620.76,
+        "ema_200": 514.49,
+        "sma_200": 484.45,
+        "ichimoku_base": 644.98,
+        "vwma_20": 637.2,
+        "hull_9": 644.11
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BIMETAL/technicals/",
+      "scraped_at": "2026-09-03T06:43:48.052Z"
+    },
+    "BIRLACABLE": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 0,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 80.82,
+        "stoch_k": 100,
+        "cci_20": 241.09,
+        "adx_14": 32.59,
+        "momentum_10": 75.48,
+        "macd_level": 27.1,
+        "stoch_rsi_fast": 86.82,
+        "williams_r": 0,
+        "ultimate_osc": 85.04
+      },
+      "moving_averages": {
+        "ema_10": 311,
+        "sma_10": 299.31,
+        "ema_20": 288.79,
+        "sma_20": 291.01,
+        "ema_30": 272.77,
+        "sma_30": 264.4,
+        "ema_50": 250.49,
+        "sma_50": 235.12,
+        "ema_100": 218.71,
+        "sma_100": 207.57,
+        "ema_200": 193.4,
+        "sma_200": 171.48,
+        "ichimoku_base": 274.33,
+        "vwma_20": 292.24,
+        "hull_9": 353.15
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BIRLACABLE/technicals/",
+      "scraped_at": "2026-09-03T06:43:53.522Z"
+    },
+    "BIRLAMONEY": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 1,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 41.27,
+        "stoch_k": 23.33,
+        "cci_20": 62.63,
+        "adx_14": 9.32,
+        "momentum_10": 0.42,
+        "macd_level": 2.03,
+        "stoch_rsi_fast": 53.73,
+        "williams_r": 68.79,
+        "ultimate_osc": 36.12
+      },
+      "moving_averages": {
+        "ema_10": 127.94,
+        "sma_10": 127.61,
+        "ema_20": 129.34,
+        "sma_20": 129.31,
+        "ema_30": 130.75,
+        "sma_30": 130.42,
+        "ema_50": 132.66,
+        "sma_50": 135.02,
+        "ema_100": 134.86,
+        "sma_100": 137.83,
+        "ema_200": 139.74,
+        "sma_200": 135.92,
+        "ichimoku_base": 131.7,
+        "vwma_20": 129.35,
+        "hull_9": 126.67
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BIRLAMONEY/technicals/",
+      "scraped_at": "2026-09-03T06:43:58.995Z"
+    },
+    "BIRLANU": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 4,
+        "sell_count": 2,
+        "neutral_count": 5
+      },
+      "oscillators": {
+        "rsi_14": 44,
+        "stoch_k": 8.3,
+        "cci_20": 107,
+        "adx_14": 24.6,
+        "momentum_10": 104.4,
+        "macd_level": 2.2,
+        "stoch_rsi_fast": 2.4,
+        "williams_r": 87.4,
+        "ultimate_osc": 28.6
+      },
+      "moving_averages": {
+        "ema_10": 1462.6,
+        "sma_10": 1465.1,
+        "ema_20": 1475.1,
+        "sma_20": 1534,
+        "ema_30": 1466.6,
+        "sma_30": 1481.2,
+        "ema_50": 1447.7,
+        "sma_50": 1420.1,
+        "ema_100": 1446.6,
+        "sma_100": 1412.3,
+        "ema_200": 1538.9,
+        "sma_200": 1490.7,
+        "ichimoku_base": 1525.2,
+        "vwma_20": 1604,
+        "hull_9": 1416.2
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BIRLANU/technicals/",
+      "scraped_at": "2026-09-03T06:44:04.763Z"
+    },
+    "BIRLAPREC": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 73.77,
+        "stoch_k": 72.99,
+        "cci_20": 118.79,
+        "adx_14": 30.97,
+        "momentum_10": 12.56,
+        "macd_level": 3.01,
+        "stoch_rsi_fast": 45.26,
+        "williams_r": 0,
+        "ultimate_osc": 62.62
+      },
+      "moving_averages": {
+        "ema_10": 45,
+        "sma_10": 45.73,
+        "ema_20": 42.37,
+        "sma_20": 41.1,
+        "ema_30": 40.85,
+        "sma_30": 38.86,
+        "ema_50": 39.45,
+        "sma_50": 37.95,
+        "ichimoku_base": 42.49,
+        "vwma_20": 45.02,
+        "hull_9": 45.89
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BIRLAPREC/technicals/",
+      "scraped_at": "2026-09-03T06:44:10.162Z"
+    },
+    "BLACKROSE": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 2,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 54.66,
+        "stoch_k": 70.63,
+        "cci_20": 56.17,
+        "adx_14": 16.92,
+        "momentum_10": 0.7,
+        "macd_level": 1.76,
+        "stoch_rsi_fast": 68.65,
+        "williams_r": 34.13,
+        "ultimate_osc": 50.79
+      },
+      "moving_averages": {
+        "ema_10": 112.88,
+        "sma_10": 113.37,
+        "ema_20": 111.6,
+        "sma_20": 111.1,
+        "ema_30": 110.4,
+        "sma_30": 110.33,
+        "ema_50": 107.67,
+        "sma_50": 109.4,
+        "ichimoku_base": 109.75,
+        "vwma_20": 111.14,
+        "hull_9": 112.94
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BLACKROSE/technicals/",
+      "scraped_at": "2026-09-03T06:44:15.629Z"
+    },
+    "BLAL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 3,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 22.38,
+        "stoch_k": 1.5,
+        "cci_20": 177.48,
+        "adx_14": 45.17,
+        "momentum_10": 7.72,
+        "macd_level": 3.29,
+        "stoch_rsi_fast": 0,
+        "williams_r": 100,
+        "ultimate_osc": 13.33
+      },
+      "moving_averages": {
+        "ema_10": 165.64,
+        "sma_10": 165.91,
+        "ema_20": 168.14,
+        "sma_20": 168.26,
+        "ema_30": 170.29,
+        "sma_30": 170.5,
+        "ema_50": 173.6,
+        "sma_50": 175.4,
+        "ema_100": 178.8,
+        "sma_100": 182.35,
+        "ema_200": 186.41,
+        "sma_200": 186.97,
+        "ichimoku_base": 171.16,
+        "vwma_20": 167.64,
+        "hull_9": 162.96
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BLAL/technicals/",
+      "scraped_at": "2026-09-03T06:44:21.105Z"
+    },
+    "BLEL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 0,
+        "neutral_count": 0
+      },
+      "oscillators": {
+        "momentum_10": 50.95
+      },
+      "moving_averages": {
+        "ema_10": 462.42,
+        "sma_10": 457.92,
+        "hull_9": 438.08
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BLEL/technicals/",
+      "scraped_at": "2026-09-03T06:44:26.488Z"
+    },
+    "BLIL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 63.03,
+        "stoch_k": 83.75,
+        "cci_20": 88.29,
+        "adx_14": 9.24,
+        "momentum_10": 0.77,
+        "macd_level": 0.38,
+        "stoch_rsi_fast": 80.04,
+        "williams_r": 14.07,
+        "ultimate_osc": 53.56
+      },
+      "moving_averages": {
+        "ema_10": 71.93,
+        "sma_10": 72.04,
+        "ema_20": 71.6,
+        "sma_20": 71.49,
+        "ema_30": 71.42,
+        "sma_30": 71.13,
+        "ema_50": 71.43,
+        "sma_50": 70.88,
+        "ichimoku_base": 71.16,
+        "vwma_20": 71.56,
+        "hull_9": 72.15
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BLIL/technicals/",
+      "scraped_at": "2026-09-03T06:44:31.907Z"
+    },
+    "BLKASHYAP": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 57.1,
+        "stoch_k": 44.51,
+        "cci_20": 90.15,
+        "adx_14": 22.51,
+        "momentum_10": 2.81,
+        "macd_level": 0.49,
+        "stoch_rsi_fast": 64.31,
+        "williams_r": 50.39,
+        "ultimate_osc": 41.64
+      },
+      "moving_averages": {
+        "ema_10": 55.49,
+        "sma_10": 55.17,
+        "ema_20": 54.92,
+        "sma_20": 54.24,
+        "ema_30": 54.78,
+        "sma_30": 54.27,
+        "ema_50": 54.68,
+        "sma_50": 54.94,
+        "ema_100": 54.35,
+        "sma_100": 54.87,
+        "ema_200": 55.18,
+        "sma_200": 52.23,
+        "ichimoku_base": 56.58,
+        "vwma_20": 55.39,
+        "hull_9": 56.47
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BLKASHYAP/technicals/",
+      "scraped_at": "2026-09-03T06:44:37.307Z"
+    },
+    "BLUECLOUDS": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 1,
+        "neutral_count": 1
+      },
+      "oscillators": {
+        "momentum_10": 2.61
+      },
+      "moving_averages": {
+        "ema_10": 20.77,
+        "sma_10": 20.81,
+        "hull_9": 19.64
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BLUECLOUDS/technicals/",
+      "scraped_at": "2026-09-03T06:44:42.767Z"
+    },
+    "BLUEWATER": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 69.59,
+        "stoch_k": 85.9,
+        "cci_20": 126.72,
+        "adx_14": 30.23,
+        "momentum_10": 58,
+        "macd_level": 21.75,
+        "stoch_rsi_fast": 100,
+        "williams_r": 13.99,
+        "ultimate_osc": 55.39
+      },
+      "moving_averages": {
+        "ema_10": 467.51,
+        "sma_10": 466.49,
+        "ema_20": 449.72,
+        "sma_20": 439.11,
+        "ema_30": 436.05,
+        "sma_30": 438.56,
+        "ema_50": 409.46,
+        "sma_50": 412.89,
+        "ema_100": 351.71,
+        "sma_100": 338.56,
+        "ema_200": 285.35,
+        "sma_200": 243.89,
+        "ichimoku_base": 440.55,
+        "vwma_20": 430.63,
+        "hull_9": 493.35
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BLUEWATER/technicals/",
+      "scraped_at": "2026-09-03T06:44:48.293Z"
+    },
+    "BLUSPRING": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 0,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 62.05,
+        "stoch_k": 75.18,
+        "cci_20": 109.02,
+        "adx_14": 27.95,
+        "momentum_10": 16.24,
+        "macd_level": 4.99,
+        "stoch_rsi_fast": 56.61,
+        "williams_r": 8.4,
+        "ultimate_osc": 50.12
+      },
+      "moving_averages": {
+        "ema_10": 127.44,
+        "sma_10": 129.04,
+        "ema_20": 123.51,
+        "sma_20": 121.95,
+        "ema_30": 120.33,
+        "sma_30": 118.87,
+        "ema_50": 114.22,
+        "sma_50": 116.11,
+        "ema_100": 101.53,
+        "sma_100": 96.68,
+        "ema_200": 91.07,
+        "sma_200": 79.01,
+        "ichimoku_base": 121.97,
+        "vwma_20": 124.87,
+        "hull_9": 128.66
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BLUSPRING/technicals/",
+      "scraped_at": "2026-09-03T06:44:53.719Z"
+    },
+    "BMLL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 3,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 55.6,
+        "stoch_k": 45.11,
+        "cci_20": 104.6,
+        "adx_14": 29.78,
+        "momentum_10": 0.15,
+        "macd_level": 2.25,
+        "stoch_rsi_fast": 47.35,
+        "williams_r": 53.86,
+        "ultimate_osc": 40.06
+      },
+      "moving_averages": {
+        "ema_10": 152.3,
+        "sma_10": 152.43,
+        "ema_20": 150.96,
+        "sma_20": 150.86,
+        "ema_30": 149.09,
+        "sma_30": 150.82,
+        "ema_50": 144.2,
+        "sma_50": 145.36,
+        "ichimoku_base": 155.32,
+        "vwma_20": 152.48,
+        "hull_9": 152.63
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BMLL/technicals/",
+      "scraped_at": "2026-09-03T06:44:59.164Z"
+    },
+    "BMWVENTLTD": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 3,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 34.94,
+        "stoch_k": 4.6,
+        "cci_20": 159.33,
+        "adx_14": 23.42,
+        "momentum_10": 2.05,
+        "macd_level": 0.68,
+        "stoch_rsi_fast": 0,
+        "williams_r": 96.4,
+        "ultimate_osc": 19.5
+      },
+      "moving_averages": {
+        "ema_10": 56.25,
+        "sma_10": 56.49,
+        "ema_20": 56.86,
+        "sma_20": 57.24,
+        "ema_30": 57.22,
+        "sma_30": 57.49,
+        "ema_50": 57.71,
+        "sma_50": 57.67,
+        "ema_100": 58.49,
+        "sma_100": 59.46,
+        "ema_200": 59.38,
+        "sma_200": 59.03,
+        "ichimoku_base": 59.32,
+        "vwma_20": 57.44,
+        "hull_9": 55.01
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BMWVENTLTD/technicals/",
+      "scraped_at": "2026-09-03T06:45:04.567Z"
+    },
+    "BODALCHEM": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 2,
+        "neutral_count": 6
+      },
+      "oscillators": {
+        "rsi_14": 94.95,
+        "stoch_k": 91.79,
+        "cci_20": 219.55,
+        "adx_14": 52.89,
+        "momentum_10": 75.31,
+        "macd_level": 17.26,
+        "stoch_rsi_fast": 100,
+        "williams_r": 10.06,
+        "ultimate_osc": 78.59
+      },
+      "moving_averages": {
+        "ema_10": 114.35,
+        "sma_10": 107.42,
+        "ema_20": 97.93,
+        "sma_20": 88.58,
+        "ema_30": 89.88,
+        "sma_30": 82.69,
+        "ema_50": 81.8,
+        "sma_50": 74.68,
+        "ema_100": 73.41,
+        "sma_100": 72.02,
+        "ema_200": 67.86,
+        "sma_200": 61.7,
+        "ichimoku_base": 113.5,
+        "vwma_20": 132.79,
+        "hull_9": 150.09
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BODALCHEM/technicals/",
+      "scraped_at": "2026-09-03T06:45:10.026Z"
+    },
+    "BORANA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 43.2,
+        "stoch_k": 19.43,
+        "cci_20": 72.75,
+        "adx_14": 17.37,
+        "momentum_10": 1.65,
+        "macd_level": 3.95,
+        "stoch_rsi_fast": 40.27,
+        "williams_r": 77.73,
+        "ultimate_osc": 42.21
+      },
+      "moving_averages": {
+        "ema_10": 310.3,
+        "sma_10": 309.58,
+        "ema_20": 313.82,
+        "sma_20": 316.42,
+        "ema_30": 315.74,
+        "sma_30": 319.82,
+        "ema_50": 318.23,
+        "sma_50": 316.93,
+        "ema_100": 321.45,
+        "sma_100": 324.97,
+        "ema_200": 306.53,
+        "sma_200": 328.07,
+        "ichimoku_base": 327.75,
+        "vwma_20": 320.47,
+        "hull_9": 306.04
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BORANA/technicals/",
+      "scraped_at": "2026-09-03T06:45:15.440Z"
+    },
+    "BOROSCI": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 3,
+        "sell_count": 0,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 50.94,
+        "stoch_k": 61.07,
+        "cci_20": 65.77,
+        "adx_14": 34.55,
+        "momentum_10": 7.9,
+        "macd_level": 4.83,
+        "stoch_rsi_fast": 100,
+        "williams_r": 15.83,
+        "ultimate_osc": 47.6
+      },
+      "moving_averages": {
+        "ema_10": 129.5,
+        "sma_10": 127.5,
+        "ema_20": 132.52,
+        "sma_20": 130.65,
+        "ema_30": 135.93,
+        "sma_30": 137.41,
+        "ema_50": 139.3,
+        "sma_50": 147.29,
+        "ema_100": 138.25,
+        "sma_100": 140.53,
+        "ema_200": 135.9,
+        "sma_200": 127.28,
+        "ichimoku_base": 142.91,
+        "vwma_20": 131.22,
+        "hull_9": 130.98
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BOROSCI/technicals/",
+      "scraped_at": "2026-09-03T06:45:20.850Z"
+    },
+    "BPL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 40.28,
+        "stoch_k": 30.81,
+        "cci_20": 64.85,
+        "adx_14": 23.71,
+        "momentum_10": 0.4,
+        "macd_level": 0.91,
+        "stoch_rsi_fast": 55.69,
+        "williams_r": 71.65,
+        "ultimate_osc": 39.01
+      },
+      "moving_averages": {
+        "ema_10": 50.35,
+        "sma_10": 50.34,
+        "ema_20": 50.99,
+        "sma_20": 50.86,
+        "ema_30": 51.61,
+        "sma_30": 51.66,
+        "ema_50": 52.43,
+        "sma_50": 53.47,
+        "ema_100": 53.79,
+        "sma_100": 54.08,
+        "ema_200": 58.13,
+        "sma_200": 55.31,
+        "ichimoku_base": 51.65,
+        "vwma_20": 50.6,
+        "hull_9": 49.76
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BPL/technicals/",
+      "scraped_at": "2026-09-03T06:45:26.258Z"
+    },
+    "BPLPHARMA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 1,
+        "neutral_count": 1
+      },
+      "oscillators": {
+        "momentum_10": 235.3
+      },
+      "moving_averages": {
+        "ema_10": 1468,
+        "sma_10": 1496.2,
+        "hull_9": 1527.9
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BPLPHARMA/technicals/",
+      "scraped_at": "2026-09-03T06:45:31.756Z"
+    },
+    "BRAHMINFRA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 0,
+        "neutral_count": 1
+      },
+      "oscillators": {
+        "momentum_10": 3.04
+      },
+      "moving_averages": {
+        "ema_10": 162.76,
+        "sma_10": 159.53,
+        "hull_9": 163.17
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BRAHMINFRA/technicals/",
+      "scraped_at": "2026-09-03T06:45:37.188Z"
+    },
+    "BRANDMAN": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 59.13,
+        "stoch_k": 71.33,
+        "cci_20": 65.39,
+        "adx_14": 19.36,
+        "momentum_10": 28.3,
+        "macd_level": 0.85,
+        "stoch_rsi_fast": 98.45,
+        "williams_r": 19.51,
+        "ultimate_osc": 57.94
+      },
+      "moving_averages": {
+        "ema_10": 174.77,
+        "sma_10": 168.93,
+        "ema_20": 174.6,
+        "sma_20": 175.7,
+        "ema_30": 175.56,
+        "sma_30": 176.26,
+        "ema_50": 176.47,
+        "sma_50": 179.78,
+        "ema_100": 175.96,
+        "sma_100": 179.31,
+        "ichimoku_base": 179,
+        "vwma_20": 175.6,
+        "hull_9": 187.66
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BRANDMAN/technicals/",
+      "scraped_at": "2026-09-03T06:45:42.573Z"
+    },
+    "BSHSL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 53.3,
+        "stoch_k": 58.08,
+        "cci_20": 70.93,
+        "adx_14": 17.23,
+        "momentum_10": 1.93,
+        "macd_level": 0.37,
+        "stoch_rsi_fast": 48.36,
+        "williams_r": 37.5,
+        "ultimate_osc": 46.28
+      },
+      "moving_averages": {
+        "ema_10": 89.54,
+        "sma_10": 89.32,
+        "ema_20": 89.15,
+        "sma_20": 89.34,
+        "ema_30": 89.07,
+        "sma_30": 88.42,
+        "ema_50": 89.46,
+        "sma_50": 88.52,
+        "ema_100": 91.33,
+        "sma_100": 92.62,
+        "ema_200": 98.25,
+        "sma_200": 94.01,
+        "ichimoku_base": 88.5,
+        "vwma_20": 89.6,
+        "hull_9": 89.91
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BSHSL/technicals/",
+      "scraped_at": "2026-09-03T06:45:48.057Z"
+    },
+    "BTTL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 2,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 35.61,
+        "stoch_k": 19,
+        "cci_20": 168.73,
+        "adx_14": 13.56,
+        "momentum_10": 4.08,
+        "macd_level": 1.06,
+        "stoch_rsi_fast": 13.38,
+        "williams_r": 99.86,
+        "ultimate_osc": 38.74
+      },
+      "moving_averages": {
+        "ema_10": 43,
+        "sma_10": 43.56,
+        "ema_20": 43.93,
+        "sma_20": 43.61,
+        "ema_30": 44.4,
+        "sma_30": 44.85,
+        "ema_50": 44.05,
+        "sma_50": 47.33,
+        "ichimoku_base": 44.47,
+        "vwma_20": 43.64,
+        "hull_9": 41.55
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BTTL/technicals/",
+      "scraped_at": "2026-09-03T06:45:53.423Z"
+    },
+    "BUTTERFLY": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 2,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 29,
+        "stoch_k": 4.27,
+        "cci_20": 134.34,
+        "adx_14": 22.71,
+        "momentum_10": 33.45,
+        "macd_level": 22.04,
+        "stoch_rsi_fast": 2.56,
+        "williams_r": 96.54,
+        "ultimate_osc": 27.52
+      },
+      "moving_averages": {
+        "ema_10": 630.78,
+        "sma_10": 630.43,
+        "ema_20": 648.66,
+        "sma_20": 649.54,
+        "ema_30": 660.65,
+        "sma_30": 673.23,
+        "ema_50": 670,
+        "sma_50": 693.21,
+        "ema_100": 669.17,
+        "sma_100": 668.84,
+        "ema_200": 670.39,
+        "sma_200": 653.14,
+        "ichimoku_base": 683.05,
+        "vwma_20": 649.26,
+        "hull_9": 614.84
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-BUTTERFLY/technicals/",
+      "scraped_at": "2026-09-03T06:45:58.814Z"
+    },
+    "C2C": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 34.29,
+        "stoch_k": 39.35,
+        "cci_20": 80.04,
+        "adx_14": 36.32,
+        "momentum_10": 17.95,
+        "macd_level": 19.22,
+        "stoch_rsi_fast": 74.78,
+        "williams_r": 63.16,
+        "ultimate_osc": 44.2
+      },
+      "moving_averages": {
+        "ema_10": 230.13,
+        "sma_10": 229.13,
+        "ema_20": 242.09,
+        "sma_20": 238.24,
+        "ema_30": 257.46,
+        "sma_30": 248.03,
+        "ema_50": 285.88,
+        "sma_50": 300.17,
+        "ema_100": 335,
+        "sma_100": 362.02,
+        "ema_200": 396.09,
+        "sma_200": 403.07,
+        "ichimoku_base": 239.58,
+        "vwma_20": 235.54,
+        "hull_9": 226.23
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-C2C/technicals/",
+      "scraped_at": "2026-09-03T06:46:04.211Z"
+    },
+    "CAMLINFINE": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 33.16,
+        "stoch_k": 9.66,
+        "cci_20": 88.34,
+        "adx_14": 28.16,
+        "momentum_10": 6.85,
+        "macd_level": 5.64,
+        "stoch_rsi_fast": 36.14,
+        "williams_r": 87.35,
+        "ultimate_osc": 39.99
+      },
+      "moving_averages": {
+        "ema_10": 104.6,
+        "sma_10": 104.52,
+        "ema_20": 108.9,
+        "sma_20": 108.9,
+        "ema_30": 112.38,
+        "sma_30": 115.2,
+        "ema_50": 116.8,
+        "sma_50": 120.54,
+        "ema_100": 123.74,
+        "sma_100": 122.71,
+        "ema_200": 136.91,
+        "sma_200": 133.67,
+        "ichimoku_base": 116.4,
+        "vwma_20": 110.1,
+        "hull_9": 101.34
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CAMLINFINE/technicals/",
+      "scraped_at": "2026-09-03T06:46:09.611Z"
+    },
+    "CANTABIL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 48.96,
+        "stoch_k": 44.41,
+        "cci_20": 8.89,
+        "adx_14": 21.27,
+        "momentum_10": 7.62,
+        "macd_level": 0.25,
+        "stoch_rsi_fast": 47.84,
+        "williams_r": 54.82,
+        "ultimate_osc": 35.69
+      },
+      "moving_averages": {
+        "ema_10": 240.96,
+        "sma_10": 243.06,
+        "ema_20": 240.65,
+        "sma_20": 237.97,
+        "ema_30": 240.58,
+        "sma_30": 238.98,
+        "ema_50": 240.33,
+        "sma_50": 244.59,
+        "ema_100": 241.7,
+        "sma_100": 236.9,
+        "ema_200": 246.29,
+        "sma_200": 251.29,
+        "ichimoku_base": 240.07,
+        "vwma_20": 239.18,
+        "hull_9": 238.16
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CANTABIL/technicals/",
+      "scraped_at": "2026-09-03T06:46:15.166Z"
+    },
+    "CAPACITE": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 42.84,
+        "stoch_k": 18.55,
+        "cci_20": 70.45,
+        "adx_14": 12.98,
+        "momentum_10": 4.4,
+        "macd_level": 2.57,
+        "stoch_rsi_fast": 23.72,
+        "williams_r": 78.07,
+        "ultimate_osc": 38.97
+      },
+      "moving_averages": {
+        "ema_10": 212.7,
+        "sma_10": 216.25,
+        "ema_20": 214.51,
+        "sma_20": 213,
+        "ema_30": 216.51,
+        "sma_30": 214.44,
+        "ema_50": 220.21,
+        "sma_50": 223.92,
+        "ema_100": 227.05,
+        "sma_100": 230.69,
+        "ema_200": 241.96,
+        "sma_200": 237.08,
+        "ichimoku_base": 216.61,
+        "vwma_20": 216.06,
+        "hull_9": 204.11
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CAPACITE/technicals/",
+      "scraped_at": "2026-09-03T06:46:20.582Z"
+    },
+    "CAPITALSFB": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 2,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 42.55,
+        "stoch_k": 19.52,
+        "cci_20": 92.81,
+        "adx_14": 13.99,
+        "momentum_10": 4.85,
+        "macd_level": 2.53,
+        "stoch_rsi_fast": 59.76,
+        "williams_r": 85.22,
+        "ultimate_osc": 34.97
+      },
+      "moving_averages": {
+        "ema_10": 284.28,
+        "sma_10": 283.99,
+        "ema_20": 286.45,
+        "sma_20": 286.72,
+        "ema_30": 287.6,
+        "sma_30": 289.72,
+        "ema_50": 287.27,
+        "sma_50": 290.77,
+        "ema_100": 282.74,
+        "sma_100": 282.99,
+        "ema_200": 279.32,
+        "sma_200": 271.26,
+        "ichimoku_base": 293.52,
+        "vwma_20": 286.47,
+        "hull_9": 283.05
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CAPITALSFB/technicals/",
+      "scraped_at": "2026-09-03T06:46:26.038Z"
+    },
+    "CCHHL": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 4,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 46.64,
+        "stoch_k": 39.06,
+        "cci_20": 38.74,
+        "adx_14": 15.37,
+        "momentum_10": 0.02,
+        "macd_level": 0.02,
+        "stoch_rsi_fast": 44.97,
+        "williams_r": 64.84,
+        "ultimate_osc": 45.23
+      },
+      "moving_averages": {
+        "ema_10": 12.65,
+        "sma_10": 12.76,
+        "ema_20": 12.67,
+        "sma_20": 12.6,
+        "ema_30": 12.69,
+        "sma_30": 12.68,
+        "ema_50": 12.75,
+        "sma_50": 12.71,
+        "ema_100": 13,
+        "sma_100": 13.11,
+        "ema_200": 13.74,
+        "sma_200": 13.58,
+        "ichimoku_base": 12.77,
+        "vwma_20": 12.6,
+        "hull_9": 12.51
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CCHHL/technicals/",
+      "scraped_at": "2026-09-03T06:47:32.731Z"
+    },
+    "CEINSYS": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 0,
+        "sell_count": 4,
+        "neutral_count": 7
+      },
+      "oscillators": {
+        "rsi_14": 23.85,
+        "stoch_k": 3.02,
+        "cci_20": 112.35,
+        "adx_14": 33.68,
+        "momentum_10": 73.95,
+        "macd_level": 41.44,
+        "stoch_rsi_fast": 0,
+        "williams_r": 98.05,
+        "ultimate_osc": 23.66
+      },
+      "moving_averages": {
+        "ema_10": 720.04,
+        "sma_10": 718.01,
+        "ema_20": 751.82,
+        "sma_20": 755.68,
+        "ema_30": 778.1,
+        "sma_30": 787.18,
+        "ema_50": 817.13,
+        "sma_50": 836.48,
+        "ema_100": 882.3,
+        "sma_100": 918.6,
+        "ichimoku_base": 784.98,
+        "vwma_20": 760.05,
+        "hull_9": 691.55
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CEINSYS/technicals/",
+      "scraped_at": "2026-09-03T06:47:38.112Z"
+    },
+    "CELLECOR": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 2,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 49.07,
+        "stoch_k": 46.51,
+        "cci_20": 57.61,
+        "adx_14": 15.63,
+        "momentum_10": 0.9,
+        "macd_level": 0.29,
+        "stoch_rsi_fast": 51.39,
+        "williams_r": 52.81,
+        "ultimate_osc": 45.98
+      },
+      "moving_averages": {
+        "ema_10": 32.36,
+        "sma_10": 32.58,
+        "ema_20": 32.44,
+        "sma_20": 31.84,
+        "ema_30": 32.79,
+        "sma_30": 32.17,
+        "ema_50": 33.43,
+        "sma_50": 34,
+        "ema_100": 33.67,
+        "sma_100": 35.68,
+        "ema_200": 33.8,
+        "sma_200": 31.73,
+        "ichimoku_base": 31.75,
+        "vwma_20": 32.23,
+        "hull_9": 31.83
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CELLECOR/technicals/",
+      "scraped_at": "2026-09-03T06:47:43.522Z"
+    },
+    "CENTENKA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 66.51,
+        "stoch_k": 52.43,
+        "cci_20": 140.1,
+        "adx_14": 30.32,
+        "momentum_10": 46.65,
+        "macd_level": 1.28,
+        "stoch_rsi_fast": 66.67,
+        "williams_r": 22.59,
+        "ultimate_osc": 49.47
+      },
+      "moving_averages": {
+        "ema_10": 573.32,
+        "sma_10": 563.31,
+        "ema_20": 572.51,
+        "sma_20": 574.96,
+        "ema_30": 570.04,
+        "sma_30": 584.56,
+        "ema_50": 558.7,
+        "sma_50": 563.92,
+        "ema_100": 529.52,
+        "sma_100": 516.61,
+        "ema_200": 504.72,
+        "sma_200": 475.77,
+        "ichimoku_base": 587.75,
+        "vwma_20": 602.11,
+        "hull_9": 586.87
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CENTENKA/technicals/",
+      "scraped_at": "2026-09-03T06:47:48.993Z"
+    },
+    "CENTRUM": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 41.95,
+        "stoch_k": 19.34,
+        "cci_20": 72.36,
+        "adx_14": 18.33,
+        "momentum_10": 0.79,
+        "macd_level": 0.4,
+        "stoch_rsi_fast": 23.33,
+        "williams_r": 76.74,
+        "ultimate_osc": 36.88
+      },
+      "moving_averages": {
+        "ema_10": 23.1,
+        "sma_10": 23.01,
+        "ema_20": 23.49,
+        "sma_20": 24.02,
+        "ema_30": 23.65,
+        "sma_30": 23.89,
+        "ema_50": 23.76,
+        "sma_50": 24,
+        "ema_100": 24.19,
+        "sma_100": 23.73,
+        "ema_200": 25.71,
+        "sma_200": 25.35,
+        "ichimoku_base": 24.6,
+        "vwma_20": 24.7,
+        "hull_9": 22.59
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CENTRUM/technicals/",
+      "scraped_at": "2026-09-03T06:47:54.405Z"
+    },
+    "CEWATER": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 0,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 42.56,
+        "stoch_k": 39.09,
+        "cci_20": 34.34,
+        "adx_14": 10.18,
+        "momentum_10": 6.75,
+        "macd_level": 6.91,
+        "stoch_rsi_fast": 75.9,
+        "williams_r": 56.79,
+        "ultimate_osc": 43.19
+      },
+      "moving_averages": {
+        "ema_10": 266.17,
+        "sma_10": 264.46,
+        "ema_20": 270.55,
+        "sma_20": 267.79,
+        "ema_30": 275.73,
+        "sma_30": 273.92,
+        "ema_50": 283.6,
+        "sma_50": 293.64,
+        "ema_100": 300.24,
+        "sma_100": 297.23,
+        "ema_200": 343.32,
+        "sma_200": 335.11,
+        "ichimoku_base": 275.5,
+        "vwma_20": 268.13,
+        "hull_9": 264.14
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CEWATER/technicals/",
+      "scraped_at": "2026-09-03T06:47:59.770Z"
+    },
+    "CGRAPHICS": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 1,
+        "sell_count": 1,
+        "neutral_count": 9
+      },
+      "oscillators": {
+        "rsi_14": 56.55,
+        "stoch_k": 44.55,
+        "cci_20": 40.93,
+        "adx_14": 20.39,
+        "momentum_10": 13.4,
+        "macd_level": 2.26,
+        "stoch_rsi_fast": 39.06,
+        "williams_r": 46.03,
+        "ultimate_osc": 40.06
+      },
+      "moving_averages": {
+        "ema_10": 148.63,
+        "sma_10": 150.71,
+        "ema_20": 146.99,
+        "sma_20": 148.06,
+        "ema_30": 145.66,
+        "sma_30": 143.96,
+        "ema_50": 144.97,
+        "sma_50": 141.57,
+        "ema_100": 148.49,
+        "sma_100": 148.41,
+        "ema_200": 158.57,
+        "sma_200": 160.14,
+        "ichimoku_base": 147.35,
+        "vwma_20": 148.59,
+        "hull_9": 145.76
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CGRAPHICS/technicals/",
+      "scraped_at": "2026-09-03T06:48:05.214Z"
+    },
+    "CHANDAN": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 2,
+        "sell_count": 1,
+        "neutral_count": 8
+      },
+      "oscillators": {
+        "rsi_14": 35.65,
+        "stoch_k": 8.21,
+        "cci_20": 138.55,
+        "adx_14": 23.75,
+        "momentum_10": 24.6,
+        "macd_level": 6.82,
+        "stoch_rsi_fast": 5.62,
+        "williams_r": 95.62,
+        "ultimate_osc": 41.65
+      },
+      "moving_averages": {
+        "ema_10": 221.1,
+        "sma_10": 220.91,
+        "ema_20": 227.33,
+        "sma_20": 230.52,
+        "ema_30": 230.64,
+        "sma_30": 233.75,
+        "ema_50": 234.34,
+        "sma_50": 239.2,
+        "ema_100": 241.01,
+        "sma_100": 240.22,
+        "ema_200": 243.41,
+        "sma_200": 261.88,
+        "ichimoku_base": 233.98,
+        "vwma_20": 231.9,
+        "hull_9": 213.19
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CHANDAN/technicals/",
+      "scraped_at": "2026-09-03T06:48:10.631Z"
+    },
+    "CHAVDA": {
+      "summary": {
+        "verdict": "Buy",
+        "buy_count": 4,
+        "sell_count": 3,
+        "neutral_count": 4
+      },
+      "oscillators": {
+        "rsi_14": 41.85,
+        "stoch_k": 12.1,
+        "cci_20": 204.08,
+        "adx_14": 55.08,
+        "momentum_10": 10,
+        "macd_level": 1.74,
+        "stoch_rsi_fast": 2.17,
+        "williams_r": 81.43,
+        "ultimate_osc": 27.62
+      },
+      "moving_averages": {
+        "ema_10": 130.9,
+        "sma_10": 133.34,
+        "ema_20": 131.08,
+        "sma_20": 134.65,
+        "ema_30": 128.45,
+        "sma_30": 132.3,
+        "ema_50": 122.53,
+        "sma_50": 119.26,
+        "ema_100": 114.38,
+        "sma_100": 108.05,
+        "ema_200": 111.79,
+        "sma_200": 106.81,
+        "ichimoku_base": 134.43,
+        "vwma_20": 138.21,
+        "hull_9": 122.61
+      },
+      "url": "https://in.tradingview.com/symbols/NSE-CHAVDA/technicals/",
+      "scraped_at": "2026-09-03T06:48:16.007Z"
     }
   },
-  "total_companies_covered": 90,
+  "total_companies_covered": 191,
   "last_batch_ok": 4,
   "last_batch_fail": 0,
   "last_batch_skipped_empty": 0,
