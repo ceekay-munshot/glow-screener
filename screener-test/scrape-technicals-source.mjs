@@ -77,6 +77,7 @@ for (const c of screener) {
 }
 
 let ordered = [];
+const seenSlug = new Set();
 if (existsSync(TODO_PATH)) {
   const lines = readFileSync(TODO_PATH, "utf8").split("\n");
   for (const line of lines) {
@@ -85,17 +86,23 @@ if (existsSync(TODO_PATH)) {
     for (const c of screener) {
       if (String(c.Company).trim().replace(/,/g, ";").startsWith(name.slice(0, 30))) {
         const slug = String(c["Screener URL"] || "").match(/\/company\/([^/]+)/)?.[1]?.toUpperCase();
-        if (slug && !/^\d+$/.test(slug)) { ordered.push(slug); break; }
+        if (slug && !/^\d+$/.test(slug) && !seenSlug.has(slug)) { ordered.push(slug); seenSlug.add(slug); break; }
       }
     }
     if (BATCH_SIZE > 0 && ordered.length >= BATCH_SIZE) break;
   }
 }
-// Fallback when revenue-mix-todo.csv hasn't been generated yet: full
-// alphabetical sweep of the universe, capped by BATCH_SIZE when set.
-if (ordered.length === 0) {
-  const all = [...screenerBySlug.keys()].sort();
-  ordered = BATCH_SIZE > 0 ? all.slice(0, BATCH_SIZE) : all;
+// Always sweep the WHOLE universe: append every remaining NSE-listed slug
+// after the TODO-priority ones (deduped). Previously the scrape stopped at
+// just the revenue-mix-todo.csv names whenever that file was non-empty,
+// which silently capped coverage to a handful of companies.
+if (!(BATCH_SIZE > 0 && ordered.length >= BATCH_SIZE)) {
+  for (const slug of [...screenerBySlug.keys()].sort()) {
+    if (seenSlug.has(slug)) continue;
+    ordered.push(slug);
+    seenSlug.add(slug);
+    if (BATCH_SIZE > 0 && ordered.length >= BATCH_SIZE) break;
+  }
 }
 
 console.log(`Will scrape ${ordered.length} companies (batch=${BATCH_SIZE === 0 ? "all" : BATCH_SIZE})`);
