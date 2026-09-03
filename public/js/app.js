@@ -543,6 +543,8 @@ const state = {
   cache: {},                  // tab → { scored, raw, meta, filtered }
   search: "",
   scoreFilter: "all",
+  mcapMin: null,              // market-cap range filter (₹ crore) — persists across tabs
+  mcapMax: null,
   sortBy: "score",
   sortDir: "desc",
   watchlist: loadWatchlist(),
@@ -1135,7 +1137,7 @@ function renderDeferredList() {
 function renderTopCards() {
   const c = cfg(); const st = tabState();
   if (c.composite) return renderCompositeTopCards();
-  const top = st.scored.slice(0, 10);
+  const top = st.scored.filter(inMcapRange).slice(0, 10);
   $("#top-cards").innerHTML = top.map((s, i) => {
     const name = c.name(s.company);
     const { color, initials } = avatarFor(name);
@@ -1246,7 +1248,7 @@ function renderCompositeTopCards() {
   `;
 
   // Premium hero cards for top 10 (basket only — exclude filtered/unrated/AVOID).
-  const top = all.filter((s) => !s.hardFailed && !s.unrated && s.rating !== "AVOID").slice(0, 10);
+  const top = all.filter((s) => !s.hardFailed && !s.unrated && s.rating !== "AVOID" && inMcapRange(s)).slice(0, 10);
   const heroCards = top.map((s, i) => {
     const co = s.company;
     const name = co.Company || "—";
@@ -7789,10 +7791,31 @@ function openHistoryDrill(pick) {
 }
 
 // ---------------- filtering / sorting ----------------
+// Market-cap range filter (₹ crore). Applies to the Top-10, the table AND the
+// Glow Basket on every tab, so picking e.g. 500–1000 shows the best names in
+// that band only. Reads either field name (fundamentals use "Market Cap",
+// technicals rows use marketCap).
+function mcapCrOf(s) {
+  const co = s.company || {};
+  const raw = String(co["Market Cap"] ?? co.marketCap ?? "").replace(/,/g, "").replace(/cr\.?/i, "").trim();
+  const n = parseFloat(raw);
+  return Number.isFinite(n) ? n : null;
+}
+function inMcapRange(s) {
+  const { mcapMin, mcapMax } = state;
+  if (mcapMin == null && mcapMax == null) return true;
+  const v = mcapCrOf(s);
+  if (v == null) return false;            // unknown market cap → out when a band is set
+  if (mcapMin != null && v < mcapMin) return false;
+  if (mcapMax != null && v > mcapMax) return false;
+  return true;
+}
+
 function applyFilters() {
   const c = cfg(); const st = tabState();
   const q = state.search.trim().toLowerCase();
   let rows = st.scored.filter((s) => {
+    if (!inMcapRange(s)) return false;
     if (state.watchOnly && !state.watchlist.has(companyKey(s.company))) return false;
     if (q && !c.name(s.company).toLowerCase().includes(q)) return false;
     if (state.scoreFilter === "redflag") return !!s.isRedFlag;
@@ -9277,6 +9300,21 @@ function wire() {
   $$(".tab-btn").forEach((b) => b.addEventListener("click", () => switchTab(b.dataset.tab)));
   $("#search").addEventListener("input", (e) => { state.search = e.target.value; applyFilters(); });
   $("#score-filter").addEventListener("change", (e) => { state.scoreFilter = e.target.value; applyFilters(); });
+  // Market-cap range band — re-render Top-10 + table (and Glow Basket) live
+  const onMcap = () => {
+    const parse = (el) => { const v = parseFloat(el?.value); return Number.isFinite(v) ? v : null; };
+    state.mcapMin = parse($("#mcap-min"));
+    state.mcapMax = parse($("#mcap-max"));
+    renderTopCards();
+    applyFilters();
+  };
+  $("#mcap-min")?.addEventListener("input", onMcap);
+  $("#mcap-max")?.addEventListener("input", onMcap);
+  $("#mcap-clear")?.addEventListener("click", () => {
+    state.mcapMin = null; state.mcapMax = null;
+    const a = $("#mcap-min"), b = $("#mcap-max"); if (a) a.value = ""; if (b) b.value = "";
+    renderTopCards(); applyFilters();
+  });
   // Watchlist toggle — click toggles "show only watchlisted" mode
   const watchBtn = $("#watch-toggle");
   if (watchBtn) watchBtn.addEventListener("click", () => {
