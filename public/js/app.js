@@ -144,7 +144,7 @@ const CONFIGS = {
           { name: "ADX",  value: c.adx14 ?? "—" },
           { name: "β",    value: c.beta_1y ?? "—" },
         ],
-        sub: c.relative_strength_6m == null ? "" : `6M relative strength ${(c.relative_strength_6m * 100).toFixed(1)}% vs Nifty 500` },
+        sub: c.relative_strength_6m == null ? "" : `6M relative strength ${(c.relative_strength_6m * 100).toFixed(1)}% vs Glow peers` },
     ],
   },
   composite: {

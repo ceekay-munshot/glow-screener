@@ -17,7 +17,8 @@ const COMPANIES_PATH = resolve(__dirname, "../public/data/screener-companies.jso
 const ATR_HISTORY_PATH = resolve(__dirname, "../public/data/atr-history.json");
 
 const HISTORY_DAYS = 400;          // calendar days back; ~280 trading days
-const INDEX_SYMBOL = "^CRSLDX";    // Nifty 500 on Yahoo Finance
+const INDEX_SYMBOL = "^CRSLDX";    // Nifty 500 on Yahoo Finance (beta + reference)
+const SMALLCAP250_SYMBOL = "NIFTYSMLCAP250.NS"; // Nifty Smallcap 250 — public small-cap benchmark
 const FETCH_DELAY_MS = 200;        // be polite — ~5 req/sec
 
 const FNO_STOCKS_PATH = resolve(__dirname, "static/fno-stocks.json");
@@ -54,6 +55,20 @@ async function run() {
   console.log(`  ${indexBars.length} bars`);
   const indexReturns = dailyReturns(indexBars);
   const indexClose = indexBars.map((b) => b.close);
+
+  // Nifty Smallcap 250 — a recognizable PUBLIC small-cap benchmark, shown
+  // alongside the like-to-like peer median. Non-fatal: if Yahoo lacks the
+  // series we simply omit the reference.
+  let smallcap250SixM = null;
+  try {
+    console.log(`Fetching ${SMALLCAP250_SYMBOL} (Nifty Smallcap 250)...`);
+    const smlBars = await fetchBars(SMALLCAP250_SYMBOL, start, end);
+    const smlClose = smlBars.map((b) => b.close);
+    if (smlClose.length >= 126) smallcap250SixM = round(smlClose.at(-1) / smlClose.at(-126) - 1, 4);
+    console.log(`  ${smlBars.length} bars · 6M ${smallcap250SixM == null ? "n/a" : (smallcap250SixM * 100).toFixed(1) + "%"}`);
+  } catch (err) {
+    console.log(`  Smallcap 250 unavailable: ${err.message}`);
+  }
 
   // NSE bhavcopy delivery % trends. Best-effort: if NSE blocks our IP we
   // get an empty map and the rule falls back to N/A per company.
@@ -141,6 +156,29 @@ async function run() {
     }
     await sleep(FETCH_DELAY_MS);
     if ((i + 1) % 25 === 0) flush(results, indexBars, failures);   // checkpoint
+  }
+
+  // Relative Strength benchmark = the Glow universe's OWN median 6M return.
+  // Each small-cap is judged against its peers (like-to-like), not against a
+  // large-cap-dominated index. Needs every stock's 6M return, so it runs after
+  // the scrape loop. Nifty Smallcap 250's 6M is attached as a reference line.
+  {
+    const sixMs = results
+      .filter((r) => r && !r.error && r.return_6m != null)
+      .map((r) => r.return_6m)
+      .sort((a, b) => a - b);
+    let median = null;
+    if (sixMs.length) {
+      const mid = Math.floor(sixMs.length / 2);
+      median = round(sixMs.length % 2 ? sixMs[mid] : (sixMs[mid - 1] + sixMs[mid]) / 2, 4);
+    }
+    for (const r of results) {
+      if (!r || r.error) continue;
+      r.return_6m_index = median;
+      r.relative_strength_6m = (r.return_6m != null && median != null) ? round(r.return_6m - median, 4) : null;
+      r.return_6m_smallcap250 = smallcap250SixM;
+    }
+    console.log(`Relative-strength benchmark: Glow universe median 6M = ${median == null ? "n/a" : (median * 100).toFixed(1) + "%"} (n=${sixMs.length}); Smallcap250 6M = ${smallcap250SixM == null ? "n/a" : (smallcap250SixM * 100).toFixed(1) + "%"}`);
   }
 
   flush(results, indexBars, failures);
@@ -356,8 +394,13 @@ function computeIndicators(bars, indexBars, indexReturns, indexClose) {
     avg_volume_20d: Math.round(avg20Vol),
     volume_ratio_today: volRatio == null ? null : round(volRatio, 2),
     return_6m: sixMReturn == null ? null : round(sixMReturn, 4),
-    return_6m_index: indexSixM == null ? null : round(indexSixM, 4),
-    relative_strength_6m: relStrength6m == null ? null : round(relStrength6m, 4),
+    // Nifty 500 6M kept for reference; the Relative Strength benchmark is now
+    // the Glow universe's OWN median 6M return (like-to-like). return_6m_index,
+    // relative_strength_6m and return_6m_smallcap250 are filled in post-loop.
+    return_6m_nifty500: indexSixM == null ? null : round(indexSixM, 4),
+    return_6m_index: null,
+    relative_strength_6m: null,
+    return_6m_smallcap250: null,
     beta_1y: beta == null ? null : round(beta, 2),
     bars_count: n,
     // ----- Batch B: pattern detection -----

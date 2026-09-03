@@ -19,6 +19,7 @@ const OUT_PATH = resolve(__dirname, "../public/data/benchmark-history.json");
 const INDICES = [
   { symbol: "^NSEI",    label: "Nifty 50" },
   { symbol: "^CRSLDX",  label: "Nifty 500" },
+  { symbol: "NIFTYSMLCAP250.NS", label: "Nifty Smallcap 250" },
   { symbol: "^NSEBANK", label: "Bank Nifty" },
 ];
 const DAYS = 180;          // ~6 months — comfortably covers the full 4-month hold

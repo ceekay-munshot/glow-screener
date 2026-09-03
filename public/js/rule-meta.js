@@ -264,9 +264,9 @@ export const META = {
     },
     rs: {
       source: COMPUTED_FROM_YAHOO,
-      calculation: "Compute 6-month return for stock and for Nifty 500 index (^CRSLDX). Relative Strength = stock_return − index_return.",
-      clientLogic: "PASS if 6M price return > Nifty 500 index return; 2 pts. Underperforming benchmark = 1 pt.",
-      ourLogic: null,
+      calculation: "Compute each stock's 6-month price return, then the MEDIAN 6-month return across the whole Glow small-cap universe (its own peers). Relative Strength = stock_6m_return − universe_median_6m. Like-to-like: a ₹200–2,000 Cr stock is judged against other ₹200–2,000 Cr stocks, not a large-cap index. Nifty Smallcap 250 and Nifty 500 6M returns are shown as reference lines.",
+      clientLogic: "PASS (2 pts) if the stock's 6M return beats the median Glow small-cap peer; behind the median peer = 1 pt.",
+      ourLogic: "Benchmark switched from Nifty 500 to the universe's own median 6M return — comparing nano/micro-caps to a large-cap-weighted index was not like-to-like. Beta and market breadth still use Nifty 500 as the broad-market proxy.",
     },
     volbo: {
       source: COMPUTED_FROM_YAHOO,
