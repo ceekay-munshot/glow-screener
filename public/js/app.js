@@ -2142,7 +2142,6 @@ async function renderHistory() {
           <h2 class="font-display font-bold text-slate-900 text-base">Past STRONG BUYs · realized return</h2>        </div>
         <div class="space-y-1.5">${rows}</div>
       </div>
-      ${lkpCard}
     `;
 
   host.innerHTML = `
@@ -3754,24 +3753,16 @@ function renderAccuracyView(data) {
         <h2 class="font-display font-bold text-slate-900 text-base">Target / Stop-loss tracker</h2>
       </div>
       ${todayHitsBanner}
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+      <div class="grid grid-cols-1 gap-3 mb-4">
         ${summaryCard("AI Picks · summary", data.aiSummary, COHORT_COLOR.ai)}
-        ${summaryCard("Manual Picks · summary", data.manualSummary, COHORT_COLOR.manual)}
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+      <div class="grid grid-cols-1 gap-3">
         <div>
           <div class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5 flex items-center gap-1.5">
             <span class="inline-block w-2 h-2 rounded-full" style="background:${COHORT_COLOR.ai}"></span>
             AI Picks · per-pick status
           </div>
           <div class="rounded-lg bg-slate-50/60 ring-1 ring-slate-100 px-1 py-1">${aiRowsHtml}</div>
-        </div>
-        <div>
-          <div class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5 flex items-center gap-1.5">
-            <span class="inline-block w-2 h-2 rounded-full" style="background:${COHORT_COLOR.manual}"></span>
-            Manual Picks · per-pick status
-          </div>
-          <div class="rounded-lg bg-slate-50/60 ring-1 ring-slate-100 px-1 py-1">${manualRowsHtml}</div>
         </div>
       </div>
     </div>
@@ -3804,13 +3795,6 @@ function renderCohortTracker(cohort, series, view, selectedSegIdx) {
   const stats = `
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-3">
       ${statBlock("AI Picks", fmtPct(last.aiCum), aiSub, sign(last.aiCum), COHORT_COLOR.ai)}
-      ${statBlock(
-        "Manual Picks",
-        series.hasManual ? fmtPct(last.manualCum) : "—",
-        series.hasManual ? `${series.manualPicksInUni.length} in coverage · static basket` : "Upload basket below",
-        sign(last.manualCum),
-        COHORT_COLOR.manual,
-      )}
       ${statBlock(
         "Nifty 50",
         series.hasNifty ? fmtPct(last.niftyCum) : "—",
@@ -3915,7 +3899,7 @@ function renderCohortTracker(cohort, series, view, selectedSegIdx) {
     <div class="bg-white rounded-2xl ring-1 ring-slate-100 p-4 sm:p-5 mb-4">
       <div class="mb-3">
         <h2 class="font-display font-bold text-slate-900 text-base">Performance Tracker</h2>
-        <div class="text-[11px] text-slate-500 mt-0.5">AI Picks vs Manual Picks vs Nifty · ${anchorSourceLabel} (<span class="font-semibold">${anchorLabel}</span>) · ${days} trading day${days === 1 ? "" : "s"}</div>
+        <div class="text-[11px] text-slate-500 mt-0.5">AI Picks vs Nifty · ${anchorSourceLabel} (<span class="font-semibold">${anchorLabel}</span>) · ${days} trading day${days === 1 ? "" : "s"}</div>
       </div>
 
       ${stats}
@@ -3934,13 +3918,6 @@ function renderCohortTracker(cohort, series, view, selectedSegIdx) {
             AI Picks · <span class="text-slate-400 normal-case font-medium">${escapeHtml(aiHeader)}</span>
           </div>
           <div class="rounded-lg bg-slate-50/60 ring-1 ring-slate-100 px-1 py-1">${aiRows}</div>
-        </div>
-        <div>
-          <div class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5 flex items-center gap-1.5">
-            <span class="inline-block w-2 h-2 rounded-full" style="background:${COHORT_COLOR.manual}"></span>
-            Manual Picks · <span class="text-slate-400 normal-case font-medium">${series.manualPicksAll.length} stocks · ${series.manualPicksInUni.length} in coverage</span>
-          </div>
-          <div class="rounded-lg bg-slate-50/60 ring-1 ring-slate-100 px-1 py-1">${manualRows}</div>
         </div>
       </div>
     </div>
@@ -5584,28 +5561,22 @@ function renderStrategyCommandBar(view, cadence, mode, hits) {
         <span class="grid place-items-center w-8 h-8 rounded-xl bg-indigo-50 text-base ring-1 ring-indigo-100 shrink-0">🎯</span>
         <div class="min-w-0">
           <div class="flex items-center gap-1.5 flex-wrap">
-            <span class="text-sm font-bold text-slate-900">AI basket vs Manual basket</span>
-            <span class="text-[8px] font-bold uppercase tracking-wider px-1 py-0.5 rounded bg-amber-100 text-amber-700 ring-1 ring-amber-200">Beta</span>
+            <span class="text-sm font-bold text-slate-900">AI basket</span>
           </div>
           <div class="flex items-center gap-1.5 flex-wrap mt-1">
             <span class="text-[10px] text-slate-500 tabular-nums">${escapeHtml(modeLabel)} · ${fmtDateDMY(view.startDate)} → ${fmtDateDMY(view.endDate)} · ${view.equityCurve.length}d</span>
-            ${convoChip}
           </div>
         </div>
       </div>
       <div class="flex items-center gap-3 ml-auto flex-wrap">
         <div class="flex items-stretch rounded-xl ring-1 ring-slate-200 bg-slate-50/40 divide-x divide-slate-200/70">
           ${stat("AI", view.finalReturn, aiDD, "text-indigo-700")}
-          ${stat("Manual", view.manualFinalReturn, manualDD, "text-amber-700")}
           ${stat("Nifty 50", view.niftyRet, niftyDD, "text-slate-500")}
           ${stat("Nifty 500", view.nifty500Ret, nifty500DD, "text-sky-600")}
           ${stat("Smallcap 250", view.smallcap250Ret, smallcap250DD, "text-purple-600")}
         </div>
         <div class="h-9 w-px bg-slate-200 hidden sm:block"></div>
         <div class="flex items-center gap-2">
-          <input id="lkp-file-input" type="file" accept=".xlsx,.xls,.csv" class="hidden" />
-          <button id="lkp-upload-btn" type="button" title="Upload the month's client basket (Excel / CSV)" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg ring-1 ring-slate-200 bg-white hover:bg-indigo-50 hover:ring-indigo-200 text-xs font-semibold text-slate-700">⬆ <span class="hidden sm:inline">Upload</span></button>
-          ${lkpOverride() ? `<button id="lkp-reset-upload" type="button" title="Discard the uploaded basket and use the published one" class="text-[11px] font-semibold text-slate-500 hover:text-rose-600">Reset</button>` : ""}
           ${hits ? renderStrategyAlertsBell(hits) : ""}
         </div>
       </div>
@@ -5895,7 +5866,6 @@ function renderStrategyKpis(view) {
       </div>
       <div class="space-y-1.5">
         ${row("bg-indigo-500", "AI basket", aiFinal)}
-        ${row("bg-amber-500", "Manual basket", manualFinal)}
         ${row("bg-slate-400", "Nifty 50", niftyFinal)}
         ${row("bg-sky-500", "Nifty 500", nifty500Final)}
         ${row("bg-purple-500", "Smallcap 250", smallcap250Final)}
@@ -5910,7 +5880,6 @@ function renderStrategyKpis(view) {
         <div class="text-emerald-500 text-base">▲</div>
       </div>
       <div class="space-y-1.5">
-        ${row("bg-amber-500", "Manual", manualUp)}
         ${row("bg-indigo-500", "AI", aiUp)}
         ${row("bg-slate-400", "Nifty 50", niftyUp)}
         ${row("bg-sky-500", "Nifty 500", nifty500Up)}
@@ -5924,7 +5893,6 @@ function renderStrategyKpis(view) {
         <div class="text-rose-500 text-base">▼</div>
       </div>
       <div class="space-y-1.5">
-        ${row("bg-amber-500", "Manual", manualDD)}
         ${row("bg-indigo-500", "AI", aiDD)}
         ${row("bg-slate-400", "Nifty 50", niftyDD)}
         ${row("bg-sky-500", "Nifty 500", nifty500DD)}
@@ -5947,7 +5915,6 @@ function renderStrategyKpis(view) {
         <div class="text-indigo-500 text-base">⇆</div>
       </div>
       <div class="space-y-1.5">
-        ${alphaRow("bg-amber-500", "Manual − AI", manualVsAi)}
         ${alphaRow("bg-slate-400", "AI − Nifty 50", aiVsNifty)}
         ${alphaRow("bg-sky-500", "AI − Nifty 500", aiVsNifty500)}
         ${alphaRow("bg-purple-500", "AI − Smallcap 250", aiVsSmallcap250)}
@@ -6686,9 +6653,8 @@ function renderManualBasketTable(manualPicks) {
 // said this is the main affordance).
 function renderActivePickRowsSplit(view) {
   return `
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+    <div class="grid grid-cols-1 gap-3">
       ${renderActivePickColumn("AI Picks · per-pick status", "indigo", view.picks, "ai")}
-      ${renderActivePickColumn("Manual Picks · per-pick status", "amber", view.manualPicks, "manual")}
     </div>
   `;
 }
