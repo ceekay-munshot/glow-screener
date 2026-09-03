@@ -1065,8 +1065,8 @@ function relativeTimeFrom(iso) {
 }
 
 function sourceFriendly(c, m) {
-  if (c.label === "Fundamentals") return "Screener.in saved screen · NSE 500";
-  if (c.label === "Technicals") return "Yahoo Finance EOD · NSE 500";
+  if (c.label === "Fundamentals") return "Screener.in saved screen · small-cap ₹200–2,000 Cr";
+  if (c.label === "Technicals") return "Yahoo Finance EOD · small-cap ₹200–2,000 Cr";
   if (c.label === "Macro") return "Multi-source · Yahoo + RBI + curated";
   if (c.label === "Sentiment & Liquidity") return "Yahoo + NSE + computed breadth";
   if (c.label === "Glow Basket") return "5-pillar weighted composite";
@@ -1298,7 +1298,7 @@ function renderCompositeTopCards() {
       <div style="padding: 30mm 10mm; text-align: center;">
         <div style="font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: #64748b;">Glow Screener · Glow Brief</div>
         <h1 style="font-size: 42px; font-weight: 800; margin: 12px 0 8px; color: #0f172a;">Glow Basket</h1>
-        <p style="font-size: 14px; color: #64748b; margin: 0;">5-pillar weighted composite · NSE 500 universe · ${new Date().toLocaleDateString("en-IN", { day: "2-digit", month: "long", year: "numeric" })}</p>
+        <p style="font-size: 14px; color: #64748b; margin: 0;">5-pillar weighted composite · small-cap ₹200–2,000 Cr universe ·${new Date().toLocaleDateString("en-IN", { day: "2-digit", month: "long", year: "numeric" })}</p>
         <div style="margin: 36px auto 0; max-width: 480px; padding: 24px; border: 1px solid #e2e8f0; border-radius: 16px; background: linear-gradient(135deg, #eef2ff 0%, #ecfeff 100%);">
           <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
             <div>
@@ -6036,7 +6036,7 @@ function renderActiveCumulativeChart(view) {
     <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-0.5" style="background:${color.ai}"></span>AI basket</span>
     ${hasManual ? `<span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-0.5" style="background:${color.manual}"></span>Manual basket</span>` : ""}
     <span class="inline-flex items-center gap-1.5" title="Benchmark"><span class="w-2.5 h-0.5 border-t border-dashed" style="border-color:${color.nifty}"></span>Nifty 50</span>
-    ${hasN500 ? `<span class="inline-flex items-center gap-1.5" title="Benchmark — the NSE 500 universe">​<span class="w-2.5 h-0.5 border-t border-dashed" style="border-color:${color.nifty500}"></span>Nifty 500</span>` : ""}`;
+    ${hasN500 ? `<span class="inline-flex items-center gap-1.5" title="Benchmark — Nifty 500 index">​<span class="w-2.5 h-0.5 border-t border-dashed" style="border-color:${color.nifty500}"></span>Nifty 500</span>` : ""}`;
 
   const body = `
       <div id="active-chart-container" class="relative">
