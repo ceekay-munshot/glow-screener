@@ -1,13 +1,13 @@
 # Revenue-mix extraction TODO — auto-generated
-# Generated:        2026-09-07T06:38:44.978Z
+# Generated:        2026-09-08T06:32:49.798Z
 # Stale threshold:  365 days
 # Universe total:   1444
 # Skipped (fresh):  0
 # Skipped (no BSE): 1101
 # Priority breakdown:
 #   1 — Glow STRONG BUY (NEW): 0
-#   2 — Glow BUY (NEW):        52
-#   3 — Other NEW:             291
+#   2 — Glow BUY (NEW):        53
+#   3 — Other NEW:             290
 #   4 — STALE (>365d):           0
 # Routine processes TOP 10 rows per daily run.
 #
@@ -58,6 +58,7 @@ MAGNAELQ, 517449
 VIPULORG, 530627
 KRONECOMM, 523411
 COCHINM, 513353
+SIMPLEXCAS, 513472
 HIGHENE, 504176
 KAKA, 543939
 ROBU, 543787
@@ -68,10 +69,10 @@ JOJO, 531910
 SAVERA, 512634
 SANCODE, 543897
 CHATHA, 544151
-SIMPLEXCAS, 513472
 MAXIMUS, 540401
 BMW, 542669
 BRRL, 543543
+SANJIVIN, 531569
 CHANDRIMA, 540829
 FLUIDOM, 522017
 SURAJ, 518075
@@ -81,7 +82,6 @@ INTEGFD, 519606
 TRISHAKT, 531279
 NPL, 544205
 STELLANT, 526071
-SANJIVIN, 531569
 BRIGHT, 543831
 TRANSCHEM, 500422
 TALBROSENG, 538987
