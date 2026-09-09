@@ -545,6 +545,12 @@ const state = {
   scoreFilter: "all",
   mcapMin: null,              // market-cap range filter (₹ crore) — persists across tabs
   mcapMax: null,
+  broadSector: "",            // sector tree (screener GICS-style) — persist across tabs
+  sector: "",                 // "Sub-sector" in the UI
+  broadIndustry: "",          // "Industry" in the UI
+  industry: "",               // "Sub-industry" in the UI
+  keyword: "",                // free-text: name + sector + industry
+  filtersExpanded: false,     // simple (false) vs exhaustive (true) filter view
   sortBy: "score",
   sortDir: "desc",
   watchlist: loadWatchlist(),
@@ -1025,6 +1031,7 @@ function renderAll() {
   renderMeta();
   renderStats();
   renderDeferredList();
+  refreshSectorDropdowns();   // sector tree grows as each tab's data loads
   renderTopCards();
   applyFilters();   // also renders the table
 }
@@ -1137,7 +1144,7 @@ function renderDeferredList() {
 function renderTopCards() {
   const c = cfg(); const st = tabState();
   if (c.composite) return renderCompositeTopCards();
-  const top = st.scored.filter(inMcapRange).slice(0, 10);
+  const top = st.scored.filter(inGlobalScope).slice(0, 10);
   $("#top-cards").innerHTML = top.map((s, i) => {
     const name = c.name(s.company);
     const { color, initials } = avatarFor(name);
@@ -1248,7 +1255,7 @@ function renderCompositeTopCards() {
   `;
 
   // Premium hero cards for top 10 (basket only — exclude filtered/unrated/AVOID).
-  const top = all.filter((s) => !s.hardFailed && !s.unrated && s.rating !== "AVOID" && inMcapRange(s)).slice(0, 10);
+  const top = all.filter((s) => !s.hardFailed && !s.unrated && s.rating !== "AVOID" && inGlobalScope(s)).slice(0, 10);
   const heroCards = top.map((s, i) => {
     const co = s.company;
     const name = co.Company || "—";
@@ -7816,11 +7823,90 @@ function inMcapRange(s) {
   return true;
 }
 
+// ---------------- sector-tree + keyword filters (global, cross-tab) ----------------
+// The screener export already carries a 4-level classification per company:
+// Broad Sector (12) → Sector (22) → Broad Industry (55) → Industry (159).
+// In the UI these read as Sector → Sub-sector → Industry → Sub-industry.
+function sectorFieldsOf(s) {
+  const co = s.company || {};
+  return {
+    bs: co["Broad Sector"] || "",
+    se: co["Sector"] || "",
+    bi: co["Broad Industry"] || "",
+    ind: co["Industry"] || "",
+  };
+}
+function inSectorScope(s) {
+  if (!state.broadSector && !state.sector && !state.broadIndustry && !state.industry) return true;
+  const f = sectorFieldsOf(s);
+  if (state.broadSector && f.bs !== state.broadSector) return false;
+  if (state.sector && f.se !== state.sector) return false;
+  if (state.broadIndustry && f.bi !== state.broadIndustry) return false;
+  if (state.industry && f.ind !== state.industry) return false;
+  return true;
+}
+function inKeywordScope(s) {
+  const q = (state.keyword || "").trim().toLowerCase();
+  if (!q) return true;
+  const co = s.company || {};
+  const hay = [co["Company"], co["Broad Sector"], co["Sector"], co["Broad Industry"], co["Industry"]]
+    .filter(Boolean).join(" • ").toLowerCase();
+  // AND across whitespace-separated terms so "solar power" narrows, not widens.
+  return q.split(/\s+/).every((t) => hay.includes(t));
+}
+// The single gate every "screening" surface uses (table, Top-10, Glow Basket).
+function inGlobalScope(s) { return inMcapRange(s) && inSectorScope(s) && inKeywordScope(s); }
+
+// Accumulating index of distinct classification combos, merged from each tab's
+// scored list as it loads (some tabs cover fewer names than Fundamentals).
+const SECTOR_COMBOS = [];
+const _sectorComboSeen = new Set();
+function indexSectorsFrom(scored) {
+  for (const s of (scored || [])) {
+    const f = sectorFieldsOf(s);
+    if (!f.bs && !f.se && !f.bi && !f.ind) continue;
+    const key = `${f.bs}|${f.se}|${f.bi}|${f.ind}`;
+    if (_sectorComboSeen.has(key)) continue;
+    _sectorComboSeen.add(key);
+    SECTOR_COMBOS.push(f);
+  }
+}
+function _distinctSorted(vals) {
+  return [...new Set(vals.filter(Boolean))].sort((a, b) => a.localeCompare(b));
+}
+function _fillFilterSelect(sel, opts, current, allLabel) {
+  const el = $(sel);
+  if (!el) return;
+  el.innerHTML = `<option value="">${escapeHtml(allLabel)}</option>` +
+    opts.map((o) => `<option value="${escapeHtml(o)}">${escapeHtml(o)}</option>`).join("");
+  el.value = opts.includes(current) ? current : "";
+}
+// Populate the four sector dropdowns, each narrowed by its ancestors' selections.
+function refreshSectorDropdowns() {
+  indexSectorsFrom(tabState()?.scored);
+  const bs = state.broadSector, se = state.sector, bi = state.broadIndustry;
+  const within = (c) => (!bs || c.bs === bs) && (!se || c.se === se) && (!bi || c.bi === bi);
+  const bsOpts = _distinctSorted(SECTOR_COMBOS.map((c) => c.bs));
+  const seOpts = _distinctSorted(SECTOR_COMBOS.filter((c) => !bs || c.bs === bs).map((c) => c.se));
+  const biOpts = _distinctSorted(SECTOR_COMBOS.filter((c) => (!bs || c.bs === bs) && (!se || c.se === se)).map((c) => c.bi));
+  const inOpts = _distinctSorted(SECTOR_COMBOS.filter(within).map((c) => c.ind));
+  _fillFilterSelect("#f-broadsector", bsOpts, state.broadSector, `All sectors (${bsOpts.length})`);
+  _fillFilterSelect("#f-sector", seOpts, state.sector, `All sub-sectors (${seOpts.length})`);
+  _fillFilterSelect("#f-broadindustry", biOpts, state.broadIndustry, `All industries (${biOpts.length})`);
+  _fillFilterSelect("#f-industry", inOpts, state.industry, `All sub-industries (${inOpts.length})`);
+}
+// Re-render every filtered surface after a global filter changes.
+function onGlobalFilterChange() {
+  refreshSectorDropdowns();
+  renderTopCards();
+  applyFilters();
+}
+
 function applyFilters() {
   const c = cfg(); const st = tabState();
   const q = state.search.trim().toLowerCase();
   let rows = st.scored.filter((s) => {
-    if (!inMcapRange(s)) return false;
+    if (!inGlobalScope(s)) return false;
     if (state.watchOnly && !state.watchlist.has(companyKey(s.company))) return false;
     if (q && !c.name(s.company).toLowerCase().includes(q)) return false;
     if (state.scoreFilter === "redflag") return !!s.isRedFlag;
@@ -9310,15 +9396,51 @@ function wire() {
     const parse = (el) => { const v = parseFloat(el?.value); return Number.isFinite(v) ? v : null; };
     state.mcapMin = parse($("#mcap-min"));
     state.mcapMax = parse($("#mcap-max"));
-    renderTopCards();
-    applyFilters();
+    onGlobalFilterChange();
   };
   $("#mcap-min")?.addEventListener("input", onMcap);
   $("#mcap-max")?.addEventListener("input", onMcap);
-  $("#mcap-clear")?.addEventListener("click", () => {
+  // Sector tree — cascading: choosing a parent resets its descendants so the
+  // narrowed child lists never show a stale, out-of-branch selection.
+  $("#f-broadsector")?.addEventListener("change", (e) => {
+    state.broadSector = e.target.value;
+    state.sector = ""; state.broadIndustry = ""; state.industry = "";
+    onGlobalFilterChange();
+  });
+  $("#f-sector")?.addEventListener("change", (e) => {
+    state.sector = e.target.value;
+    state.broadIndustry = ""; state.industry = "";
+    onGlobalFilterChange();
+  });
+  $("#f-broadindustry")?.addEventListener("change", (e) => {
+    state.broadIndustry = e.target.value;
+    state.industry = "";
+    onGlobalFilterChange();
+  });
+  $("#f-industry")?.addEventListener("change", (e) => {
+    state.industry = e.target.value;
+    onGlobalFilterChange();
+  });
+  // Business keyword — free-text over name + sector + industry.
+  $("#f-keyword")?.addEventListener("input", (e) => {
+    state.keyword = e.target.value;
+    onGlobalFilterChange();
+  });
+  // "All filters" toggle — simple default view vs the exhaustive view.
+  $("#filters-toggle")?.addEventListener("click", () => {
+    state.filtersExpanded = !state.filtersExpanded;
+    const adv = $("#filters-advanced"); if (adv) adv.hidden = !state.filtersExpanded;
+    const btn = $("#filters-toggle");
+    if (btn) btn.innerHTML = state.filtersExpanded ? "⚙ Fewer filters" : "⚙ All filters";
+  });
+  // Clear all — reset every global filter at once.
+  $("#filters-clear")?.addEventListener("click", () => {
     state.mcapMin = null; state.mcapMax = null;
-    const a = $("#mcap-min"), b = $("#mcap-max"); if (a) a.value = ""; if (b) b.value = "";
-    renderTopCards(); applyFilters();
+    state.broadSector = ""; state.sector = ""; state.broadIndustry = ""; state.industry = "";
+    state.keyword = "";
+    const mn = $("#mcap-min"), mx = $("#mcap-max"), kw = $("#f-keyword");
+    if (mn) mn.value = ""; if (mx) mx.value = ""; if (kw) kw.value = "";
+    onGlobalFilterChange();
   });
   // Watchlist toggle — click toggles "show only watchlisted" mode
   const watchBtn = $("#watch-toggle");
