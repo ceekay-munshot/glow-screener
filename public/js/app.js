@@ -550,6 +550,9 @@ const state = {
   broadIndustry: "",          // "Industry" in the UI
   industry: "",               // "Sub-industry" in the UI
   keyword: "",                // free-text: name + sector + industry
+  liqMinCr: null,             // liquidity band — 20-day avg daily traded value (₹ crore)
+  liqMaxCr: null,             // set min to exclude illiquid; set max to isolate illiquid
+  listedWithinMonths: null,   // recently-listed filter — null | 6 | 12 | 24
   filtersExpanded: false,     // simple (false) vs exhaustive (true) filter view
   sortBy: "score",
   sortDir: "desc",
@@ -7854,8 +7857,74 @@ function inKeywordScope(s) {
   // AND across whitespace-separated terms so "solar power" narrows, not widens.
   return q.split(/\s+/).every((t) => hay.includes(t));
 }
+// ---------------- liquidity + listing-date filters (global, cross-tab) ----------------
+// technicals.json already carries per-company 20-day avg daily traded value
+// (adtv_20d_cr) and — after the next technicals refresh — a listing_date from
+// Yahoo's first-trade timestamp. We load a compact slice once, keyed by the
+// Screener URL (the exact join key both files share), so these filters work on
+// every tab, not just Technicals.
+const GLIQ_BY_URL = new Map();   // screenerUrl → { adtv, tier, listing }
+let _gliqLoaded = false;
+let _hasListingData = false;     // false until a technicals refresh adds listing_date
+async function loadLiquidityListing() {
+  if (_gliqLoaded) return;
+  try {
+    const j = await fetch("data/technicals.json").then((r) => r.json());
+    const comps = Array.isArray(j) ? j : (j.companies || []);
+    const arr = Array.isArray(comps) ? comps : Object.values(comps);
+    for (const c of arr) {
+      const url = c && c.screenerUrl;
+      if (!url) continue;
+      if (c.listing_date) _hasListingData = true;
+      GLIQ_BY_URL.set(url, {
+        adtv: Number.isFinite(c.adtv_20d_cr) ? c.adtv_20d_cr : null,
+        tier: c.liquidity_tier || null,
+        listing: c.listing_date || null,
+      });
+    }
+    _gliqLoaded = true;
+    // Until the technicals refresh ships listing_date, disable the listing
+    // control so it never silently blanks the board.
+    const listed = $("#f-listed");
+    if (listed && !_hasListingData) {
+      listed.disabled = true;
+      listed.title = "Available after the next data refresh";
+    }
+    // Data landed after first paint — refresh any active liquidity/listing filter.
+    if (state.liqMinCr != null || state.liqMaxCr != null || state.listedWithinMonths) onGlobalFilterChange();
+  } catch { /* technicals.json may be mid-refresh — filters pass through until it loads */ }
+}
+function liqOf(s) {
+  const url = s.company && s.company["Screener URL"];
+  return url ? GLIQ_BY_URL.get(url) : null;
+}
+function inLiquidityScope(s) {
+  const { liqMinCr, liqMaxCr } = state;
+  if (liqMinCr == null && liqMaxCr == null) return true;
+  if (!GLIQ_BY_URL.size) return true;             // data not loaded yet — don't blank the board
+  const d = liqOf(s);
+  const v = d && Number.isFinite(d.adtv) ? d.adtv : null;
+  if (v == null) return false;                    // unknown liquidity → out when a band is set
+  if (liqMinCr != null && v < liqMinCr) return false;
+  if (liqMaxCr != null && v > liqMaxCr) return false;
+  return true;
+}
+function inListingScope(s) {
+  const m = state.listedWithinMonths;
+  if (!m) return true;
+  if (!GLIQ_BY_URL.size || !_hasListingData) return true;  // not loaded / not in data yet
+  const d = liqOf(s);
+  const iso = d && d.listing;
+  if (!iso) return false;                          // unknown listing date → out when filter set
+  const cutoff = new Date();
+  cutoff.setMonth(cutoff.getMonth() - m);
+  return new Date(iso) >= cutoff;
+}
+
 // The single gate every "screening" surface uses (table, Top-10, Glow Basket).
-function inGlobalScope(s) { return inMcapRange(s) && inSectorScope(s) && inKeywordScope(s); }
+function inGlobalScope(s) {
+  return inMcapRange(s) && inSectorScope(s) && inKeywordScope(s) && inLiquidityScope(s) && inListingScope(s);
+}
 
 // Accumulating index of distinct classification combos, merged from each tab's
 // scored list as it loads (some tabs cover fewer names than Fundamentals).
@@ -9426,6 +9495,22 @@ function wire() {
     state.keyword = e.target.value;
     onGlobalFilterChange();
   });
+  // Liquidity band — 20-day avg daily traded value (₹ Cr). Set min to exclude
+  // illiquid names; set max to isolate them. Works both ways, per the client.
+  const onLiq = () => {
+    const parse = (el) => { const v = parseFloat(el?.value); return Number.isFinite(v) ? v : null; };
+    state.liqMinCr = parse($("#liq-min"));
+    state.liqMaxCr = parse($("#liq-max"));
+    onGlobalFilterChange();
+  };
+  $("#liq-min")?.addEventListener("input", onLiq);
+  $("#liq-max")?.addEventListener("input", onLiq);
+  // Recently-listed filter — listed within the last N months (Yahoo first-trade).
+  $("#f-listed")?.addEventListener("change", (e) => {
+    const v = parseInt(e.target.value, 10);
+    state.listedWithinMonths = Number.isFinite(v) && v > 0 ? v : null;
+    onGlobalFilterChange();
+  });
   // "All filters" toggle — simple default view vs the exhaustive view.
   $("#filters-toggle")?.addEventListener("click", () => {
     state.filtersExpanded = !state.filtersExpanded;
@@ -9438,8 +9523,11 @@ function wire() {
     state.mcapMin = null; state.mcapMax = null;
     state.broadSector = ""; state.sector = ""; state.broadIndustry = ""; state.industry = "";
     state.keyword = "";
-    const mn = $("#mcap-min"), mx = $("#mcap-max"), kw = $("#f-keyword");
-    if (mn) mn.value = ""; if (mx) mx.value = ""; if (kw) kw.value = "";
+    state.liqMinCr = null; state.liqMaxCr = null; state.listedWithinMonths = null;
+    for (const id of ["#mcap-min", "#mcap-max", "#f-keyword", "#liq-min", "#liq-max"]) {
+      const el = $(id); if (el) el.value = "";
+    }
+    const listed = $("#f-listed"); if (listed) listed.value = "";
     onGlobalFilterChange();
   });
   // Watchlist toggle — click toggles "show only watchlisted" mode
@@ -11138,3 +11226,4 @@ function wireAlertsInputs(root, rerender) {
 
 wire();
 switchTab("fundamentals");
+loadLiquidityListing();   // background — populates the liquidity + listing filters

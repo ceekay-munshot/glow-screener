@@ -146,6 +146,10 @@ async function run() {
         // July 2024 (circular 62424).
         impact_cost_pct_est_5cr: amihudImpactPct(bars, 30, IMPACT_COST_ORDER_SIZE_RUPEES),
         liquidity_tier: liquidityTier(adtv20Cr(bars)),
+        // Listing date = Yahoo's first-trade timestamp. Powers the dashboard's
+        // "recently listed" filter (last 6/12/24 months). Best-effort: null if
+        // Yahoo doesn't expose it for this symbol.
+        listing_date: firstTradeISO(bars.meta),
         ...indicators,
       });
       console.log(`OK  RSI ${indicators.rsi14}  MACD ${indicators.macd.line.toFixed(1)}  ADX ${indicators.adx14}`);
@@ -270,6 +274,15 @@ function spreadFromMeta(meta) {
   const mid = (bid + ask) / 2;
   const pct = ((ask - bid) / mid) * 100;
   return Math.round(pct * 1000) / 1000; // 3 decimal places
+}
+
+// Yahoo chart meta carries firstTradeDate (epoch SECONDS) = the symbol's
+// first trading day ≈ its listing date. Returns an ISO YYYY-MM-DD, or null.
+function firstTradeISO(meta) {
+  const t = meta && meta.firstTradeDate;
+  if (t == null || !Number.isFinite(t)) return null;
+  const d = new Date(t * 1000);
+  return Number.isNaN(d.getTime()) ? null : d.toISOString().slice(0, 10);
 }
 
 async function fetchBars(symbol, start, end) {
