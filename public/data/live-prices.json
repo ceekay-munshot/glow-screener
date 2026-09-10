@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-10T08:58:28.263Z",
+  "generated_at": "2026-09-10T13:38:45.089Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 5,
   "prices": {
     "KROSS": {
-      "current": 234.09,
+      "current": 231.54,
       "open": 220.75,
       "prevClose": 220,
       "dayHigh": 240.8,
@@ -15,36 +15,36 @@
       "ma50": 201.04,
       "ma200": 192.49,
       "vol10d": 313740,
-      "marketCap": 15101010359.74,
+      "marketCap": 14936511136.77,
       "yearlyChangePct": 1.27
     },
     "SUNSHIEL": {
-      "current": 1243.25,
+      "current": 1228.75,
       "open": 1244.65,
       "prevClose": 1229.75,
       "dayHigh": 1249,
       "dayLow": 1213.95,
       "week52High": 1320,
       "week52Low": 721.05,
-      "ma50": 1193.65,
-      "ma200": 981.97,
-      "vol10d": 549,
-      "marketCap": 10934179857,
-      "yearlyChangePct": 0
+      "ma50": 1194.39,
+      "ma200": 983.23,
+      "vol10d": 588,
+      "marketCap": 10806654735,
+      "yearlyChangePct": 16.07
     },
     "AUSOMENT": {
-      "current": 153.25,
+      "current": 153,
       "open": 154.96,
       "prevClose": 154.19,
-      "dayHigh": 154.96,
-      "dayLow": 153,
+      "dayHigh": 157,
+      "dayLow": 148.98,
       "week52High": 178,
       "week52Low": 93,
-      "ma50": 137.73,
-      "ma200": 122.2,
-      "vol10d": 9332,
-      "marketCap": 2087809344,
-      "yearlyChangePct": 0
+      "ma50": 138.07,
+      "ma200": 122.36,
+      "vol10d": 9453,
+      "marketCap": 2084403456,
+      "yearlyChangePct": 51.2
     },
     "MODISONLTD": {
       "current": 514.8,
@@ -54,25 +54,25 @@
       "dayLow": 485.05,
       "week52High": 546,
       "week52Low": 114,
-      "ma50": 340.27,
-      "ma200": 216.85,
-      "vol10d": 370654,
+      "ma50": 343.27,
+      "ma200": 218.22,
+      "vol10d": 397476,
       "marketCap": 16705259603.88,
-      "yearlyChangePct": 0
+      "yearlyChangePct": 207.38
     },
     "PREMIERPOL": {
-      "current": 88.18,
+      "current": 87.99,
       "open": 90.04,
       "prevClose": 89.73,
       "dayHigh": 92.39,
-      "dayLow": 87.24,
+      "dayLow": 87.02,
       "week52High": 98.8,
       "week52Low": 38,
-      "ma50": 77.41,
-      "ma200": 58.67,
-      "vol10d": 371402,
-      "marketCap": 9236191477.46,
-      "yearlyChangePct": 0
+      "ma50": 77.66,
+      "ma200": 58.83,
+      "vol10d": 391511,
+      "marketCap": 9216290151.5,
+      "yearlyChangePct": 84.06
     }
   }
 }
