@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-11T05:07:58.671Z",
+  "generated_at": "2026-09-12T04:59:24.316Z",
   "source_count": 4,
   "curated_baseline_count": 5,
-  "total_entities_seen": 15,
+  "total_entities_seen": 14,
   "flagged_companies": {
     "ADANIENT": {
       "primary_name": "Adani Enterprises",
@@ -21,7 +21,7 @@
           "snippet": "Ongoing SEBI investigation into Adani group entities — disclosures of related-party transactions and offshore-holding allegations following the 2023 Hindenburg report; SEBI status reports filed with S"
         }
       ],
-      "first_seen_at": "2026-09-11T05:07:58.671Z"
+      "first_seen_at": "2026-09-12T04:59:24.316Z"
     },
     "ADANIGREEN": {
       "primary_name": "Adani Green Energy",
@@ -40,7 +40,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group related-party / offshore-holding disclosures."
         }
       ],
-      "first_seen_at": "2026-09-11T05:07:58.671Z"
+      "first_seen_at": "2026-09-12T04:59:24.316Z"
     },
     "ADANIPORTS": {
       "primary_name": "Adani Ports & SEZ",
@@ -59,7 +59,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
         }
       ],
-      "first_seen_at": "2026-09-11T05:07:58.671Z"
+      "first_seen_at": "2026-09-12T04:59:24.316Z"
     },
     "ADANIPOWER": {
       "primary_name": "Adani Power",
@@ -78,7 +78,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
         }
       ],
-      "first_seen_at": "2026-09-11T05:07:58.671Z"
+      "first_seen_at": "2026-09-12T04:59:24.316Z"
     },
     "ZEEL": {
       "primary_name": "Zee Entertainment",
@@ -97,13 +97,19 @@
           "snippet": "SEBI orders restricting Zee promoters from directorship + show-cause on alleged fund diversion (orders issued 2023, appeals + follow-ups ongoing through 2024-25)."
         }
       ],
-      "first_seen_at": "2026-09-11T05:07:58.671Z"
+      "first_seen_at": "2026-09-12T04:59:24.316Z"
     }
   },
   "unmatched_sample": [
     {
       "name": "Vedanta",
-      "type": "sebi-investigation",
+      "type": "other",
+      "source": "Business Standard — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "BVG India",
+      "type": "sebi-fine",
       "source": "Business Standard — SEBI topic (news)",
       "origin": "scraper"
     },
@@ -114,26 +120,8 @@
       "origin": "scraper"
     },
     {
-      "name": "BVG India",
-      "type": "other",
-      "source": "Business Standard — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "NSE",
-      "type": "other",
-      "source": "Business Standard — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
       "name": "Jindal Steel & Power",
       "type": "sebi-fine",
-      "source": "Economic Times — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "Vedanta",
-      "type": "sebi-penalty",
       "source": "Economic Times — SEBI topic (news)",
       "origin": "scraper"
     },
@@ -151,13 +139,19 @@
     },
     {
       "name": "IFCI",
-      "type": "sebi-investigation",
+      "type": "other",
       "source": "Economic Times — SEBI topic (news)",
       "origin": "scraper"
     },
     {
-      "name": "NSE",
-      "type": "sebi-investigation",
+      "name": "Adani Group",
+      "type": "sebi-action",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Citrus Check Inns",
+      "type": "sebi-fine",
       "source": "Economic Times — SEBI topic (news)",
       "origin": "scraper"
     }
@@ -167,42 +161,78 @@
       "url": "https://www.livemint.com/topic/sebi",
       "label": "Mint — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-09-11T05:07:28.373Z",
+      "at": "2026-09-12T04:59:09.608Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
-      "total_extracted_raw": 4,
-      "total_extracted": 4,
+      "total_extracted_raw": 10,
+      "total_extracted": 10,
       "prefilter_sample": [
         {
-          "name": "Neogen",
+          "name": "SEBI",
           "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "₹600 cr Neogen QIP: Floor price, key dates, discount option, approvals and other details"
+          "is_listed_entity": false,
+          "snippet": "SEBI likely to allow co-location for commodity markets next year."
         },
         {
-          "name": "Milky Mist",
+          "name": "SEBI",
           "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "Milky Mist share price hits record high, soaring 75% from 52-week low: What’s fueling the rally?"
+          "is_listed_entity": false,
+          "snippet": "SEBI launches Demat 2.0: Key FAQs on the pilot project for tokenised corporate bonds answered."
         },
         {
-          "name": "Vedanta Aluminium Metal",
+          "name": "SEBI",
           "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "Vedanta Aluminium Metal shares dip over 3% \\| Here's why Anil Agarwal-owned stock is nosediving."
+          "is_listed_entity": false,
+          "snippet": "SEBI says closing auction session is here to stay: What it means for stock market investors."
         },
         {
-          "name": "Shankesh Jewellers",
+          "name": "SEBI",
           "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "Newly-listed stock Shankesh Jewellers surges 18% to hit a record high."
+          "is_listed_entity": false,
+          "snippet": "India’s CAS liquidity concerns not unique, says Sebi chief."
+        },
+        {
+          "name": "SEBI",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "SEBI eases commodity position limits, caps penalties for breaches."
+        },
+        {
+          "name": "SEBI",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "SEBI seeks to widen talent pool for stock exchanges and depositories."
+        },
+        {
+          "name": "SEBI",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "Your investments need a glide path as the goal gets closer."
+        },
+        {
+          "name": "SEBI",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "Merchant banks step up hunt for talent to manage regulatory compliance as IPO market heats up."
+        },
+        {
+          "name": "SEBI",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "SEBI gives angel funds 7-month extension to comply with accredited investor mandate."
+        },
+        {
+          "name": "SEBI",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "SEBI eases regulatory compliance for FPIs investing only in government securities."
         }
       ],
       "after_filter_count": 0,
       "dropped_counts": {
-        "not_listed": 0,
-        "no_sebi_signal_in_snippet": 4,
+        "not_listed": 10,
+        "no_sebi_signal_in_snippet": 0,
         "resolved_in_favour": 0,
         "no_name": 0
       },
@@ -212,45 +242,39 @@
       "url": "https://www.business-standard.com/topic/sebi",
       "label": "Business Standard — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-09-11T05:07:35.748Z",
+      "at": "2026-09-12T04:59:14.213Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
-      "total_extracted_raw": 5,
-      "total_extracted": 5,
+      "total_extracted_raw": 4,
+      "total_extracted": 4,
       "prefilter_sample": [
         {
           "name": "Vedanta",
-          "order_type": "sebi-investigation",
+          "order_type": "other",
           "is_listed_entity": true,
           "snippet": "SC sends Vedanta buyback fraud case back to SAT for fresh examination"
+        },
+        {
+          "name": "Hindenburg",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "Mkts regulator presses ahead against Hindenburg, others in Adani case"
+        },
+        {
+          "name": "BVG India",
+          "order_type": "sebi-fine",
+          "is_listed_entity": true,
+          "snippet": "BVG India receives Sebi approval to raise ₹300 cr via IPO: CEO Rupal Sinha"
         },
         {
           "name": "Nalco",
           "order_type": "sebi-fine",
           "is_listed_entity": true,
           "snippet": "Nalco faces ₹28.6 lakh fine from NSE, BSE over Sebi non-compliance"
-        },
-        {
-          "name": "BVG India",
-          "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "BVG India receives Sebi approval to raise ₹300 cr via IPO: CEO Rupal Sinha"
-        },
-        {
-          "name": "Adani",
-          "order_type": "sebi-enforcement",
-          "is_listed_entity": true,
-          "snippet": "Mkts regulator presses ahead against Hindenburg, others in Adani case"
-        },
-        {
-          "name": "NSE",
-          "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "Sebi clears long-awaited NSE IPO; listing likely around September 25"
         }
       ],
-      "after_filter_count": 4,
+      "after_filter_count": 3,
       "dropped_counts": {
         "not_listed": 0,
         "no_sebi_signal_in_snippet": 1,
@@ -260,23 +284,18 @@
       "sample": [
         {
           "name": "Vedanta",
-          "order_type": "sebi-investigation",
+          "order_type": "other",
           "snippet": "SC sends Vedanta buyback fraud case back to SAT for fresh examination"
+        },
+        {
+          "name": "BVG India",
+          "order_type": "sebi-fine",
+          "snippet": "BVG India receives Sebi approval to raise ₹300 cr via IPO: CEO Rupal Sinha"
         },
         {
           "name": "Nalco",
           "order_type": "sebi-fine",
           "snippet": "Nalco faces ₹28.6 lakh fine from NSE, BSE over Sebi non-compliance"
-        },
-        {
-          "name": "BVG India",
-          "order_type": "other",
-          "snippet": "BVG India receives Sebi approval to raise ₹300 cr via IPO: CEO Rupal Sinha"
-        },
-        {
-          "name": "NSE",
-          "order_type": "other",
-          "snippet": "Sebi clears long-awaited NSE IPO; listing likely around September 25"
         }
       ]
     },
@@ -284,7 +303,7 @@
       "url": "https://economictimes.indiatimes.com/topic/sebi",
       "label": "Economic Times — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-09-11T05:07:42.210Z",
+      "at": "2026-09-12T04:59:17.451Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -296,12 +315,6 @@
           "order_type": "sebi-fine",
           "is_listed_entity": true,
           "snippet": "Sebi fines two Jindal Steel designated persons for trading-window violations"
-        },
-        {
-          "name": "Vedanta",
-          "order_type": "sebi-penalty",
-          "is_listed_entity": true,
-          "snippet": "Supreme Court sends Vedanta’s Rs 5.25 crore SEBI penalty case back to SAT"
         },
         {
           "name": "Adani Ports and Special Economic Zone Ltd",
@@ -316,22 +329,28 @@
           "snippet": "Sebi bars Tarapur Transformers, promoters from markets for 5 years in fund diversion case"
         },
         {
-          "name": "IFCI",
-          "order_type": "sebi-investigation",
-          "is_listed_entity": true,
-          "snippet": "IFCI shares rally 6%, turn multibagger as NSE IPO gets SEBI nod"
-        },
-        {
           "name": "Cairn India",
-          "order_type": "judicial-review",
+          "order_type": "other",
           "is_listed_entity": true,
           "snippet": "Supreme Court directs SAT to revisit Cairn India buyback case"
         },
         {
-          "name": "NSE",
-          "order_type": "sebi-investigation",
+          "name": "IFCI",
+          "order_type": "other",
           "is_listed_entity": true,
-          "snippet": "NSE slashes IPO size to Rs 23,500 crore in revised Sebi filing"
+          "snippet": "IFCI shares rally 6%, turn multibagger as NSE IPO gets SEBI nod. More upside ahead?"
+        },
+        {
+          "name": "Adani Group",
+          "order_type": "sebi-action",
+          "is_listed_entity": true,
+          "snippet": "Sebi moves ahead with action against Hindenburg, others in Adani case: Report"
+        },
+        {
+          "name": "Citrus Check Inns",
+          "order_type": "sebi-fine",
+          "is_listed_entity": true,
+          "snippet": "Sebi slaps Rs 25 lakh fine on Citrus Check Inns directors"
         }
       ],
       "after_filter_count": 6,
@@ -348,11 +367,6 @@
           "snippet": "Sebi fines two Jindal Steel designated persons for trading-window violations"
         },
         {
-          "name": "Vedanta",
-          "order_type": "sebi-penalty",
-          "snippet": "Supreme Court sends Vedanta’s Rs 5.25 crore SEBI penalty case back to SAT"
-        },
-        {
           "name": "Adani Ports and Special Economic Zone Ltd",
           "order_type": "settlement",
           "snippet": "Karan Adani settles PMC Projects case with Sebi by paying Rs 13.65 lakh"
@@ -364,13 +378,18 @@
         },
         {
           "name": "IFCI",
-          "order_type": "sebi-investigation",
-          "snippet": "IFCI shares rally 6%, turn multibagger as NSE IPO gets SEBI nod"
+          "order_type": "other",
+          "snippet": "IFCI shares rally 6%, turn multibagger as NSE IPO gets SEBI nod. More upside ahead?"
         },
         {
-          "name": "NSE",
-          "order_type": "sebi-investigation",
-          "snippet": "NSE slashes IPO size to Rs 23,500 crore in revised Sebi filing"
+          "name": "Adani Group",
+          "order_type": "sebi-action",
+          "snippet": "Sebi moves ahead with action against Hindenburg, others in Adani case: Report"
+        },
+        {
+          "name": "Citrus Check Inns",
+          "order_type": "sebi-fine",
+          "snippet": "Sebi slaps Rs 25 lakh fine on Citrus Check Inns directors"
         }
       ]
     },
@@ -378,7 +397,7 @@
       "url": "https://www.sebi.gov.in/enforcement/orders.html",
       "label": "SEBI — orders listing (backup)",
       "mode": "regulator",
-      "at": "2026-09-11T05:07:56.468Z",
+      "at": "2026-09-12T04:59:22.338Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
