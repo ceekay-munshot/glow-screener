@@ -1,5 +1,5 @@
 # Revenue-mix extraction TODO — auto-generated
-# Generated:        2026-09-15T06:45:24.838Z
+# Generated:        2026-09-16T06:48:15.642Z
 # Stale threshold:  365 days
 # Universe total:   1452
 # Skipped (fresh):  0
@@ -50,12 +50,12 @@ Bambino Agro Ind, 519295
 IIRM Holdings, 526530
 Shri Venkatesh, 543373
 Narmada Gelatine, 526739
+Sancode Tech., 543897
 Indus Finance, 531841
 India Gelatine, 531253
 Golkunda Diamond, 523676
 Fluidomat, 522017
 Bemco Hydraulics, 522650
-Sancode Tech., 543897
 Qualitek Labs, 544091
 Mitsu Chem Plast, 540078
 7Seas Enter., 540874
@@ -72,6 +72,7 @@ Agribio Spirits, 539546
 Organic Recyclin, 543997
 Captain Techno., 540652
 Sera Investments, 512399
+JOJO, 531910
 Rajasthan Securities, 526873
 ADC India, 523411
 Ahm. Steelcraft, 522273
@@ -79,10 +80,10 @@ United Van Der, 522091
 Macfos, 543787
 Sanjiv.Parant., 531569
 Cosmic CRF, 543928
-JOJO, 531910
 Transchem, 500422
 Remi Edelstahl, 513043
 Jattashankar Ind, 514318
+Suraj Products, 518075
 Emerald Finance, 538882
 Sayaji (Indore), 544080
 Cochin Minerals, 513353
@@ -90,7 +91,6 @@ Novelix Pharma., 536565
 JTL Defence, 537254
 Sayaji Hot. Pune, 544090
 Stellant Secu., 526071
-Suraj Products, 518075
 India Finsec, 535667
 Ovobel Foods, 530741
 Spice IslandsInd, 526827
@@ -113,6 +113,7 @@ Bizotic Commer., 543926
 Sunita Tools Ltd, 544001
 Atvo Enterprises, 532090
 Bright Outdoor, 543831
+B-Right Real, 543543
 Megamont, 523888
 Marble City, 531281
 Veer Global Inf., 543241
@@ -125,7 +126,6 @@ Goodricke Group, 500166
 Panasonic Carbon, 508941
 Shish Industries, 540693
 Satani Bearings, 505703
-B-Right Real, 543543
 Vega Jewellers, 512026
 GTV Engineering, 539479
 Galaxy Bearings, 526073
@@ -167,6 +167,7 @@ Kings Infra, 530215
 Jhaveri Credits, 531550
 Nagpur Power, 532362
 Multibase India, 526169
+Gennex Lab., 531739
 Baroda Rayon, 500270
 iStreet Network, 524622
 Lak. Electrical, 504258
@@ -178,7 +179,6 @@ Bharat Global, 521238
 Expo Engineering, 526614
 Vashu Bhagnani, 532011
 Gujjubhai Industries, 532070
-Gennex Lab., 531739
 SMT Engineering, 538563
 Suditi Industrie, 521113
 Sattrix Infor., 544189
@@ -190,6 +190,7 @@ Shahlon Silk, 542862
 FratelliVineyard, 541741
 Aryaman Capital, 538716
 Shree Salasar, 503635
+Northern Spirits, 542628
 Alphalogic Tech., 542770
 Shah Foods, 519031
 Josts Engg. Co., 505750
@@ -203,7 +204,6 @@ Forbes & Co, 502865
 Samor Reality, 543376
 Innovassynth Technologies, 533315
 Jay Ushin, 513252
-Northern Spirits, 542628
 Espire Hospi, 532016
 ITCONS E-Soluti., 543806
 Apis India, 506166
@@ -216,7 +216,6 @@ SBEC Sugar, 532102
 Veefin Solutions, 543931
 SJ Corp, 504398
 Pipan Oils, 538537
-Hindustan Motors, 500500
 Arvaya Healthcare, 524723
 Keto Motors, 537392
 Prec. Electronic, 517258
@@ -334,6 +333,7 @@ Digilogic Systems, 544684
 Hannah Joseph, 544687
 Mach Travel Solutions, 544248
 Systematic Inds., 544541
+Hindustan Motors, 500500
 Silverstorm Parks, 544840
 Shiv Texchem, 544272
 Monika Alcobev, 544451
