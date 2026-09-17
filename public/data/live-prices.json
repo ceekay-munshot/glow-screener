@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-09-17T09:29:14.390Z",
+  "generated_at": "2026-09-17T14:28:39.949Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 2,
   "prices": {
     "SUNSHIEL": {
-      "current": 1234.9,
+      "current": 1212.1,
       "open": 1248.65,
       "prevClose": 1215.75,
       "dayHigh": 1248.65,
-      "dayLow": 1215.5,
+      "dayLow": 1209.15,
       "week52High": 1320,
       "week52Low": 721.05,
       "ma50": 1197.52,
       "ma200": 986.61,
       "vol10d": 569,
-      "marketCap": 10860743191.12,
+      "marketCap": 10660220500.88,
       "yearlyChangePct": 26.69
     },
     "KRISHIVAL": {
-      "current": 410.1,
+      "current": 409.45,
       "open": 420,
       "prevClose": 419.4,
       "dayHigh": 420,
@@ -29,7 +29,7 @@
       "ma50": 400.13,
       "ma200": 370.96,
       "vol10d": 17305,
-      "marketCap": 10510166396.52,
+      "marketCap": 10493508157.3,
       "yearlyChangePct": -10.48
     }
   }
