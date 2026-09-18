@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-18T08:31:06.362Z",
+  "generated_at": "2026-09-18T09:02:05.270Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 5,
   "prices": {
     "GPTHEALTH": {
-      "current": 166.13,
+      "current": 166.64,
       "open": 164.3,
       "prevClose": 163.61,
       "dayHigh": 170.4,
@@ -15,11 +15,11 @@
       "ma50": 157.31,
       "ma200": 141.59,
       "vol10d": 121863,
-      "marketCap": 13631768145.65,
+      "marketCap": 13673615654.64,
       "yearlyChangePct": 0
     },
     "MACPOWER": {
-      "current": 2109.8,
+      "current": 2095,
       "open": 1930.1,
       "prevClose": 1921.6,
       "dayHigh": 2149,
@@ -29,11 +29,11 @@
       "ma50": 1668.38,
       "ma200": 1175.31,
       "vol10d": 23396,
-      "marketCap": 21106777256.48,
+      "marketCap": 20958715200,
       "yearlyChangePct": 0
     },
     "KRISHIVAL": {
-      "current": 414.95,
+      "current": 415,
       "open": 417.5,
       "prevClose": 409.45,
       "dayHigh": 418,
@@ -43,7 +43,7 @@
       "ma50": 400.15,
       "ma200": 370.39,
       "vol10d": 15969,
-      "marketCap": 10634463812.8,
+      "marketCap": 10635744915,
       "yearlyChangePct": 0
     },
     "BENARAS": {
@@ -61,7 +61,7 @@
       "yearlyChangePct": 0
     },
     "MOTISONS": {
-      "current": 18.38,
+      "current": 18.25,
       "open": 18.25,
       "prevClose": 17.94,
       "dayHigh": 19.12,
@@ -71,7 +71,7 @@
       "ma50": 15.22,
       "ma200": 14.09,
       "vol10d": 59483448,
-      "marketCap": 20907370353.37,
+      "marketCap": 20759495450,
       "yearlyChangePct": -6.51
     }
   }
