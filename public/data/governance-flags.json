@@ -1,28 +1,9 @@
 {
-  "generated_at": "2026-09-18T05:11:20.380Z",
+  "generated_at": "2026-09-19T05:00:41.082Z",
   "source_count": 4,
   "curated_baseline_count": 5,
-  "total_entities_seen": 17,
+  "total_entities_seen": 15,
   "flagged_companies": {
-    "531289": {
-      "primary_name": "National Stock Exchange",
-      "order_type": "other",
-      "snippet": "Will NSE be allowed to trade on NSE? Stock exchange may seek Sebi’s nod after listing",
-      "source_url": "https://economictimes.indiatimes.com/topic/sebi",
-      "source_label": "Economic Times — SEBI topic (news)",
-      "origins": [
-        "scraper"
-      ],
-      "mentions": [
-        {
-          "source": "Economic Times — SEBI topic (news)",
-          "origin": "scraper",
-          "order_type": "other",
-          "snippet": "Will NSE be allowed to trade on NSE? Stock exchange may seek Sebi’s nod after listing"
-        }
-      ],
-      "first_seen_at": "2026-09-18T05:11:20.379Z"
-    },
     "EMAMIREAL": {
       "primary_name": "Emami Realty",
       "order_type": "sebi-fine",
@@ -40,10 +21,10 @@
           "snippet": "Sebi imposes Rs 2 lakh penalty on Emami Realty for regulatory lapses"
         }
       ],
-      "first_seen_at": "2026-09-18T05:11:20.379Z"
+      "first_seen_at": "2026-09-19T05:00:41.081Z"
     },
     "JPOLYINVST": {
-      "primary_name": "Jindal Steel & Power",
+      "primary_name": "Jindal Steel",
       "order_type": "sebi-fine",
       "snippet": "Sebi fines two Jindal Steel designated persons for trading-window violations",
       "source_url": "https://economictimes.indiatimes.com/topic/sebi",
@@ -59,7 +40,7 @@
           "snippet": "Sebi fines two Jindal Steel designated persons for trading-window violations"
         }
       ],
-      "first_seen_at": "2026-09-18T05:11:20.379Z"
+      "first_seen_at": "2026-09-19T05:00:41.081Z"
     },
     "ADANIENT": {
       "primary_name": "Adani Enterprises",
@@ -78,7 +59,7 @@
           "snippet": "Ongoing SEBI investigation into Adani group entities — disclosures of related-party transactions and offshore-holding allegations following the 2023 Hindenburg report; SEBI status reports filed with S"
         }
       ],
-      "first_seen_at": "2026-09-18T05:11:20.379Z"
+      "first_seen_at": "2026-09-19T05:00:41.082Z"
     },
     "ADANIGREEN": {
       "primary_name": "Adani Green Energy",
@@ -97,7 +78,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group related-party / offshore-holding disclosures."
         }
       ],
-      "first_seen_at": "2026-09-18T05:11:20.379Z"
+      "first_seen_at": "2026-09-19T05:00:41.082Z"
     },
     "ADANIPORTS": {
       "primary_name": "Adani Ports & SEZ",
@@ -116,7 +97,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
         }
       ],
-      "first_seen_at": "2026-09-18T05:11:20.379Z"
+      "first_seen_at": "2026-09-19T05:00:41.082Z"
     },
     "ADANIPOWER": {
       "primary_name": "Adani Power",
@@ -135,7 +116,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
         }
       ],
-      "first_seen_at": "2026-09-18T05:11:20.379Z"
+      "first_seen_at": "2026-09-19T05:00:41.082Z"
     },
     "ZEEL": {
       "primary_name": "Zee Entertainment",
@@ -154,61 +135,55 @@
           "snippet": "SEBI orders restricting Zee promoters from directorship + show-cause on alleged fund diversion (orders issued 2023, appeals + follow-ups ongoing through 2024-25)."
         }
       ],
-      "first_seen_at": "2026-09-18T05:11:20.379Z"
+      "first_seen_at": "2026-09-19T05:00:41.082Z"
     }
   },
   "unmatched_sample": [
     {
-      "name": "SEBI",
-      "type": "other",
+      "name": "Kore Digital",
+      "type": "sebi-ban",
       "source": "Mint — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "SEBI",
-      "type": "other",
-      "source": "Mint — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "SEBI",
-      "type": "other",
-      "source": "Mint — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "Vedanta",
-      "type": "sebi-investigation",
-      "source": "Business Standard — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "BSE",
-      "type": "other",
-      "source": "Economic Times — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "Cairn India",
-      "type": "other",
-      "source": "Economic Times — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "Groww",
-      "type": "other",
-      "source": "Economic Times — SEBI topic (news)",
       "origin": "scraper"
     },
     {
       "name": "NSE",
+      "type": "settlement",
+      "source": "Business Standard — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Vedanta",
       "type": "other",
+      "source": "Business Standard — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Kore Digital",
+      "type": "sebi-ban",
       "source": "Economic Times — SEBI topic (news)",
       "origin": "scraper"
     },
     {
-      "name": "Mann Fleet Partners",
-      "type": "other",
+      "name": "Kore Digital",
+      "type": "sebi-investigation",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Adani Ports",
+      "type": "settlement",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Mirae Asset Venture Investments",
+      "type": "settlement",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "IFCI",
+      "type": "sebi-investigation",
       "source": "Economic Times — SEBI topic (news)",
       "origin": "scraper"
     }
@@ -218,62 +193,7 @@
       "url": "https://www.livemint.com/topic/sebi",
       "label": "Mint — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-09-18T05:11:07.087Z",
-      "fc_status": 200,
-      "outcome": "ok",
-      "upstream_status": 200,
-      "total_extracted_raw": 3,
-      "total_extracted": 3,
-      "prefilter_sample": [
-        {
-          "name": "SEBI",
-          "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "Sebi grants 1% unhedged leeway to arbitrage funds to boost closing auction participation."
-        },
-        {
-          "name": "SEBI",
-          "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "SEBI to issue consultation paper on derivatives settlement price methodology on Saturday."
-        },
-        {
-          "name": "SEBI",
-          "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "Sebi proposes changes to expiry settlement as closing auction faces pushback."
-        }
-      ],
-      "after_filter_count": 3,
-      "dropped_counts": {
-        "not_listed": 0,
-        "no_sebi_signal_in_snippet": 0,
-        "resolved_in_favour": 0,
-        "no_name": 0
-      },
-      "sample": [
-        {
-          "name": "SEBI",
-          "order_type": "other",
-          "snippet": "Sebi grants 1% unhedged leeway to arbitrage funds to boost closing auction participation."
-        },
-        {
-          "name": "SEBI",
-          "order_type": "other",
-          "snippet": "SEBI to issue consultation paper on derivatives settlement price methodology on Saturday."
-        },
-        {
-          "name": "SEBI",
-          "order_type": "other",
-          "snippet": "Sebi proposes changes to expiry settlement as closing auction faces pushback."
-        }
-      ]
-    },
-    {
-      "url": "https://www.business-standard.com/topic/sebi",
-      "label": "Business Standard — SEBI topic (news)",
-      "mode": "news",
-      "at": "2026-09-18T05:11:10.305Z",
+      "at": "2026-09-19T05:00:26.584Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -281,10 +201,10 @@
       "total_extracted": 1,
       "prefilter_sample": [
         {
-          "name": "Vedanta",
-          "order_type": "sebi-investigation",
+          "name": "Kore Digital",
+          "order_type": "sebi-ban",
           "is_listed_entity": true,
-          "snippet": "SC sends Vedanta buyback fraud case back to SAT for fresh examination"
+          "snippet": "Sebi bars Kore Digital, three top execs from capital markets over alleged fraud"
         }
       ],
       "after_filter_count": 1,
@@ -296,8 +216,82 @@
       },
       "sample": [
         {
+          "name": "Kore Digital",
+          "order_type": "sebi-ban",
+          "snippet": "Sebi bars Kore Digital, three top execs from capital markets over alleged fraud"
+        }
+      ]
+    },
+    {
+      "url": "https://www.business-standard.com/topic/sebi",
+      "label": "Business Standard — SEBI topic (news)",
+      "mode": "news",
+      "at": "2026-09-19T05:00:28.776Z",
+      "fc_status": 200,
+      "outcome": "ok",
+      "upstream_status": 200,
+      "total_extracted_raw": 7,
+      "total_extracted": 7,
+      "prefilter_sample": [
+        {
+          "name": "NSE",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "SC allows NSE-Sebi settlement in co-location case, disposes appeals"
+        },
+        {
+          "name": "Hi-Tech Flow Solutions",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "Hi-Tech Flow Solutions files IPO papers, seeks ₹300 cr via fresh issue"
+        },
+        {
+          "name": "Sebi",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "Sebi to look into stock broker concerns over MDR on UPI transactions"
+        },
+        {
           "name": "Vedanta",
-          "order_type": "sebi-investigation",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "SC sends Vedanta buyback fraud case back to SAT for fresh examination"
+        },
+        {
+          "name": "Sebi",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "Sebi bars broker and related entity for cross-segment price manipulation"
+        },
+        {
+          "name": "Sebi",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "Sebi proposes changes to derivatives settlement, closing auction timings"
+        },
+        {
+          "name": "Sebi",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "Sebi proposes easier director eligibility, norms for key MII officials"
+        }
+      ],
+      "after_filter_count": 2,
+      "dropped_counts": {
+        "not_listed": 4,
+        "no_sebi_signal_in_snippet": 1,
+        "resolved_in_favour": 0,
+        "no_name": 0
+      },
+      "sample": [
+        {
+          "name": "NSE",
+          "order_type": "settlement",
+          "snippet": "SC allows NSE-Sebi settlement in co-location case, disposes appeals"
+        },
+        {
+          "name": "Vedanta",
+          "order_type": "other",
           "snippet": "SC sends Vedanta buyback fraud case back to SAT for fresh examination"
         }
       ]
@@ -306,13 +300,25 @@
       "url": "https://economictimes.indiatimes.com/topic/sebi",
       "label": "Economic Times — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-09-18T05:11:12.691Z",
+      "at": "2026-09-19T05:00:33.043Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
-      "total_extracted_raw": 12,
-      "total_extracted": 12,
+      "total_extracted_raw": 9,
+      "total_extracted": 9,
       "prefilter_sample": [
+        {
+          "name": "Kore Digital",
+          "order_type": "sebi-ban",
+          "is_listed_entity": true,
+          "snippet": "Sebi bars Kore Digital promoters over alleged Rs 541 crore revenue misstatement"
+        },
+        {
+          "name": "Kore Digital",
+          "order_type": "sebi-investigation",
+          "is_listed_entity": true,
+          "snippet": "Kore Digital shares crash 10% as Sebi alleges Rs 541 cr revenue misstatement, bars CEO, CFO and MD from capital market"
+        },
         {
           "name": "Emami Realty",
           "order_type": "sebi-fine",
@@ -320,119 +326,84 @@
           "snippet": "Sebi imposes Rs 2 lakh penalty on Emami Realty for regulatory lapses"
         },
         {
-          "name": "Kamlesh Chandra Varshney",
-          "order_type": "other",
-          "is_listed_entity": false,
-          "snippet": "Kamlesh Chandra Varshney reappointed as Sebi whole-time member"
-        },
-        {
-          "name": "National Stock Exchange",
-          "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "Will NSE be allowed to trade on NSE? Stock exchange may seek Sebi’s nod after listing"
-        },
-        {
-          "name": "BSE",
-          "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "BSE, Groww, other broking stocks in focus as SEBI proposes changes to CAS. What does it mean for investors?"
-        },
-        {
-          "name": "Mirae Asset Venture Investments",
-          "order_type": "settlement",
-          "is_listed_entity": false,
-          "snippet": "Mirae Asset Venture Investments, others pay Rs 12.75 lakh to settle Sebi proceedings over violations"
-        },
-        {
-          "name": "Cairn India",
-          "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "Supreme Court sends Vedanta’s Rs 5.25 crore SEBI penalty case back to SAT"
-        },
-        {
-          "name": "Jindal Steel & Power",
+          "name": "Jindal Steel",
           "order_type": "sebi-fine",
           "is_listed_entity": true,
           "snippet": "Sebi fines two Jindal Steel designated persons for trading-window violations"
         },
         {
-          "name": "Groww",
-          "order_type": "other",
+          "name": "Adani Ports",
+          "order_type": "settlement",
           "is_listed_entity": true,
-          "snippet": "BSE, Groww, other broking stocks in focus as SEBI proposes changes to CAS. What does it mean for investors?"
+          "snippet": "Karan Adani settles PMC Projects case with Sebi by paying Rs 13.65 lakh"
+        },
+        {
+          "name": "Mirae Asset Venture Investments",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "Mirae Asset Venture Investments, others pay Rs 12.75 lakh to settle Sebi proceedings over violations"
         },
         {
           "name": "NSE",
-          "order_type": "other",
+          "order_type": "sebi-investigation",
           "is_listed_entity": true,
-          "snippet": "NSE slashes IPO size to Rs 23,500 crore in revised Sebi filing"
+          "snippet": "NSE IPO: Everything investors need to know about the National Stock Exchange IPO"
         },
         {
-          "name": "Mann Fleet Partners",
-          "order_type": "other",
+          "name": "NSE",
+          "order_type": "sebi-investigation",
           "is_listed_entity": true,
-          "snippet": "Mann Fleet Partners gets Sebi nod to raise funds via IPO"
+          "snippet": "NSE's IPO to be second biggest till now as offer size cut, price band lowered"
         },
         {
-          "name": "Manipal Payment & Identity Solutions",
-          "order_type": "other",
+          "name": "IFCI",
+          "order_type": "sebi-investigation",
           "is_listed_entity": true,
-          "snippet": "Manipal Payment & Identity Solutions lists at 2% discount to IPO price"
-        },
-        {
-          "name": "Reliance Industries",
-          "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "Reliance Industries shares in focus as govt slashes windfall tax on fuel exports; stock down 21% in 2026 so far"
+          "snippet": "IFCI shares rally 6%, turn multibagger as NSE IPO gets SEBI nod. More upside ahead?"
         }
       ],
-      "after_filter_count": 8,
+      "after_filter_count": 7,
       "dropped_counts": {
-        "not_listed": 2,
+        "not_listed": 0,
         "no_sebi_signal_in_snippet": 2,
         "resolved_in_favour": 0,
         "no_name": 0
       },
       "sample": [
         {
+          "name": "Kore Digital",
+          "order_type": "sebi-ban",
+          "snippet": "Sebi bars Kore Digital promoters over alleged Rs 541 crore revenue misstatement"
+        },
+        {
+          "name": "Kore Digital",
+          "order_type": "sebi-investigation",
+          "snippet": "Kore Digital shares crash 10% as Sebi alleges Rs 541 cr revenue misstatement, bars CEO, CFO and MD from capital market"
+        },
+        {
           "name": "Emami Realty",
           "order_type": "sebi-fine",
           "snippet": "Sebi imposes Rs 2 lakh penalty on Emami Realty for regulatory lapses"
         },
         {
-          "name": "National Stock Exchange",
-          "order_type": "other",
-          "snippet": "Will NSE be allowed to trade on NSE? Stock exchange may seek Sebi’s nod after listing"
-        },
-        {
-          "name": "BSE",
-          "order_type": "other",
-          "snippet": "BSE, Groww, other broking stocks in focus as SEBI proposes changes to CAS. What does it mean for investors?"
-        },
-        {
-          "name": "Cairn India",
-          "order_type": "other",
-          "snippet": "Supreme Court sends Vedanta’s Rs 5.25 crore SEBI penalty case back to SAT"
-        },
-        {
-          "name": "Jindal Steel & Power",
+          "name": "Jindal Steel",
           "order_type": "sebi-fine",
           "snippet": "Sebi fines two Jindal Steel designated persons for trading-window violations"
         },
         {
-          "name": "Groww",
-          "order_type": "other",
-          "snippet": "BSE, Groww, other broking stocks in focus as SEBI proposes changes to CAS. What does it mean for investors?"
+          "name": "Adani Ports",
+          "order_type": "settlement",
+          "snippet": "Karan Adani settles PMC Projects case with Sebi by paying Rs 13.65 lakh"
         },
         {
-          "name": "NSE",
-          "order_type": "other",
-          "snippet": "NSE slashes IPO size to Rs 23,500 crore in revised Sebi filing"
+          "name": "Mirae Asset Venture Investments",
+          "order_type": "settlement",
+          "snippet": "Mirae Asset Venture Investments, others pay Rs 12.75 lakh to settle Sebi proceedings over violations"
         },
         {
-          "name": "Mann Fleet Partners",
-          "order_type": "other",
-          "snippet": "Mann Fleet Partners gets Sebi nod to raise funds via IPO"
+          "name": "IFCI",
+          "order_type": "sebi-investigation",
+          "snippet": "IFCI shares rally 6%, turn multibagger as NSE IPO gets SEBI nod. More upside ahead?"
         }
       ]
     },
@@ -440,7 +411,7 @@
       "url": "https://www.sebi.gov.in/enforcement/orders.html",
       "label": "SEBI — orders listing (backup)",
       "mode": "regulator",
-      "at": "2026-09-18T05:11:18.611Z",
+      "at": "2026-09-19T05:00:38.644Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
