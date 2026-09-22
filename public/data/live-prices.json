@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-22T09:19:50.828Z",
+  "generated_at": "2026-09-22T14:12:38.940Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 5,
   "prices": {
     "IRISDOREME": {
-      "current": 65.34,
+      "current": 66.24,
       "open": 64.81,
       "prevClose": 64.81,
       "dayHigh": 68,
@@ -15,11 +15,11 @@
       "ma50": 55.4,
       "ma200": 40.18,
       "vol10d": 870245,
-      "marketCap": 12436257552.79,
+      "marketCap": 12607556166.21,
       "yearlyChangePct": 102.85
     },
     "GANDHITUBE": {
-      "current": 999,
+      "current": 1003.2,
       "open": 909,
       "prevClose": 909.3,
       "dayHigh": 1046.6,
@@ -29,39 +29,39 @@
       "ma50": 889.27,
       "ma200": 837.12,
       "vol10d": 4630,
-      "marketCap": 11272616100,
+      "marketCap": 11320008617.74,
       "yearlyChangePct": -0.98
     },
     "INDOAMIN": {
-      "current": 136,
+      "current": 134.8,
       "open": 135.8,
       "prevClose": 132.87,
       "dayHigh": 138.65,
-      "dayLow": 133.25,
+      "dayLow": 132.87,
       "week52High": 149,
       "week52Low": 81.9,
       "ma50": 126.06,
       "ma200": 120.26,
       "vol10d": 42978,
-      "marketCap": 9871908160,
+      "marketCap": 9784803309.52,
       "yearlyChangePct": -5.86
     },
     "CORDSCABLE": {
-      "current": 374.3,
+      "current": 382.9,
       "open": 361,
       "prevClose": 355.35,
-      "dayHigh": 381.9,
+      "dayHigh": 389,
       "dayLow": 360,
       "week52High": 394.9,
       "week52Low": 127.01,
       "ma50": 258.98,
       "ma200": 202.88,
       "vol10d": 526489,
-      "marketCap": 4838867896.19,
+      "marketCap": 4950046883.1,
       "yearlyChangePct": 97.58
     },
     "SUNSHIEL": {
-      "current": 1182.05,
+      "current": 1193.95,
       "open": 1210,
       "prevClose": 1205.2,
       "dayHigh": 1229,
@@ -71,7 +71,7 @@
       "ma50": 1200.59,
       "ma200": 991.42,
       "vol10d": 665,
-      "marketCap": 10395936323.24,
+      "marketCap": 10500594012.76,
       "yearlyChangePct": 24.1
     }
   }
