@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-09-23T08:50:53.968Z",
+  "generated_at": "2026-09-23T09:20:25.082Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 6,
   "prices": {
     "GALAPREC": {
-      "current": 1130.3,
+      "current": 1159.7,
       "open": 1066.5,
       "prevClose": 1058,
-      "dayHigh": 1137.5,
+      "dayHigh": 1175,
       "dayLow": 1064,
       "week52High": 1260,
       "week52Low": 671.2,
       "ma50": 1068.61,
       "ma200": 891.25,
       "vol10d": 22104,
-      "marketCap": 14486151485.79,
+      "marketCap": 14862946514.21,
       "yearlyChangePct": 32.9
     },
     "PREMIERPOL": {
-      "current": 96.68,
+      "current": 96.32,
       "open": 81.7,
       "prevClose": 81.02,
       "dayHigh": 97.22,
@@ -29,25 +29,25 @@
       "ma50": 81.34,
       "ma200": 60.61,
       "vol10d": 179116,
-      "marketCap": 10126502514.96,
+      "marketCap": 10088795160.04,
       "yearlyChangePct": 0
     },
     "ARROWGREEN": {
-      "current": 896,
+      "current": 893,
       "open": 940.05,
       "prevClose": 917.8,
       "dayHigh": 948.9,
-      "dayLow": 895.5,
+      "dayLow": 888.6,
       "week52High": 952.75,
       "week52Low": 341.95,
       "ma50": 753.81,
       "ma200": 565.51,
       "vol10d": 72470,
-      "marketCap": 13518792448,
+      "marketCap": 13473528634,
       "yearlyChangePct": 0
     },
     "20MICRONS": {
-      "current": 219.3,
+      "current": 219.26,
       "open": 220.8,
       "prevClose": 216.45,
       "dayHigh": 223.95,
@@ -57,11 +57,11 @@
       "ma50": 205.38,
       "ma200": 187.53,
       "vol10d": 143951,
-      "marketCap": 7738329996.29,
+      "marketCap": 7736918234.69,
       "yearlyChangePct": -4.96
     },
     "CORDSCABLE": {
-      "current": 364.9,
+      "current": 365.85,
       "open": 398,
       "prevClose": 382.9,
       "dayHigh": 406.95,
@@ -71,11 +71,11 @@
       "ma50": 260.12,
       "ma200": 202.94,
       "vol10d": 332690,
-      "marketCap": 4717346843.1,
+      "marketCap": 4729628391.9,
       "yearlyChangePct": 0
     },
     "DIFFNKG": {
-      "current": 439.85,
+      "current": 438.85,
       "open": 442.1,
       "prevClose": 442,
       "dayHigh": 454.8,
@@ -85,7 +85,7 @@
       "ma50": 415.52,
       "ma200": 334.13,
       "vol10d": 124467,
-      "marketCap": 16329985247.75,
+      "marketCap": 16292858988.75,
       "yearlyChangePct": 0
     }
   }
