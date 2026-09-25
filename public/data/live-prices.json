@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-09-25T09:06:10.743Z",
+  "generated_at": "2026-09-25T09:38:12.576Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 7,
   "prices": {
     "SHANTIGOLD": {
-      "current": 319.27,
+      "current": 326.27,
       "open": 289.8,
       "prevClose": 283.62,
-      "dayHigh": 322,
+      "dayHigh": 327,
       "dayLow": 288.99,
       "week52High": 293.7,
       "week52Low": 155,
       "ma50": 241.2,
       "ma200": 214.5,
       "vol10d": 2571214,
-      "marketCap": 24500610063.08,
+      "marketCap": 25037786360.08,
       "yearlyChangePct": 29.9
     },
     "PREMIERPOL": {
-      "current": 95.87,
+      "current": 95.27,
       "open": 102,
       "prevClose": 99.28,
       "dayHigh": 102.67,
@@ -29,11 +29,11 @@
       "ma50": 82.37,
       "ma200": 61.28,
       "vol10d": 1468197,
-      "marketCap": 10041661365.93,
+      "marketCap": 9978815241.64,
       "yearlyChangePct": 120.03
     },
     "GALAPREC": {
-      "current": 1148.9,
+      "current": 1144.2,
       "open": 1120,
       "prevClose": 1117.1,
       "dayHigh": 1172.6,
@@ -43,11 +43,11 @@
       "ma50": 1066.84,
       "ma200": 895.56,
       "vol10d": 39818,
-      "marketCap": 14724532492.9,
+      "marketCap": 14664295414.21,
       "yearlyChangePct": 45.49
     },
     "JAGSNPHARM": {
-      "current": 243.54,
+      "current": 242.77,
       "open": 247.67,
       "prevClose": 243.97,
       "dayHigh": 251,
@@ -57,25 +57,25 @@
       "ma50": 232.33,
       "ma200": 204.89,
       "vol10d": 964478,
-      "marketCap": 16063269623.97,
+      "marketCap": 16012483135.2,
       "yearlyChangePct": 13.5
     },
     "ARROWGREEN": {
-      "current": 902.75,
+      "current": 903.85,
       "open": 900,
       "prevClose": 904,
-      "dayHigh": 907,
+      "dayHigh": 918.8,
       "dayLow": 875,
       "week52High": 952.75,
       "week52Low": 341.95,
       "ma50": 765.32,
       "ma200": 571.17,
       "vol10d": 96613,
-      "marketCap": 13620636029.5,
+      "marketCap": 13637232392.94,
       "yearlyChangePct": 63.64
     },
     "20MICRONS": {
-      "current": 218,
+      "current": 217.66,
       "open": 215.01,
       "prevClose": 213.87,
       "dayHigh": 219.8,
@@ -85,11 +85,11 @@
       "ma50": 205.85,
       "ma200": 187.83,
       "vol10d": 141660,
-      "marketCap": 7692457436,
+      "marketCap": 7680460154.54,
       "yearlyChangePct": -3.13
     },
     "DHARMAJ": {
-      "current": 295,
+      "current": 296.9,
       "open": 299.9,
       "prevClose": 298.1,
       "dayHigh": 306,
@@ -99,7 +99,7 @@
       "ma50": 270.12,
       "ma200": 257.09,
       "vol10d": 48915,
-      "marketCap": 9970202320,
+      "marketCap": 10034416976.12,
       "yearlyChangePct": -3.05
     }
   }
