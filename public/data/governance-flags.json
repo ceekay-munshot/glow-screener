@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-28T06:01:12.104Z",
+  "generated_at": "2026-09-29T06:21:00.102Z",
   "source_count": 4,
   "curated_baseline_count": 5,
-  "total_entities_seen": 5,
+  "total_entities_seen": 20,
   "flagged_companies": {
     "ADANIENT": {
       "primary_name": "Adani Enterprises",
@@ -21,7 +21,7 @@
           "snippet": "Ongoing SEBI investigation into Adani group entities — disclosures of related-party transactions and offshore-holding allegations following the 2023 Hindenburg report; SEBI status reports filed with S"
         }
       ],
-      "first_seen_at": "2026-09-28T06:01:12.104Z"
+      "first_seen_at": "2026-09-29T06:21:00.102Z"
     },
     "ADANIGREEN": {
       "primary_name": "Adani Green Energy",
@@ -40,7 +40,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group related-party / offshore-holding disclosures."
         }
       ],
-      "first_seen_at": "2026-09-28T06:01:12.104Z"
+      "first_seen_at": "2026-09-29T06:21:00.102Z"
     },
     "ADANIPORTS": {
       "primary_name": "Adani Ports & SEZ",
@@ -59,7 +59,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
         }
       ],
-      "first_seen_at": "2026-09-28T06:01:12.104Z"
+      "first_seen_at": "2026-09-29T06:21:00.102Z"
     },
     "ADANIPOWER": {
       "primary_name": "Adani Power",
@@ -78,7 +78,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
         }
       ],
-      "first_seen_at": "2026-09-28T06:01:12.104Z"
+      "first_seen_at": "2026-09-29T06:21:00.102Z"
     },
     "ZEEL": {
       "primary_name": "Zee Entertainment",
@@ -97,46 +97,401 @@
           "snippet": "SEBI orders restricting Zee promoters from directorship + show-cause on alleged fund diversion (orders issued 2023, appeals + follow-ups ongoing through 2024-25)."
         }
       ],
-      "first_seen_at": "2026-09-28T06:01:12.104Z"
+      "first_seen_at": "2026-09-29T06:21:00.102Z"
     }
   },
-  "unmatched_sample": [],
+  "unmatched_sample": [
+    {
+      "name": "Adani Group",
+      "type": "settlement",
+      "source": "Mint — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "BSE",
+      "type": "other",
+      "source": "Mint — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Adani Group",
+      "type": "investigation",
+      "source": "Business Standard — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Adani Group",
+      "type": "settlement",
+      "source": "Business Standard — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Vinod Adani",
+      "type": "other",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Adani Enterprises",
+      "type": "settlement",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Omaxe",
+      "type": "sebi-ban",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Kore Digital",
+      "type": "sebi-ban",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Mirae Asset Venture Investments",
+      "type": "settlement",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Motilal Oswal",
+      "type": "other",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Adani Power",
+      "type": "settlement",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Adani Ports and Special Economic Zone",
+      "type": "settlement",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Adani Green Energy",
+      "type": "settlement",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Adani Energy Solutions",
+      "type": "settlement",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Trans ACNR Solutions",
+      "type": "other",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.livemint.com/topic/sebi",
       "label": "Mint — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-09-28T06:01:09.780Z",
-      "fc_status": 402,
-      "outcome": "fc_http_error",
-      "error_body": "{\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\"}"
+      "at": "2026-09-29T06:20:37.319Z",
+      "fc_status": 200,
+      "outcome": "ok",
+      "upstream_status": 200,
+      "total_extracted_raw": 6,
+      "total_extracted": 6,
+      "prefilter_sample": [
+        {
+          "name": "Adani Group",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "Adani Group firms settle Sebi cases over public shareholding allegations"
+        },
+        {
+          "name": "BSE",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "BSE stock falls 2.3% as SEBI mulls self-listing rules revamp, days after NSE IPO listing"
+        },
+        {
+          "name": "SEBI",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "SEBI board clears a number of reforms; expands FPI access to commodity derivatives, relaxes advertising norms"
+        },
+        {
+          "name": "SEBI",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "SEBI widens FPI access to commodity derivatives; delivery rules laid out"
+        },
+        {
+          "name": "SEBI",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "Sebi board allows FPI access in non-farm goods, approves revamp of PMS, settlement rules"
+        },
+        {
+          "name": "SEBI",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "Sebi board is set to grow. Experts say it's missing one safeguard it needs most"
+        }
+      ],
+      "after_filter_count": 2,
+      "dropped_counts": {
+        "not_listed": 4,
+        "no_sebi_signal_in_snippet": 0,
+        "resolved_in_favour": 0,
+        "no_name": 0
+      },
+      "sample": [
+        {
+          "name": "Adani Group",
+          "order_type": "settlement",
+          "snippet": "Adani Group firms settle Sebi cases over public shareholding allegations"
+        },
+        {
+          "name": "BSE",
+          "order_type": "other",
+          "snippet": "BSE stock falls 2.3% as SEBI mulls self-listing rules revamp, days after NSE IPO listing"
+        }
+      ]
     },
     {
       "url": "https://www.business-standard.com/topic/sebi",
       "label": "Business Standard — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-09-28T06:01:10.367Z",
-      "fc_status": 402,
-      "outcome": "fc_http_error",
-      "error_body": "{\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\"}"
+      "at": "2026-09-29T06:20:41.677Z",
+      "fc_status": 200,
+      "outcome": "ok",
+      "upstream_status": 200,
+      "total_extracted_raw": 3,
+      "total_extracted": 3,
+      "prefilter_sample": [
+        {
+          "name": "Adani Group",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "Gautam Adani, four Adani group firms and 13 others paid a cumulative ₹1.48 crore to settle proceedings over alleged non-compliance with minimum public"
+        },
+        {
+          "name": "Adani Group",
+          "order_type": "investigation",
+          "is_listed_entity": true,
+          "snippet": "Sebi finds no evidence Vinod Adani controlled FPIs, drops Adani MPS case."
+        },
+        {
+          "name": "Adani Group",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "Five Adani group companies settle Sebi proceedings for ₹1.51 crore."
+        }
+      ],
+      "after_filter_count": 2,
+      "dropped_counts": {
+        "not_listed": 0,
+        "no_sebi_signal_in_snippet": 1,
+        "resolved_in_favour": 0,
+        "no_name": 0
+      },
+      "sample": [
+        {
+          "name": "Adani Group",
+          "order_type": "investigation",
+          "snippet": "Sebi finds no evidence Vinod Adani controlled FPIs, drops Adani MPS case."
+        },
+        {
+          "name": "Adani Group",
+          "order_type": "settlement",
+          "snippet": "Five Adani group companies settle Sebi proceedings for ₹1.51 crore."
+        }
+      ]
     },
     {
       "url": "https://economictimes.indiatimes.com/topic/sebi",
       "label": "Economic Times — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-09-28T06:01:10.922Z",
-      "fc_status": 402,
-      "outcome": "fc_http_error",
-      "error_body": "{\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\"}"
+      "at": "2026-09-29T06:20:49.436Z",
+      "fc_status": 200,
+      "outcome": "ok",
+      "upstream_status": 200,
+      "total_extracted_raw": 19,
+      "total_extracted": 19,
+      "prefilter_sample": [
+        {
+          "name": "Vinod Adani",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "Sebi's investigation into Vinod Adani's control over offshore investments in Adani group companies has concluded."
+        },
+        {
+          "name": "Adani Enterprises",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "4 Adani group companies settle public shareholding violations case with Sebi."
+        },
+        {
+          "name": "Omaxe",
+          "order_type": "sebi-ban",
+          "is_listed_entity": true,
+          "snippet": "Sebi bans Omaxe, 5 others for violating minimum public shareholding norms."
+        },
+        {
+          "name": "Kore Digital",
+          "order_type": "sebi-ban",
+          "is_listed_entity": true,
+          "snippet": "Kore Digital shares crash 10% as Sebi alleges Rs 541 cr revenue misstatement."
+        },
+        {
+          "name": "Mirae Asset Venture Investments",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "Mirae Asset Venture Investments, others pay Rs 12.75 lakh to settle Sebi proceedings over violations."
+        },
+        {
+          "name": "Fortis Healthcare",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "Fortis Healthcare shares in focus as Supreme Court allows forensic audit to proceed."
+        },
+        {
+          "name": "Motilal Oswal",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "Motilal Oswal group gets SEBI custodian licence to start operations from Q4."
+        },
+        {
+          "name": "Adani Power",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "Sebi clears Gautam, Vinod Adani of MPS norm violation."
+        },
+        {
+          "name": "Adani Ports and Special Economic Zone",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "Sebi clears Gautam, Vinod Adani of MPS norm violation."
+        },
+        {
+          "name": "Adani Green Energy",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "Adani Group firms settle Sebi case on governance issues."
+        },
+        {
+          "name": "Adani Energy Solutions",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "Sebi clears Gautam, Vinod Adani of MPS norm violation."
+        },
+        {
+          "name": "Trans ACNR Solutions",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "Trans ACNR Solutions, 8 others file IPO papers with Sebi."
+        },
+        {
+          "name": "Prestige Estates",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "Prestige Group drops Rs 2,700 cr IPO plan for hospitality arm."
+        },
+        {
+          "name": "Embassy Office Parks REIT",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "Embassy REIT raises Rs 1,000 cr via debentures to refinance debt."
+        },
+        {
+          "name": "Novartis",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "Novartis Pharma India Limited appoints new managing director."
+        }
+      ],
+      "after_filter_count": 11,
+      "dropped_counts": {
+        "not_listed": 0,
+        "no_sebi_signal_in_snippet": 8,
+        "resolved_in_favour": 0,
+        "no_name": 0
+      },
+      "sample": [
+        {
+          "name": "Vinod Adani",
+          "order_type": "other",
+          "snippet": "Sebi's investigation into Vinod Adani's control over offshore investments in Adani group companies has concluded."
+        },
+        {
+          "name": "Adani Enterprises",
+          "order_type": "settlement",
+          "snippet": "4 Adani group companies settle public shareholding violations case with Sebi."
+        },
+        {
+          "name": "Omaxe",
+          "order_type": "sebi-ban",
+          "snippet": "Sebi bans Omaxe, 5 others for violating minimum public shareholding norms."
+        },
+        {
+          "name": "Kore Digital",
+          "order_type": "sebi-ban",
+          "snippet": "Kore Digital shares crash 10% as Sebi alleges Rs 541 cr revenue misstatement."
+        },
+        {
+          "name": "Mirae Asset Venture Investments",
+          "order_type": "settlement",
+          "snippet": "Mirae Asset Venture Investments, others pay Rs 12.75 lakh to settle Sebi proceedings over violations."
+        },
+        {
+          "name": "Motilal Oswal",
+          "order_type": "other",
+          "snippet": "Motilal Oswal group gets SEBI custodian licence to start operations from Q4."
+        },
+        {
+          "name": "Adani Power",
+          "order_type": "settlement",
+          "snippet": "Sebi clears Gautam, Vinod Adani of MPS norm violation."
+        },
+        {
+          "name": "Adani Ports and Special Economic Zone",
+          "order_type": "settlement",
+          "snippet": "Sebi clears Gautam, Vinod Adani of MPS norm violation."
+        },
+        {
+          "name": "Adani Green Energy",
+          "order_type": "settlement",
+          "snippet": "Adani Group firms settle Sebi case on governance issues."
+        },
+        {
+          "name": "Adani Energy Solutions",
+          "order_type": "settlement",
+          "snippet": "Sebi clears Gautam, Vinod Adani of MPS norm violation."
+        }
+      ]
     },
     {
       "url": "https://www.sebi.gov.in/enforcement/orders.html",
       "label": "SEBI — orders listing (backup)",
       "mode": "regulator",
-      "at": "2026-09-28T06:01:11.609Z",
-      "fc_status": 402,
-      "outcome": "fc_http_error",
-      "error_body": "{\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\"}"
+      "at": "2026-09-29T06:20:58.500Z",
+      "fc_status": 200,
+      "outcome": "ok",
+      "upstream_status": 200,
+      "total_extracted_raw": 0,
+      "total_extracted": 0,
+      "prefilter_sample": [],
+      "after_filter_count": 0,
+      "dropped_counts": {
+        "not_listed": 0,
+        "no_sebi_signal_in_snippet": 0,
+        "resolved_in_favour": 0,
+        "no_name": 0
+      },
+      "sample": []
     }
   ]
 }
