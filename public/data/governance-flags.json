@@ -1,9 +1,28 @@
 {
-  "generated_at": "2026-10-03T05:54:48.759Z",
+  "generated_at": "2026-10-04T06:29:36.406Z",
   "source_count": 4,
   "curated_baseline_count": 5,
-  "total_entities_seen": 16,
+  "total_entities_seen": 18,
   "flagged_companies": {
+    "SMCGLOBAL": {
+      "primary_name": "SMC Global Securities",
+      "order_type": "sebi-fine",
+      "snippet": "Sebi penalises SMC Global Securities for compliance lapses",
+      "source_url": "https://economictimes.indiatimes.com/topic/sebi",
+      "source_label": "Economic Times — SEBI topic (news)",
+      "origins": [
+        "scraper"
+      ],
+      "mentions": [
+        {
+          "source": "Economic Times — SEBI topic (news)",
+          "origin": "scraper",
+          "order_type": "sebi-fine",
+          "snippet": "Sebi penalises SMC Global Securities for compliance lapses"
+        }
+      ],
+      "first_seen_at": "2026-10-04T06:29:36.406Z"
+    },
     "ADANIENT": {
       "primary_name": "Adani Enterprises",
       "order_type": "sebi-investigation",
@@ -21,7 +40,7 @@
           "snippet": "Ongoing SEBI investigation into Adani group entities — disclosures of related-party transactions and offshore-holding allegations following the 2023 Hindenburg report; SEBI status reports filed with S"
         }
       ],
-      "first_seen_at": "2026-10-03T05:54:48.758Z"
+      "first_seen_at": "2026-10-04T06:29:36.406Z"
     },
     "ADANIGREEN": {
       "primary_name": "Adani Green Energy",
@@ -40,7 +59,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group related-party / offshore-holding disclosures."
         }
       ],
-      "first_seen_at": "2026-10-03T05:54:48.758Z"
+      "first_seen_at": "2026-10-04T06:29:36.406Z"
     },
     "ADANIPORTS": {
       "primary_name": "Adani Ports & SEZ",
@@ -59,7 +78,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
         }
       ],
-      "first_seen_at": "2026-10-03T05:54:48.758Z"
+      "first_seen_at": "2026-10-04T06:29:36.406Z"
     },
     "ADANIPOWER": {
       "primary_name": "Adani Power",
@@ -78,7 +97,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
         }
       ],
-      "first_seen_at": "2026-10-03T05:54:48.758Z"
+      "first_seen_at": "2026-10-04T06:29:36.406Z"
     },
     "ZEEL": {
       "primary_name": "Zee Entertainment",
@@ -97,10 +116,16 @@
           "snippet": "SEBI orders restricting Zee promoters from directorship + show-cause on alleged fund diversion (orders issued 2023, appeals + follow-ups ongoing through 2024-25)."
         }
       ],
-      "first_seen_at": "2026-10-03T05:54:48.758Z"
+      "first_seen_at": "2026-10-04T06:29:36.406Z"
     }
   },
   "unmatched_sample": [
+    {
+      "name": "Embassy Office Parks REIT",
+      "type": "other",
+      "source": "Mint — SEBI topic (news)",
+      "origin": "scraper"
+    },
     {
       "name": "Lloyds Enterprises",
       "type": "settlement",
@@ -114,9 +139,33 @@
       "origin": "scraper"
     },
     {
-      "name": "Inox Clean Energy",
+      "name": "BSE",
       "type": "other",
+      "source": "Mint — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Inox Clean Energy Ltd",
+      "type": "sebi-investigation",
       "source": "Business Standard — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Carlsberg India",
+      "type": "sebi-investigation",
+      "source": "Business Standard — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Embassy Office Parks REIT",
+      "type": "other",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Lloyds Enterprises",
+      "type": "settlement",
+      "source": "Economic Times — SEBI topic (news)",
       "origin": "scraper"
     },
     {
@@ -132,38 +181,14 @@
       "origin": "scraper"
     },
     {
-      "name": "Lloyds Enterprises",
+      "name": "Adani Group",
       "type": "settlement",
       "source": "Economic Times — SEBI topic (news)",
       "origin": "scraper"
     },
     {
-      "name": "Adani Enterprises",
-      "type": "settlement",
-      "source": "Economic Times — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "Adani",
+      "name": "Inox Air Products",
       "type": "other",
-      "source": "Economic Times — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "Adani Green",
-      "type": "settlement",
-      "source": "Economic Times — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "Adani Ports",
-      "type": "settlement",
-      "source": "Economic Times — SEBI topic (news)",
-      "origin": "scraper"
-    },
-    {
-      "name": "Kore Digital",
-      "type": "sebi-ban",
       "source": "Economic Times — SEBI topic (news)",
       "origin": "scraper"
     }
@@ -173,13 +198,19 @@
       "url": "https://www.livemint.com/topic/sebi",
       "label": "Mint — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-10-03T05:54:31.037Z",
+      "at": "2026-10-04T06:29:20.851Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
-      "total_extracted_raw": 2,
-      "total_extracted": 2,
+      "total_extracted_raw": 5,
+      "total_extracted": 5,
       "prefilter_sample": [
+        {
+          "name": "Embassy Office Parks REIT",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "SEBI relies on amended rules in Embassy REIT ‘Fit and Proper’ matter, tells Bombay HC no disqualification made out"
+        },
         {
           "name": "Lloyds Enterprises",
           "order_type": "settlement",
@@ -191,17 +222,34 @@
           "order_type": "settlement",
           "is_listed_entity": true,
           "snippet": "Adani Group firms settle Sebi cases over public shareholding allegations"
+        },
+        {
+          "name": "BSE",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "BSE stock falls 2.3% as SEBI mulls self-listing rules revamp"
+        },
+        {
+          "name": "SEBI",
+          "order_type": "other",
+          "is_listed_entity": false,
+          "snippet": "Your gold or silver ETF holds physical bullion: Here's what SEBI's new vault rules mean for investors"
         }
       ],
-      "after_filter_count": 2,
+      "after_filter_count": 4,
       "dropped_counts": {
-        "not_listed": 0,
+        "not_listed": 1,
         "no_sebi_signal_in_snippet": 0,
         "resolved_in_favour": 0,
         "no_name": 0
       },
       "sample": [
         {
+          "name": "Embassy Office Parks REIT",
+          "order_type": "other",
+          "snippet": "SEBI relies on amended rules in Embassy REIT ‘Fit and Proper’ matter, tells Bombay HC no disqualification made out"
+        },
+        {
           "name": "Lloyds Enterprises",
           "order_type": "settlement",
           "snippet": "Lloyds Enterprises settles Sebi case over ₹144.82 crore advances"
@@ -210,6 +258,11 @@
           "name": "Adani Group",
           "order_type": "settlement",
           "snippet": "Adani Group firms settle Sebi cases over public shareholding allegations"
+        },
+        {
+          "name": "BSE",
+          "order_type": "other",
+          "snippet": "BSE stock falls 2.3% as SEBI mulls self-listing rules revamp"
         }
       ]
     },
@@ -217,12 +270,12 @@
       "url": "https://www.business-standard.com/topic/sebi",
       "label": "Business Standard — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-10-03T05:54:34.320Z",
+      "at": "2026-10-04T06:29:25.780Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
-      "total_extracted_raw": 2,
-      "total_extracted": 2,
+      "total_extracted_raw": 3,
+      "total_extracted": 3,
       "prefilter_sample": [
         {
           "name": "Gautam Adani",
@@ -231,13 +284,19 @@
           "snippet": "Gautam Adani, four Adani group firms and 13 others paid a cumulative ₹1.48 crore to settle proceedings over alleged non-compliance with minimum public"
         },
         {
-          "name": "Inox Clean Energy",
-          "order_type": "other",
+          "name": "Inox Clean Energy Ltd",
+          "order_type": "sebi-investigation",
           "is_listed_entity": true,
-          "snippet": "Sebi keeps Inox Clean Energy's IPO papers to raise ₹10K cr in abeyance."
+          "snippet": "Markets regulator Sebi has kept in 'abeyance' the draft offer documents of Inox Clean Energy Ltd, which is looking to raise up to Rs 10,000 crore thro"
+        },
+        {
+          "name": "Carlsberg India",
+          "order_type": "sebi-investigation",
+          "is_listed_entity": true,
+          "snippet": "Sindhuja Microcredit raised ₹100 crore through NCDs, while Carlsberg India received Sebi's observations for a ₹6,600 crore IPO involving a stake sale "
         }
       ],
-      "after_filter_count": 1,
+      "after_filter_count": 2,
       "dropped_counts": {
         "not_listed": 0,
         "no_sebi_signal_in_snippet": 1,
@@ -246,9 +305,14 @@
       },
       "sample": [
         {
-          "name": "Inox Clean Energy",
-          "order_type": "other",
-          "snippet": "Sebi keeps Inox Clean Energy's IPO papers to raise ₹10K cr in abeyance."
+          "name": "Inox Clean Energy Ltd",
+          "order_type": "sebi-investigation",
+          "snippet": "Markets regulator Sebi has kept in 'abeyance' the draft offer documents of Inox Clean Energy Ltd, which is looking to ra"
+        },
+        {
+          "name": "Carlsberg India",
+          "order_type": "sebi-investigation",
+          "snippet": "Sindhuja Microcredit raised ₹100 crore through NCDs, while Carlsberg India received Sebi's observations for a ₹6,600 cro"
         }
       ]
     },
@@ -256,7 +320,7 @@
       "url": "https://economictimes.indiatimes.com/topic/sebi",
       "label": "Economic Times — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-10-03T05:54:36.847Z",
+      "at": "2026-10-04T06:29:29.539Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -264,101 +328,96 @@
       "total_extracted": 8,
       "prefilter_sample": [
         {
-          "name": "Omaxe",
-          "order_type": "sebi-ban",
+          "name": "SMC Global Securities",
+          "order_type": "sebi-fine",
           "is_listed_entity": true,
-          "snippet": "Sebi bans Omaxe, 5 others for violating minimum public shareholding norms."
+          "snippet": "Sebi penalises SMC Global Securities for compliance lapses"
         },
         {
-          "name": "Growpital",
+          "name": "Embassy Office Parks REIT",
           "order_type": "other",
           "is_listed_entity": true,
-          "snippet": "Growpital case: Sebi to refund money directly to investors for first time."
+          "snippet": "SEBI relies on amended rules in Embassy REIT 'Fit and Proper' matter"
         },
         {
           "name": "Lloyds Enterprises",
           "order_type": "settlement",
           "is_listed_entity": true,
-          "snippet": "Lloyds Enterprises settles listing rule violations case with Sebi."
+          "snippet": "Lloyds Enterprises settles listing rule violations case with Sebi"
         },
         {
-          "name": "Adani Enterprises",
-          "order_type": "settlement",
-          "is_listed_entity": true,
-          "snippet": "Adani Group firms settle Sebi case on governance issues."
-        },
-        {
-          "name": "Adani",
-          "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "5 Adani group stocks in focus as firms settle Sebi proceedings linked to Hindenburg report."
-        },
-        {
-          "name": "Adani Green",
-          "order_type": "settlement",
-          "is_listed_entity": true,
-          "snippet": "Adani Group settles legal issues with Sebi, pays Rs 1.5 cr over alleged corporate governance violations."
-        },
-        {
-          "name": "Adani Ports",
-          "order_type": "settlement",
-          "is_listed_entity": true,
-          "snippet": "Adani Ports among five firms settling with Sebi over violations."
-        },
-        {
-          "name": "Kore Digital",
+          "name": "Omaxe",
           "order_type": "sebi-ban",
           "is_listed_entity": true,
-          "snippet": "Kore Digital shares crash 10% as Sebi alleges Rs 541 cr revenue misstatement."
+          "snippet": "Sebi bans Omaxe, 5 others for violating minimum public shareholding norms"
+        },
+        {
+          "name": "Growpital",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "Growpital case: Sebi to refund money directly to investors for first time"
+        },
+        {
+          "name": "Adani Group",
+          "order_type": "settlement",
+          "is_listed_entity": true,
+          "snippet": "5 Adani group stocks in focus as firms settle Sebi proceedings linked to Hindenburg report"
+        },
+        {
+          "name": "MRPL",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "MRPL shares tumble 5% after explosion at Mangaluru plant, thick smoke seen from refinery unit"
+        },
+        {
+          "name": "Inox Air Products",
+          "order_type": "other",
+          "is_listed_entity": true,
+          "snippet": "Gas maker Inox Air Products files IPO papers with Sebi, public issue to entirely comprise OFS"
         }
       ],
-      "after_filter_count": 8,
+      "after_filter_count": 7,
       "dropped_counts": {
         "not_listed": 0,
-        "no_sebi_signal_in_snippet": 0,
+        "no_sebi_signal_in_snippet": 1,
         "resolved_in_favour": 0,
         "no_name": 0
       },
       "sample": [
         {
-          "name": "Omaxe",
-          "order_type": "sebi-ban",
-          "snippet": "Sebi bans Omaxe, 5 others for violating minimum public shareholding norms."
+          "name": "SMC Global Securities",
+          "order_type": "sebi-fine",
+          "snippet": "Sebi penalises SMC Global Securities for compliance lapses"
         },
         {
-          "name": "Growpital",
+          "name": "Embassy Office Parks REIT",
           "order_type": "other",
-          "snippet": "Growpital case: Sebi to refund money directly to investors for first time."
+          "snippet": "SEBI relies on amended rules in Embassy REIT 'Fit and Proper' matter"
         },
         {
           "name": "Lloyds Enterprises",
           "order_type": "settlement",
-          "snippet": "Lloyds Enterprises settles listing rule violations case with Sebi."
+          "snippet": "Lloyds Enterprises settles listing rule violations case with Sebi"
         },
         {
-          "name": "Adani Enterprises",
-          "order_type": "settlement",
-          "snippet": "Adani Group firms settle Sebi case on governance issues."
-        },
-        {
-          "name": "Adani",
-          "order_type": "other",
-          "snippet": "5 Adani group stocks in focus as firms settle Sebi proceedings linked to Hindenburg report."
-        },
-        {
-          "name": "Adani Green",
-          "order_type": "settlement",
-          "snippet": "Adani Group settles legal issues with Sebi, pays Rs 1.5 cr over alleged corporate governance violations."
-        },
-        {
-          "name": "Adani Ports",
-          "order_type": "settlement",
-          "snippet": "Adani Ports among five firms settling with Sebi over violations."
-        },
-        {
-          "name": "Kore Digital",
+          "name": "Omaxe",
           "order_type": "sebi-ban",
-          "snippet": "Kore Digital shares crash 10% as Sebi alleges Rs 541 cr revenue misstatement."
+          "snippet": "Sebi bans Omaxe, 5 others for violating minimum public shareholding norms"
+        },
+        {
+          "name": "Growpital",
+          "order_type": "other",
+          "snippet": "Growpital case: Sebi to refund money directly to investors for first time"
+        },
+        {
+          "name": "Adani Group",
+          "order_type": "settlement",
+          "snippet": "5 Adani group stocks in focus as firms settle Sebi proceedings linked to Hindenburg report"
+        },
+        {
+          "name": "Inox Air Products",
+          "order_type": "other",
+          "snippet": "Gas maker Inox Air Products files IPO papers with Sebi, public issue to entirely comprise OFS"
         }
       ]
     },
@@ -366,7 +425,7 @@
       "url": "https://www.sebi.gov.in/enforcement/orders.html",
       "label": "SEBI — orders listing (backup)",
       "mode": "regulator",
-      "at": "2026-10-03T05:54:47.254Z",
+      "at": "2026-10-04T06:29:34.620Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
