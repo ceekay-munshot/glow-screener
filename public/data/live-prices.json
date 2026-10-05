@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T11:32:45.836Z",
+  "generated_at": "2026-10-05T19:09:51.161Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 5,
@@ -10,12 +10,12 @@
       "prevClose": 90.64,
       "dayHigh": 106.05,
       "dayLow": 89.81,
-      "week52High": 106,
+      "week52High": 106.05,
       "week52Low": 38,
-      "ma50": 84.26,
-      "ma200": 62.68,
-      "vol10d": 1566345,
-      "marketCap": 10635551007.39,
+      "ma50": 84.47,
+      "ma200": 62.8,
+      "vol10d": 2040154,
+      "marketCap": 10635550911.5,
       "yearlyChangePct": 0
     },
     "DIFFNKG": {
@@ -26,9 +26,9 @@
       "dayLow": 447.6,
       "week52High": 519.9,
       "week52Low": 216.8,
-      "ma50": 424.2,
-      "ma200": 339.77,
-      "vol10d": 134242,
+      "ma50": 424.63,
+      "ma200": 339.93,
+      "vol10d": 147248,
       "marketCap": 16753224373.75,
       "yearlyChangePct": 0
     },
@@ -40,10 +40,10 @@
       "dayLow": 1150,
       "week52High": 1260,
       "week52Low": 671.2,
-      "ma50": 1062.77,
-      "ma200": 906.94,
-      "vol10d": 63413,
-      "marketCap": 14868073307.1,
+      "ma50": 1060.65,
+      "ma200": 907.73,
+      "vol10d": 63426,
+      "marketCap": 14868073620,
       "yearlyChangePct": 0
     },
     "KRISHNADEF": {
@@ -54,9 +54,9 @@
       "dayLow": 1006.8,
       "week52High": 1400,
       "week52Low": 665,
-      "ma50": 1079.32,
-      "ma200": 1067.11,
-      "vol10d": 53005,
+      "ma50": 1074.8,
+      "ma200": 1069.11,
+      "vol10d": 191174,
       "marketCap": 17934998988,
       "yearlyChangePct": 0
     },
@@ -68,10 +68,10 @@
       "dayLow": 967.6,
       "week52High": 1046.6,
       "week52Low": 681.05,
-      "ma50": 907.21,
-      "ma200": 846.67,
-      "vol10d": 43873,
-      "marketCap": 11212811567.74,
+      "ma50": 907.88,
+      "ma200": 847.18,
+      "vol10d": 45044,
+      "marketCap": 11212811430,
       "yearlyChangePct": 0
     }
   }
