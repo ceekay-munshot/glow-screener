@@ -290,7 +290,9 @@
     "ASTRAMICRO",
     "DATAPATTNS",
     "JWL",
-    "PGEL"
+    "PGEL",
+    "HMVL",
+    "RCOM"
   ],
   "renewable_companies": [
     "ADANIGREEN",
@@ -417,5 +419,13 @@
     "TATAPOWER",
     "ARE&M",
     "EXIDEIND"
-  ]
+  ],
+  "_last_auto_refresh": "2026-10-05T01:12:43.720Z",
+  "_last_auto_refresh_summary": {
+    "added_pli": [
+      "HMVL",
+      "RCOM"
+    ],
+    "added_renewable": []
+  }
 }
