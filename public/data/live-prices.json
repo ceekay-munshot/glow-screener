@@ -1,7 +1,78 @@
 {
-  "generated_at": "2026-10-02T16:10:57.925Z",
+  "generated_at": "2026-10-05T10:52:05.034Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
-  "ticker_count": 0,
-  "prices": {}
+  "ticker_count": 5,
+  "prices": {
+    "PREMIERPOL": {
+      "current": 101.54,
+      "open": 91.02,
+      "prevClose": 90.64,
+      "dayHigh": 106.05,
+      "dayLow": 89.81,
+      "week52High": 106,
+      "week52Low": 38,
+      "ma50": 84.26,
+      "ma200": 62.68,
+      "vol10d": 1566345,
+      "marketCap": 10635551007.39,
+      "yearlyChangePct": 0
+    },
+    "DIFFNKG": {
+      "current": 451.25,
+      "open": 469.9,
+      "prevClose": 464.4,
+      "dayHigh": 477.9,
+      "dayLow": 447.6,
+      "week52High": 519.9,
+      "week52Low": 216.8,
+      "ma50": 424.2,
+      "ma200": 339.77,
+      "vol10d": 134242,
+      "marketCap": 16753224373.75,
+      "yearlyChangePct": 0
+    },
+    "GALAPREC": {
+      "current": 1160.1,
+      "open": 1185,
+      "prevClose": 1157.8,
+      "dayHigh": 1200,
+      "dayLow": 1150,
+      "week52High": 1260,
+      "week52Low": 671.2,
+      "ma50": 1062.77,
+      "ma200": 906.94,
+      "vol10d": 63413,
+      "marketCap": 14868073307.1,
+      "yearlyChangePct": 0
+    },
+    "KRISHNADEF": {
+      "current": 1201,
+      "open": 1020,
+      "prevClose": 1000.9,
+      "dayHigh": 1201,
+      "dayLow": 1006.8,
+      "week52High": 1400,
+      "week52Low": 665,
+      "ma50": 1079.32,
+      "ma200": 1067.11,
+      "vol10d": 53005,
+      "marketCap": 17934998988,
+      "yearlyChangePct": 0
+    },
+    "GANDHITUBE": {
+      "current": 993.7,
+      "open": 988.05,
+      "prevClose": 975.55,
+      "dayHigh": 1005,
+      "dayLow": 967.6,
+      "week52High": 1046.6,
+      "week52Low": 681.05,
+      "ma50": 907.21,
+      "ma200": 846.67,
+      "vol10d": 43873,
+      "marketCap": 11212811567.74,
+      "yearlyChangePct": 0
+    }
+  }
 }
