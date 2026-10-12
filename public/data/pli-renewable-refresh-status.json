@@ -1,12 +1,9 @@
 {
-  "generated_at": "2026-10-05T01:12:43.719Z",
+  "generated_at": "2026-10-12T00:38:43.524Z",
   "pli": {
-    "existing": 174,
-    "discovered": 2,
-    "added": [
-      "HMVL",
-      "RCOM"
-    ]
+    "existing": 176,
+    "discovered": 1,
+    "added": []
   },
   "renewable": {
     "existing": 54,
@@ -18,7 +15,7 @@
       "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2&MenuId=1",
       "label": "PIB — recent press releases",
       "category": "pli",
-      "at": "2026-10-05T01:12:34.716Z",
+      "at": "2026-10-12T00:38:35.299Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -29,28 +26,30 @@
       "url": "https://pib.gov.in/indexd.aspx",
       "label": "PIB — home",
       "category": "pli",
-      "at": "2026-10-05T01:12:36.113Z",
+      "at": "2026-10-12T00:38:36.663Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
-      "candidates_count": 9,
+      "candidates_count": 11,
       "candidates_sample": [
         "NTPC",
+        "Indian Railway Catering and Tourism Corporation",
         "Tata Power",
-        "Adani Green Energy",
         "Reliance Industries",
-        "Hindustan Aeronautics Limited",
+        "Tata Steel",
+        "Adani Green Energy",
         "Larsen & Toubro",
         "JSW Energy",
-        "Tata Steel",
-        "Vedanta Limited"
+        "Hero MotoCorp",
+        "State Bank of India",
+        "Indian Oil Corporation"
       ]
     },
     {
       "url": "https://www.dpiit.gov.in/whats-new",
       "label": "DPIIT — what's new",
       "category": "pli",
-      "at": "2026-10-05T01:12:38.313Z",
+      "at": "2026-10-12T00:38:38.671Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -61,7 +60,7 @@
       "url": "https://mnre.gov.in/whats-new/",
       "label": "MNRE — what's new",
       "category": "renewable",
-      "at": "2026-10-05T01:12:39.968Z",
+      "at": "2026-10-12T00:38:40.070Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -75,7 +74,7 @@
       "url": "https://mnre.gov.in/press-releases/",
       "label": "MNRE — press releases",
       "category": "renewable",
-      "at": "2026-10-05T01:12:41.848Z",
+      "at": "2026-10-12T00:38:41.773Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 404,
