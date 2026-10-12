@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T12:03:08.786Z",
+  "generated_at": "2026-10-12T19:43:03.274Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 6,
@@ -10,13 +10,13 @@
       "prevClose": 103.5,
       "dayHigh": 120,
       "dayLow": 106.2,
-      "week52High": 106.7,
+      "week52High": 120,
       "week52Low": 38,
-      "ma50": 86.41,
-      "ma200": 63.54,
-      "vol10d": 1045699,
-      "marketCap": 12035958185.83,
-      "yearlyChangePct": 134.5
+      "ma50": 86.68,
+      "ma200": 63.66,
+      "vol10d": 1801579,
+      "marketCap": 12035957802.25,
+      "yearlyChangePct": 0
     },
     "ONWARDTEC": {
       "current": 332.45,
@@ -26,11 +26,11 @@
       "dayLow": 307.95,
       "week52High": 345.4,
       "week52Low": 208.25,
-      "ma50": 287.63,
-      "ma200": 276.04,
-      "vol10d": 35595,
-      "marketCap": 7293857189.77,
-      "yearlyChangePct": 0.03
+      "ma50": 287.5,
+      "ma200": 276.11,
+      "vol10d": 65659,
+      "marketCap": 7293856921.95,
+      "yearlyChangePct": 0
     },
     "MODIS": {
       "current": 417.25,
@@ -38,13 +38,13 @@
       "prevClose": 398.05,
       "dayHigh": 434,
       "dayLow": 400,
-      "week52High": 429.05,
+      "week52High": 434,
       "week52Low": 276,
-      "ma50": 381.36,
-      "ma200": 348.04,
-      "vol10d": 40137,
+      "ma50": 381.11,
+      "ma200": 348.09,
+      "vol10d": 81834,
       "marketCap": 8174428200,
-      "yearlyChangePct": 0.91
+      "yearlyChangePct": 0
     },
     "OMAXAUTO": {
       "current": 220.61,
@@ -54,11 +54,11 @@
       "dayLow": 201.96,
       "week52High": 263.4,
       "week52Low": 84.5,
-      "ma50": 191.56,
-      "ma200": 163.97,
-      "vol10d": 68291,
-      "marketCap": 4730143586.31,
-      "yearlyChangePct": 59.73
+      "ma50": 191.66,
+      "ma200": 164.29,
+      "vol10d": 88085,
+      "marketCap": 4730143573.22,
+      "yearlyChangePct": 0
     },
     "OCCLLTD": {
       "current": 232.91,
@@ -66,13 +66,13 @@
       "prevClose": 218.54,
       "dayHigh": 240.5,
       "dayLow": 224.2,
-      "week52High": 218.77,
+      "week52High": 240.5,
       "week52Low": 75.71,
-      "ma50": 167.01,
-      "ma200": 120.37,
-      "vol10d": 178122,
-      "marketCap": 11633961821.52,
-      "yearlyChangePct": 71.67
+      "ma50": 167.2,
+      "ma200": 120.51,
+      "vol10d": 229037,
+      "marketCap": 11633961638.6,
+      "yearlyChangePct": 0
     },
     "ADVANCE": {
       "current": 126.52,
@@ -82,11 +82,11 @@
       "dayLow": 113.01,
       "week52High": 154,
       "week52Low": 84.1,
-      "ma50": 118.38,
-      "ma200": 114.46,
-      "vol10d": 262710,
-      "marketCap": 8133429078.6,
-      "yearlyChangePct": 3.42
+      "ma50": 118.35,
+      "ma200": 114.45,
+      "vol10d": 514768,
+      "marketCap": 8133429294.4,
+      "yearlyChangePct": 0
     }
   }
 }
