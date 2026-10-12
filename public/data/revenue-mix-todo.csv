@@ -1,18 +1,20 @@
 # Revenue-mix extraction TODO — auto-generated
-# Generated:        2026-10-11T07:50:54.581Z
+# Generated:        2026-10-12T08:02:43.285Z
 # Stale threshold:  365 days
-# Universe total:   1467
+# Universe total:   1465
 # Skipped (fresh):  0
-# Skipped (no BSE): 1115
+# Skipped (no BSE): 1109
 # Priority breakdown:
 #   1 — Glow STRONG BUY (NEW): 0
 #   2 — Glow BUY (NEW):        0
-#   3 — Other NEW:             352
+#   3 — Other NEW:             356
 #   4 — STALE (>365d):           0
 # Routine processes TOP 10 rows per daily run.
 #
 # Format: Company Name, BSECode
+Vans Electroengineerings, 544971
 Adon Agro, 544809
+Millworks Technologies, 544826
 Rajasthan Securities, 526873
 Recode Studios, 544755
 Stellant Secu., 526071
@@ -40,6 +42,7 @@ Msafe Equipments, 544695
 Susan Electrical, 544793
 Purple Wave Info, 544627
 KS Smart Technlogies, 516038
+Dove Soft, 544975
 Horizon Reclaim, 544794
 KP Green Engg., 544150
 Praruh Tech, 544538
@@ -59,9 +62,10 @@ JD Cables, 544524
 Poojaa Precision Engg., 544844
 Novus Loyalty, 544735
 Foseco Crucible (India), 523160
+EverestIMS Tech., 544979
+Paramount Syntex, 544982
 Aryaman Capital, 538716
 Neetu Yoshi, 544434
-Bhagwati Auto, 504646
 Kalind, 526935
 ADC India, 523411
 Pajson Agro, 544657
@@ -83,6 +87,7 @@ Accretion Nutraveda, 544694
 Chemkart India, 544442
 Danlaw Tech., 532329
 Bizotic Commer., 543926
+Acme India, 544981
 Exato Technologies, 544626
 SK Minerals & Additives, 544584
 Airfloa Rail, 544516
@@ -113,7 +118,6 @@ Patel Chem, 544460
 Laxmipati Engg, 537669
 AMPL Capital, 539598
 B-Right Real, 543543
-Emerald Finance, 538882
 Prime Fresh, 540404
 BharatRohan Air., 544535
 Bhatia Communic., 540956
@@ -121,9 +125,9 @@ Jasch Gauging, 544112
 Bai-Kakaji Poly., 544670
 Maruti Interior, 543464
 Sera Investments, 512399
+Trident Lifeline, 543616
 Forbes Precision, 544186
 Covance Softsol, 544361
-Trident Lifeline, 543616
 BDH Industries, 524828
 G G Automotive, 531399
 Keltech Energies, 506528
@@ -144,7 +148,6 @@ Sanjiv.Parant., 531569
 JOJO, 531910
 Fabtech Cleanrooms, 544332
 Kaka Industries, 543939
-Modern Insulator, 515008
 Uni Abex Alloy, 504605
 B C C Fuba India, 517246
 Injecto Polymers, 544930
@@ -160,6 +163,7 @@ Integra Engg., 505358
 CWD, 543378
 Intl. Travel Hse, 500213
 Lehar Footwears, 532829
+Prime Industries, 519299
 Hannah Joseph, 544687
 Mach Travel Solutions, 544248
 India Homes, 513361
@@ -170,15 +174,15 @@ Talbros Engg., 538987
 Multibase India, 526169
 Hindustan Motors, 500500
 Shivam Chemicals, 544165
+Organic Recyclin, 543997
 Delton Cables, 504240
 Gujjubhai Industries, 532070
 Mitsu Chem Plast, 540078
 Indian Toners, 523586
 Silverstorm Parks, 544840
 SBEC Sugar, 532102
+Syschem (India), 531173
 India Gelatine, 531253
-Organic Recyclin, 543997
-Northern Spirits, 542628
 National Fitting, 531289
 Nitin Castings, 508875
 Shiv Texchem, 544272
@@ -196,7 +200,6 @@ Nilachal Carbo, 544510
 Monika Alcobev, 544451
 Apis India, 506166
 Ecoplast, 526703
-D & H India, 517514
 Bhavik Enterpris, 544551
 Cochin Minerals, 513353
 Marble City, 531281
@@ -209,12 +212,12 @@ Cosmic CRF, 543928
 India Finsec, 535667
 ITCONS E-Soluti., 543806
 MKVentures Cap., 514238
+Rikhav Securitie, 544340
 Sealmatic India, 543782
 Alphalogic Tech., 542770
 Solarium Green, 544354
 United Van Der, 522091
 Maximus Interna., 540401
-Cropster Agro, 523105
 Espire Hospi, 532016
 Rotographics (I), 539922
 BMW Industries, 542669
@@ -232,14 +235,18 @@ GEE, 504028
 Supershakti Met., 541701
 Sh. Hari Chem., 524336
 Ratnabhumi Dev., 540796
+Coral Labs., 524506
 Sunita Tools Ltd, 544001
-Hindusthan Insulators &, 539984
 Regency Fincorp, 540175
+Coromandel Engg., 533167
+Hindusthan Insulators &, 539984
 Astonea Labs, 544409
 Jagatjit Inds., 507155
 Ludlow Jute, 526179
 Veefin Solutions, 543931
+Acme Universal Safezone 9, 544964
 Filtron Engineer, 531191
+Suyog Gurbaxani, 543391
 Sattrix Infor., 544189
 Chatha Foods, 544151
 Patels Airtemp, 517417
@@ -247,7 +254,6 @@ Madala Holdings, 532344
 UVS Hospitality, 531652
 Him Teknoforg., 505712
 Emerald Leisures, 507265
-Alacrity Sec., 535916
 7Seas Enter., 540874
 Astal Lab, 512600
 Shahlon Silk, 542862
@@ -274,6 +280,7 @@ Aviva Industries, 512109
 Spice LoungeFood, 539895
 Remi Edelstahl, 513043
 Fundviser Capit., 530197
+iSERA Lifesciences, 534920
 Ace Soft. Exp., 531525
 Niyogin Fintech, 538772
 Sh. Dinesh Mills, 503804
@@ -286,14 +293,12 @@ Subam Papers, 544267
 Hypersoft Tech., 539724
 Chandrima Mercan, 540829
 Zenotech Lab., 532039
-Cosmo Ferrites, 523100
 Wardwizard Foods, 539132
 Agribio Spirits, 539546
 Nutricircle, 530219
 Yamuna Syndicate, 540980
 Aashka Hospitals, 543346
 Haryana Fin. Co., 530927
-Genus Prime, 532425
 Baroda Rayon, 500270
 Jattashankar Ind, 514318
 Riddhi Siddhi Gl, 524480
@@ -331,10 +336,10 @@ Bombay Oxygen, 509470
 Vaarad Ventures, 532320
 Hi-Klass Trading, 542332
 Andhra Petrochem, 500012
+Landmarc Leisur., 532275
 Samor Reality, 543376
 Rudra Ecovation, 514010
 Kisan Mouldings, 530145
-Glittek Granites, 513528
 Diksat Transworl, 540151
 FratelliVineyard, 541741
 Tierra Agrotech, 543531
@@ -344,11 +349,9 @@ Artson, 522134
 Innovassynth Technologies, 533315
 Balgopal Commer., 539834
 Shriram AMC, 531359
-Alan Scott Ente., 539115
 Aerpace Indus, 534733
 Birla Cotsyn, 533006
 Jaybharat Text, 512233
-Waaree Tech., 539337
 Pipan Oils, 538537
 Tejassvi Aaharam, 531628
 Prabhatam Infra Venture Venture, 531647
@@ -356,6 +359,7 @@ Smaart Tech Services, 523449
 Citurgia Biochem, 506373
 Evexia Lifecare, 524444
 Vega Jewellers, 512026
+GHV Infra, 505504
 PropsharePlatina, 544295
 Cupid Breweries, 512361
 Shah Foods, 519031
