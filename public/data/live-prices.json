@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-14T09:33:02.188Z",
+  "generated_at": "2026-10-14T14:41:23.047Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 6,
   "prices": {
     "PREMIERPOL": {
-      "current": 109.11,
+      "current": 108.86,
       "open": 110.53,
       "prevClose": 110.08,
       "dayHigh": 114.7,
@@ -15,11 +15,11 @@
       "ma50": 88.05,
       "ma200": 64.27,
       "vol10d": 1869360,
-      "marketCap": 11428451511.18,
+      "marketCap": 11402265892.43,
       "yearlyChangePct": 159.71
     },
     "MODISONLTD": {
-      "current": 545.5,
+      "current": 545.3,
       "open": 516.65,
       "prevClose": 519.55,
       "dayHigh": 545.5,
@@ -29,11 +29,11 @@
       "ma50": 424.41,
       "ma200": 252.99,
       "vol10d": 73262,
-      "marketCap": 17701475000,
+      "marketCap": 17694984603.88,
       "yearlyChangePct": 222.86
     },
     "GPTINFRA": {
-      "current": 125.38,
+      "current": 125.13,
       "open": 121.99,
       "prevClose": 122,
       "dayHigh": 128,
@@ -43,11 +43,11 @@
       "ma50": 115.42,
       "ma200": 114.68,
       "vol10d": 493796,
-      "marketCap": 15843593200.93,
+      "marketCap": 15812002050.93,
       "yearlyChangePct": 14.05
     },
     "ADVANCE": {
-      "current": 154.1,
+      "current": 155.67,
       "open": 144,
       "prevClose": 143.97,
       "dayHigh": 161.44,
@@ -57,11 +57,11 @@
       "ma50": 118.9,
       "ma200": 114.64,
       "vol10d": 2042819,
-      "marketCap": 9906429844.37,
+      "marketCap": 10007357914.69,
       "yearlyChangePct": 30.35
     },
     "KRISHNADEF": {
-      "current": 1240.5,
+      "current": 1242,
       "open": 1201,
       "prevClose": 1201,
       "dayHigh": 1257.9,
@@ -71,11 +71,11 @@
       "ma50": 1087.18,
       "ma200": 1075.26,
       "vol10d": 397300,
-      "marketCap": 18524867814,
+      "marketCap": 18547267896,
       "yearlyChangePct": 50.37
     },
     "MMP": {
-      "current": 510,
+      "current": 508.65,
       "open": 486.8,
       "prevClose": 486.8,
       "dayHigh": 520,
@@ -85,7 +85,7 @@
       "ma50": 417.36,
       "ma200": 297.43,
       "vol10d": 106300,
-      "marketCap": 12955332630,
+      "marketCap": 12921038947.4,
       "yearlyChangePct": 84.36
     }
   }
