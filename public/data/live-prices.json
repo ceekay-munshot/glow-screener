@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-15T09:11:06.309Z",
+  "generated_at": "2026-10-15T14:12:07.750Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 5,
   "prices": {
     "PREMIERPOL": {
-      "current": 106.45,
+      "current": 106.13,
       "open": 109.2,
       "prevClose": 108.86,
       "dayHigh": 109.39,
@@ -15,11 +15,11 @@
       "ma50": 88.75,
       "ma200": 64.61,
       "vol10d": 1889219,
-      "marketCap": 11149836144.1,
+      "marketCap": 11116318584.07,
       "yearlyChangePct": 142.4
     },
     "HALDYNGL": {
-      "current": 159.95,
+      "current": 158.8,
       "open": 156.6,
       "prevClose": 155.7,
       "dayHigh": 166,
@@ -29,25 +29,25 @@
       "ma50": 139.3,
       "ma200": 110.75,
       "vol10d": 17364,
-      "marketCap": 8597584250.96,
+      "marketCap": 8535770124.04,
       "yearlyChangePct": 61.83
     },
     "GPTINFRA": {
-      "current": 125.11,
+      "current": 124.76,
       "open": 124.05,
       "prevClose": 125.13,
-      "dayHigh": 126,
+      "dayHigh": 126.08,
       "dayLow": 122.18,
       "week52High": 150,
       "week52Low": 96.22,
       "ma50": 115.64,
       "ma200": 114.76,
       "vol10d": 492125,
-      "marketCap": 15809475183.13,
+      "marketCap": 15765247765.94,
       "yearlyChangePct": 18.1
     },
     "AUSOMENT": {
-      "current": 151.5,
+      "current": 154.36,
       "open": 152.54,
       "prevClose": 152.54,
       "dayHigh": 155.5,
@@ -57,11 +57,11 @@
       "ma50": 147.23,
       "ma200": 126.4,
       "vol10d": 5266,
-      "marketCap": 2063968128,
+      "marketCap": 2102931495.04,
       "yearlyChangePct": 47.38
     },
     "KRISHNADEF": {
-      "current": 1201,
+      "current": 1201.2,
       "open": 1240.5,
       "prevClose": 1242,
       "dayHigh": 1250.6,
@@ -71,7 +71,7 @@
       "ma50": 1087.65,
       "ma200": 1077.62,
       "vol10d": 403809,
-      "marketCap": 17934998988,
+      "marketCap": 17937984936.43,
       "yearlyChangePct": 56.18
     }
   }
