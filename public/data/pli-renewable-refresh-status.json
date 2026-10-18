@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-12T00:38:43.524Z",
+  "generated_at": "2026-10-18T23:25:44.240Z",
   "pli": {
     "existing": 176,
-    "discovered": 1,
+    "discovered": 0,
     "added": []
   },
   "renewable": {
@@ -15,7 +15,7 @@
       "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2&MenuId=1",
       "label": "PIB — recent press releases",
       "category": "pli",
-      "at": "2026-10-12T00:38:35.299Z",
+      "at": "2026-10-18T23:25:36.293Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -26,30 +26,18 @@
       "url": "https://pib.gov.in/indexd.aspx",
       "label": "PIB — home",
       "category": "pli",
-      "at": "2026-10-12T00:38:36.663Z",
+      "at": "2026-10-18T23:25:37.899Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
-      "candidates_count": 11,
-      "candidates_sample": [
-        "NTPC",
-        "Indian Railway Catering and Tourism Corporation",
-        "Tata Power",
-        "Reliance Industries",
-        "Tata Steel",
-        "Adani Green Energy",
-        "Larsen & Toubro",
-        "JSW Energy",
-        "Hero MotoCorp",
-        "State Bank of India",
-        "Indian Oil Corporation"
-      ]
+      "candidates_count": 0,
+      "candidates_sample": []
     },
     {
       "url": "https://www.dpiit.gov.in/whats-new",
       "label": "DPIIT — what's new",
       "category": "pli",
-      "at": "2026-10-12T00:38:38.671Z",
+      "at": "2026-10-18T23:25:39.499Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -60,7 +48,7 @@
       "url": "https://mnre.gov.in/whats-new/",
       "label": "MNRE — what's new",
       "category": "renewable",
-      "at": "2026-10-12T00:38:40.070Z",
+      "at": "2026-10-18T23:25:41.008Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -74,7 +62,7 @@
       "url": "https://mnre.gov.in/press-releases/",
       "label": "MNRE — press releases",
       "category": "renewable",
-      "at": "2026-10-12T00:38:41.773Z",
+      "at": "2026-10-18T23:25:42.525Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 404,
