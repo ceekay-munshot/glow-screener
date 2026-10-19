@@ -1,9 +1,9 @@
 # Revenue-mix extraction TODO — auto-generated
-# Generated:        2026-10-18T06:37:18.090Z
+# Generated:        2026-10-19T06:53:50.447Z
 # Stale threshold:  365 days
-# Universe total:   1465
+# Universe total:   1473
 # Skipped (fresh):  0
-# Skipped (no BSE): 1109
+# Skipped (no BSE): 1117
 # Priority breakdown:
 #   1 — Glow STRONG BUY (NEW): 0
 #   2 — Glow BUY (NEW):        0
@@ -12,12 +12,14 @@
 # Routine processes TOP 10 rows per daily run.
 #
 # Format: Company Name, BSECode
+Infrax Renewable, 544919
 Vans Electroengineerings, 544971
 Adon Agro, 544809
 Millworks Technologies, 544826
 Rajasthan Securities, 526873
 Recode Studios, 544755
 Stellant Secu., 526071
+SMR Jewels, 544774
 Technocrats Plasma, 544877
 Vegorama Punjabi, 544765
 Complete Sports and Management, 544900
@@ -25,6 +27,7 @@ Spice IslandsInd, 526827
 Devson Catalyst, 544823
 Raksan Transformers, 544924
 Unifinz Capital, 541358
+Black Opal, 544972
 Kwick Forensic, 544895
 Maharaja & Speedex India, 544925
 Rajesh Power, 544291
@@ -45,13 +48,13 @@ KS Smart Technlogies, 516038
 Dove Soft, 544975
 Horizon Reclaim, 544794
 KP Green Engg., 544150
-Praruh Tech, 544538
 TIPCO Engineering, 544740
 Vikram Thermo, 530477
 GRE Renew, 544682
 Infinity Infoway, 544567
 Citizen Solar, 538786
 Khazanchi Jewell, 543953
+FX Multitech, 544941
 Bansal Roofing, 538546
 Unified Data, 544406
 Goel Construct., 544504
@@ -63,7 +66,6 @@ Poojaa Precision Engg., 544844
 Novus Loyalty, 544735
 Foseco Crucible (India), 523160
 EverestIMS Tech., 544979
-Paramount Syntex, 544982
 Aryaman Capital, 538716
 Neetu Yoshi, 544434
 Kalind, 526935
@@ -77,6 +79,7 @@ Captain Techno., 540652
 Exhicon Events, 543895
 Cryogenic OGS, 544440
 Sugs Lloyd, 544501
+Sharvaya Metals, 544506
 GTV Engineering, 539479
 Sayaji Hot. Pune, 544090
 Monarch Surve., 544453
@@ -119,7 +122,6 @@ Laxmipati Engg, 537669
 AMPL Capital, 539598
 B-Right Real, 543543
 Prime Fresh, 540404
-BharatRohan Air., 544535
 Bhatia Communic., 540956
 Jasch Gauging, 544112
 Bai-Kakaji Poly., 544670
@@ -148,12 +150,11 @@ Sanjiv.Parant., 531569
 JOJO, 531910
 Fabtech Cleanrooms, 544332
 Kaka Industries, 543939
-Uni Abex Alloy, 504605
 B C C Fuba India, 517246
 Injecto Polymers, 544930
 Hemant Surgical, 543916
-Aayush Art, 540718
 Aelea Commoditi., 544213
+Uni Abex Alloy, 504605
 VVIP Infratech, 544219
 HRS Aluglaze, 544656
 Asarfi Hospital, 543943
@@ -181,7 +182,6 @@ Mitsu Chem Plast, 540078
 Indian Toners, 523586
 Silverstorm Parks, 544840
 SBEC Sugar, 532102
-Syschem (India), 531173
 India Gelatine, 531253
 National Fitting, 531289
 Nitin Castings, 508875
@@ -207,6 +207,7 @@ True Green, 533407
 Shree Refrigerat, 544458
 Meenakshi (I), 544831
 Logica Infoway, 543746
+Accord Transformer, 544710
 GLEN Industries, 544444
 Cosmic CRF, 543928
 India Finsec, 535667
@@ -228,14 +229,12 @@ Emmforce Auto., 544166
 Jay Ushin, 513252
 Innovators, 541353
 Gennex Lab., 531739
-Jaysynth Orgo, 524592
 A-1, 542012
 Sayaji (Indore), 544080
+Emergent Indust., 506180
 GEE, 504028
 Supershakti Met., 541701
-Sh. Hari Chem., 524336
 Ratnabhumi Dev., 540796
-Coral Labs., 524506
 Sunita Tools Ltd, 544001
 Regency Fincorp, 540175
 Coromandel Engg., 533167
@@ -246,10 +245,8 @@ Ludlow Jute, 526179
 Veefin Solutions, 543931
 Acme Universal Safezone 9, 544964
 Filtron Engineer, 531191
-Suyog Gurbaxani, 543391
 Sattrix Infor., 544189
 Chatha Foods, 544151
-Patels Airtemp, 517417
 Madala Holdings, 532344
 UVS Hospitality, 531652
 Him Teknoforg., 505712
@@ -299,22 +296,25 @@ Nutricircle, 530219
 Yamuna Syndicate, 540980
 Aashka Hospitals, 543346
 Haryana Fin. Co., 530927
+Quest Flow, 543982
+Parshva Enterpr., 542694
 Baroda Rayon, 500270
 Jattashankar Ind, 514318
 Riddhi Siddhi Gl, 524480
 Super Sales Ind., 512527
 Corporate Merch, 540199
-Jhaveri Credits, 531550
+Arvaya Healthcare, 524723
 Quest Capital, 500069
 National Perox., 544205
 Vashu Bhagnani, 532011
 Atvo Enterprises, 532090
 Polo Queen Ind., 540717
+Jhaveri Credits, 531550
 Blue Pearl Agri, 514440
+Raghuvir Synth, 514316
 Veritas (India), 512229
 Purple Finance, 544191
 Ekansh Concept, 531364
-Raghuvir Synth, 514316
 Kinetic Engg., 500240
 Suraj Industries, 526211
 Integ. Proteins, 519606
@@ -324,7 +324,7 @@ Satani Bearings, 505703
 Likhami Consult., 539927
 ZR2 Bioenergy, 506640
 JTL Defence, 537254
-Belding India, 513307
+AUDROC, 530889
 PG Foils, 526747
 Nagpur Power, 532362
 Omnitex Industri, 514324
@@ -349,9 +349,11 @@ Artson, 522134
 Innovassynth Technologies, 533315
 Balgopal Commer., 539834
 Shriram AMC, 531359
+Alan Scott Ente., 539115
 Aerpace Indus, 534733
 Birla Cotsyn, 533006
 Jaybharat Text, 512233
+Waaree Tech., 539337
 Pipan Oils, 538537
 Tejassvi Aaharam, 531628
 Prabhatam Infra Venture Venture, 531647
@@ -365,6 +367,4 @@ Cupid Breweries, 512361
 Shah Foods, 519031
 Propshare Celestia, 544752
 Tandhan Industries, 512062
-Arvaya Healthcare, 524723
 Axentra Corp, 511634
-Robokidz Eduventures, 544940
