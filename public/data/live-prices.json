@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-19T09:19:01.492Z",
+  "generated_at": "2026-10-19T09:57:13.308Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 6,
   "prices": {
     "KROSS": {
-      "current": 303.45,
+      "current": 294.8,
       "open": 313.6,
       "prevClose": 270,
       "dayHigh": 326.4,
-      "dayLow": 298,
+      "dayLow": 294.3,
       "week52High": 283,
       "week52Low": 150.52,
       "ma50": 230.95,
       "ma200": 202.36,
       "vol10d": 1869684,
-      "marketCap": 19575384893.37,
+      "marketCap": 19017376818.13,
       "yearlyChangePct": 50.03
     },
     "AUSOMENT": {
-      "current": 160.37,
+      "current": 159.9,
       "open": 155,
       "prevClose": 157.2,
       "dayHigh": 170,
@@ -29,25 +29,25 @@
       "ma50": 147.82,
       "ma200": 126.83,
       "vol10d": 5874,
-      "marketCap": 2184808967.72,
+      "marketCap": 2178405881.65,
       "yearlyChangePct": 51.65
     },
     "PREMIERPOL": {
-      "current": 106.83,
+      "current": 104.33,
       "open": 112,
       "prevClose": 111.51,
       "dayHigh": 113.41,
-      "dayLow": 105.86,
+      "dayLow": 104.1,
       "week52High": 120,
       "week52Low": 38,
       "ma50": 90.2,
       "ma200": 65.29,
       "vol10d": 1941634,
-      "marketCap": 11189638796.04,
+      "marketCap": 10927782608.54,
       "yearlyChangePct": 157.71
     },
     "BENARAS": {
-      "current": 10200,
+      "current": 10201,
       "open": 10482,
       "prevClose": 10482,
       "dayHigh": 10482,
@@ -57,11 +57,11 @@
       "ma50": 10324.45,
       "ma200": 10324.45,
       "vol10d": 154,
-      "marketCap": 13260000000,
+      "marketCap": 13261300000,
       "yearlyChangePct": 2.71
     },
     "MVGJL": {
-      "current": 241.16,
+      "current": 241.1,
       "open": 233,
       "prevClose": 226.05,
       "dayHigh": 244,
@@ -71,21 +71,21 @@
       "ma50": 187.99,
       "ma200": 168.98,
       "vol10d": 408417,
-      "marketCap": 11780049050.44,
+      "marketCap": 11777118323.24,
       "yearlyChangePct": 22.68
     },
     "ONWARDTEC": {
-      "current": 454.55,
+      "current": 457.05,
       "open": 459.25,
       "prevClose": 427.4,
       "dayHigh": 495.65,
-      "dayLow": 444.75,
+      "dayLow": 442.55,
       "week52High": 427.4,
       "week52Low": 208.25,
       "ma50": 294.65,
       "ma200": 278.28,
       "vol10d": 398651,
-      "marketCap": 9959703874.03,
+      "marketCap": 10014481699.03,
       "yearlyChangePct": 38.43
     }
   }
