@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-21T08:53:39.099Z",
+  "generated_at": "2026-10-21T09:23:54.272Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 3,
   "prices": {
     "AUSOMENT": {
-      "current": 156.98,
+      "current": 155,
       "open": 158.1,
       "prevClose": 161.25,
       "dayHigh": 166.01,
@@ -15,11 +15,11 @@
       "ma50": 148.28,
       "ma200": 127.08,
       "vol10d": 7286,
-      "marketCap": 2138625134.75,
+      "marketCap": 2111650560,
       "yearlyChangePct": 58.04
     },
     "KROSS": {
-      "current": 278.5,
+      "current": 283.2,
       "open": 293,
       "prevClose": 297.55,
       "dayHigh": 293.9,
@@ -29,7 +29,7 @@
       "ma50": 232.9,
       "ma200": 202.88,
       "vol10d": 3490172,
-      "marketCap": 17965874027,
+      "marketCap": 18269069097.87,
       "yearlyChangePct": 59.66
     },
     "MARC": {
