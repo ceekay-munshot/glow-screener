@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T23:25:44.240Z",
+  "generated_at": "2026-10-25T23:29:44.207Z",
   "pli": {
     "existing": 176,
     "discovered": 0,
@@ -15,7 +15,7 @@
       "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2&MenuId=1",
       "label": "PIB — recent press releases",
       "category": "pli",
-      "at": "2026-10-18T23:25:36.293Z",
+      "at": "2026-10-25T23:29:36.364Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -26,7 +26,7 @@
       "url": "https://pib.gov.in/indexd.aspx",
       "label": "PIB — home",
       "category": "pli",
-      "at": "2026-10-18T23:25:37.899Z",
+      "at": "2026-10-25T23:29:37.845Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -37,7 +37,7 @@
       "url": "https://www.dpiit.gov.in/whats-new",
       "label": "DPIIT — what's new",
       "category": "pli",
-      "at": "2026-10-18T23:25:39.499Z",
+      "at": "2026-10-25T23:29:39.975Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -48,29 +48,23 @@
       "url": "https://mnre.gov.in/whats-new/",
       "label": "MNRE — what's new",
       "category": "renewable",
-      "at": "2026-10-18T23:25:41.008Z",
+      "at": "2026-10-25T23:29:41.420Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
-      "candidates_count": 2,
-      "candidates_sample": [
-        "Indian Renewable Energy Development Agency Limited (IREDA)",
-        "Solar Energy Corporation of India Limited (SECI)"
-      ]
+      "candidates_count": 0,
+      "candidates_sample": []
     },
     {
       "url": "https://mnre.gov.in/press-releases/",
       "label": "MNRE — press releases",
       "category": "renewable",
-      "at": "2026-10-18T23:25:42.525Z",
+      "at": "2026-10-25T23:29:42.920Z",
       "fc_status": 200,
       "outcome": "ok",
-      "upstream_status": 404,
-      "candidates_count": 2,
-      "candidates_sample": [
-        "भारतीय अक्षय ऊर्जा विकास संस्था लिमिटेड (इरेडा )",
-        "सोलर एनर्जी कॉर्पोरेशन ऑफ इंडिया (सेकी)"
-      ]
+      "upstream_status": 200,
+      "candidates_count": 0,
+      "candidates_sample": []
     }
   ]
 }
