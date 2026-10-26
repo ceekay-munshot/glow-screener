@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-26T09:22:26.980Z",
+  "generated_at": "2026-10-26T10:11:39.084Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 5,
   "prices": {
     "KROSS": {
-      "current": 293.45,
+      "current": 288.7,
       "open": 306.55,
       "prevClose": 305.4,
       "dayHigh": 306.8,
-      "dayLow": 292.9,
+      "dayLow": 285.1,
       "week52High": 326.4,
       "week52Low": 150.52,
       "ma50": 238.26,
       "ma200": 204.49,
       "vol10d": 5038338,
-      "marketCap": 18930290673.37,
+      "marketCap": 18623870918.87,
       "yearlyChangePct": 65.91
     },
     "AUSOMENT": {
-      "current": 149.99,
+      "current": 153.11,
       "open": 150.65,
       "prevClose": 149.8,
       "dayHigh": 153.99,
@@ -29,7 +29,7 @@
       "ma50": 149.07,
       "ma200": 127.75,
       "vol10d": 5786,
-      "marketCap": 2043396639.32,
+      "marketCap": 2085902055.04,
       "yearlyChangePct": 47.19
     },
     "PANACHE": {
@@ -47,7 +47,7 @@
       "yearlyChangePct": 61.8
     },
     "ONWARDTEC": {
-      "current": 430.85,
+      "current": 426.35,
       "open": 420,
       "prevClose": 436.45,
       "dayHigh": 451,
@@ -57,11 +57,11 @@
       "ma50": 307.52,
       "ma200": 281.56,
       "vol10d": 801560,
-      "marketCap": 9440410494.23,
+      "marketCap": 9341810409.23,
       "yearlyChangePct": 36.28
     },
     "MGEL": {
-      "current": 18.18,
+      "current": 18.22,
       "open": 17.01,
       "prevClose": 17.02,
       "dayHigh": 19.35,
@@ -71,7 +71,7 @@
       "ma50": 15.46,
       "ma200": 14.09,
       "vol10d": 655136,
-      "marketCap": 5991320908.57,
+      "marketCap": 6004502805.71,
       "yearlyChangePct": 13.01
     }
   }
