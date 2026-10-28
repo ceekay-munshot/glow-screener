@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-28T10:01:53.028Z",
+  "generated_at": "2026-10-28T10:36:50.668Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 6,
   "prices": {
     "KROSS": {
-      "current": 296,
+      "current": 294.7,
       "open": 293.45,
       "prevClose": 290.95,
       "dayHigh": 301.85,
@@ -15,11 +15,11 @@
       "ma50": 241.74,
       "ma200": 205.34,
       "vol10d": 5261223,
-      "marketCap": 19094788912,
+      "marketCap": 19010927450.87,
       "yearlyChangePct": 58.57
     },
     "KANPRPLA": {
-      "current": 245,
+      "current": 248.94,
       "open": 270,
       "prevClose": 241.99,
       "dayHigh": 270,
@@ -29,11 +29,11 @@
       "ma50": 251.29,
       "ma200": 207.67,
       "vol10d": 27893,
-      "marketCap": 5997344710,
+      "marketCap": 6093791864.28,
       "yearlyChangePct": 18.79
     },
     "MACPOWER": {
-      "current": 1930.1,
+      "current": 1938.7,
       "open": 1930,
       "prevClose": 1903.5,
       "dayHigh": 2016.7,
@@ -43,7 +43,7 @@
       "ma50": 1944.58,
       "ma200": 1305.84,
       "vol10d": 49594,
-      "marketCap": 19309028971.76,
+      "marketCap": 19395064503.52,
       "yearlyChangePct": 122.1
     },
     "PANACHE": {
@@ -61,7 +61,7 @@
       "yearlyChangePct": 56.08
     },
     "AUSOMENT": {
-      "current": 152.74,
+      "current": 151.19,
       "open": 150.61,
       "prevClose": 152.21,
       "dayHigh": 154,
@@ -71,11 +71,11 @@
       "ma50": 149.39,
       "ma200": 128.18,
       "vol10d": 5658,
-      "marketCap": 2080861407.32,
+      "marketCap": 2059744860.14,
       "yearlyChangePct": 49.18
     },
     "MARKOLINES": {
-      "current": 175.1,
+      "current": 174.49,
       "open": 175.78,
       "prevClose": 175.69,
       "dayHigh": 176.95,
@@ -85,7 +85,7 @@
       "ma50": 171.9,
       "ma200": 163.05,
       "vol10d": 440537,
-      "marketCap": 3887871507.52,
+      "marketCap": 3874327224.77,
       "yearlyChangePct": 5.28
     }
   }
