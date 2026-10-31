@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-30T06:27:41.062Z",
+  "generated_at": "2026-10-31T06:23:18.607Z",
   "source_count": 4,
   "curated_baseline_count": 5,
-  "total_entities_seen": 8,
+  "total_entities_seen": 9,
   "flagged_companies": {
     "ADANIENT": {
       "primary_name": "Adani Enterprises",
@@ -21,7 +21,7 @@
           "snippet": "Ongoing SEBI investigation into Adani group entities — disclosures of related-party transactions and offshore-holding allegations following the 2023 Hindenburg report; SEBI status reports filed with S"
         }
       ],
-      "first_seen_at": "2026-10-30T06:27:41.062Z"
+      "first_seen_at": "2026-10-31T06:23:18.606Z"
     },
     "ADANIGREEN": {
       "primary_name": "Adani Green Energy",
@@ -40,7 +40,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group related-party / offshore-holding disclosures."
         }
       ],
-      "first_seen_at": "2026-10-30T06:27:41.062Z"
+      "first_seen_at": "2026-10-31T06:23:18.606Z"
     },
     "ADANIPORTS": {
       "primary_name": "Adani Ports & SEZ",
@@ -59,7 +59,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
         }
       ],
-      "first_seen_at": "2026-10-30T06:27:41.062Z"
+      "first_seen_at": "2026-10-31T06:23:18.606Z"
     },
     "ADANIPOWER": {
       "primary_name": "Adani Power",
@@ -78,7 +78,7 @@
           "snippet": "Subject entity in ongoing SEBI investigation into Adani group disclosures and related-party transactions."
         }
       ],
-      "first_seen_at": "2026-10-30T06:27:41.062Z"
+      "first_seen_at": "2026-10-31T06:23:18.606Z"
     },
     "ZEEL": {
       "primary_name": "Zee Entertainment",
@@ -97,25 +97,31 @@
           "snippet": "SEBI orders restricting Zee promoters from directorship + show-cause on alleged fund diversion (orders issued 2023, appeals + follow-ups ongoing through 2024-25)."
         }
       ],
-      "first_seen_at": "2026-10-30T06:27:41.062Z"
+      "first_seen_at": "2026-10-31T06:23:18.606Z"
     }
   },
   "unmatched_sample": [
     {
-      "name": "Nippon Life India AMC",
-      "type": "settlement",
+      "name": "Central Depository Services (India) Ltd",
+      "type": "sebi-fine",
       "source": "Business Standard — SEBI topic (news)",
       "origin": "scraper"
     },
     {
-      "name": "Nippon AMC",
+      "name": "Axis Capital",
+      "type": "sebi-investigation",
+      "source": "Economic Times — SEBI topic (news)",
+      "origin": "scraper"
+    },
+    {
+      "name": "Nippon Life India Asset Management Company",
       "type": "settlement",
       "source": "Economic Times — SEBI topic (news)",
       "origin": "scraper"
     },
     {
-      "name": "Avadhut Sathe",
-      "type": "sebi-fine",
+      "name": "Avadhut Sathe Academy",
+      "type": "sebi-order",
       "source": "Economic Times — SEBI topic (news)",
       "origin": "scraper"
     }
@@ -125,23 +131,29 @@
       "url": "https://www.livemint.com/topic/sebi",
       "label": "Mint — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-10-30T06:27:29.556Z",
+      "at": "2026-10-31T06:22:58.224Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
-      "total_extracted_raw": 1,
-      "total_extracted": 1,
+      "total_extracted_raw": 2,
+      "total_extracted": 2,
       "prefilter_sample": [
         {
           "name": "Avadhut Sathe",
-          "order_type": "sebi-fine",
+          "order_type": "sebi-ban",
           "is_listed_entity": false,
-          "snippet": "Sebi bars Avadhut Sathe, academy from markets, imposes ₹11.5 crore penalty."
+          "snippet": "Sebi bars Avadhut Sathe, academy from markets, imposes ₹11.5 crore penalty"
+        },
+        {
+          "name": "ASTA",
+          "order_type": "sebi-ban",
+          "is_listed_entity": false,
+          "snippet": "Avadhut Sathe case: Why ASTA may challenge SEBI order before SAT over ‘grey areas’ in stock-market education rules"
         }
       ],
       "after_filter_count": 0,
       "dropped_counts": {
-        "not_listed": 1,
+        "not_listed": 2,
         "no_sebi_signal_in_snippet": 0,
         "resolved_in_favour": 0,
         "no_name": 0
@@ -152,7 +164,7 @@
       "url": "https://www.business-standard.com/topic/sebi",
       "label": "Business Standard — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-10-30T06:27:31.506Z",
+      "at": "2026-10-31T06:23:03.832Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -160,16 +172,16 @@
       "total_extracted": 2,
       "prefilter_sample": [
         {
-          "name": "Avadhut Sathe Trading Academy Pvt Ltd",
+          "name": "Central Depository Services (India) Ltd",
           "order_type": "sebi-fine",
-          "is_listed_entity": false,
-          "snippet": "Sebi orders Avadhut Sathe Trading Academy and its founder to refund ₹546 cr collected from participants for providing unregistered investment advisory"
+          "is_listed_entity": true,
+          "snippet": "Sebi imposes ₹1 crore fine on Central Depository Services (India) Ltd (CDSL) for multiple compliance lapses"
         },
         {
-          "name": "Nippon Life India AMC",
-          "order_type": "settlement",
-          "is_listed_entity": true,
-          "snippet": "Nippon Life India AMC gets Sebi nod to settle the Yes Bank AT-1 bond case after paying ₹96.76 crore."
+          "name": "Avadhut Sathe Trading Academy Pvt Ltd",
+          "order_type": "sebi-investigation",
+          "is_listed_entity": false,
+          "snippet": "Sebi orders Avadhut Sathe Trading Academy and its founder to refund ₹546 cr"
         }
       ],
       "after_filter_count": 1,
@@ -181,9 +193,9 @@
       },
       "sample": [
         {
-          "name": "Nippon Life India AMC",
-          "order_type": "settlement",
-          "snippet": "Nippon Life India AMC gets Sebi nod to settle the Yes Bank AT-1 bond case after paying ₹96.76 crore."
+          "name": "Central Depository Services (India) Ltd",
+          "order_type": "sebi-fine",
+          "snippet": "Sebi imposes ₹1 crore fine on Central Depository Services (India) Ltd (CDSL) for multiple compliance lapses"
         }
       ]
     },
@@ -191,7 +203,7 @@
       "url": "https://economictimes.indiatimes.com/topic/sebi",
       "label": "Economic Times — SEBI topic (news)",
       "mode": "news",
-      "at": "2026-10-30T06:27:34.209Z",
+      "at": "2026-10-31T06:23:09.228Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -199,47 +211,52 @@
       "total_extracted": 4,
       "prefilter_sample": [
         {
-          "name": "Nippon AMC",
+          "name": "Axis Capital",
+          "order_type": "sebi-investigation",
+          "is_listed_entity": true,
+          "snippet": "SEBI has issued a regulatory censure against Axis Capital, concluding proceedings linked to September 2024 restrictions."
+        },
+        {
+          "name": "Nippon Life India Asset Management Company",
           "order_type": "settlement",
           "is_listed_entity": true,
-          "snippet": "Nippon AMC gets Sebi nod for settlement in Yes Bank AT1 case"
+          "snippet": "Nippon AMC gets Sebi nod for settlement in Yes Bank AT1 case."
         },
         {
-          "name": "Avadhut Sathe",
-          "order_type": "sebi-fine",
+          "name": "Avadhut Sathe Academy",
+          "order_type": "sebi-order",
           "is_listed_entity": true,
-          "snippet": "Sebi orders Avadhut Sathe, academy to refund Rs 546 crore"
+          "snippet": "Sebi orders Avadhut Sathe, academy to refund Rs 546 crore."
         },
         {
-          "name": "Carlsberg India",
+          "name": "Reliance Industries",
           "order_type": "other",
           "is_listed_entity": true,
-          "snippet": "Carlsberg India moves closer to IPO, files updated DRHP for complete OFS issue"
-        },
-        {
-          "name": "Jio Platforms",
-          "order_type": "other",
-          "is_listed_entity": true,
-          "snippet": "Jio Platforms shares to be available under MTF from Day 1. What should investors know?"
+          "snippet": "Reliance Industries has approved plans to raise up to Rs 15,000 crore through non-convertible debentures."
         }
       ],
-      "after_filter_count": 2,
+      "after_filter_count": 3,
       "dropped_counts": {
         "not_listed": 0,
-        "no_sebi_signal_in_snippet": 2,
+        "no_sebi_signal_in_snippet": 1,
         "resolved_in_favour": 0,
         "no_name": 0
       },
       "sample": [
         {
-          "name": "Nippon AMC",
-          "order_type": "settlement",
-          "snippet": "Nippon AMC gets Sebi nod for settlement in Yes Bank AT1 case"
+          "name": "Axis Capital",
+          "order_type": "sebi-investigation",
+          "snippet": "SEBI has issued a regulatory censure against Axis Capital, concluding proceedings linked to September 2024 restrictions."
         },
         {
-          "name": "Avadhut Sathe",
-          "order_type": "sebi-fine",
-          "snippet": "Sebi orders Avadhut Sathe, academy to refund Rs 546 crore"
+          "name": "Nippon Life India Asset Management Company",
+          "order_type": "settlement",
+          "snippet": "Nippon AMC gets Sebi nod for settlement in Yes Bank AT1 case."
+        },
+        {
+          "name": "Avadhut Sathe Academy",
+          "order_type": "sebi-order",
+          "snippet": "Sebi orders Avadhut Sathe, academy to refund Rs 546 crore."
         }
       ]
     },
@@ -247,7 +264,7 @@
       "url": "https://www.sebi.gov.in/enforcement/orders.html",
       "label": "SEBI — orders listing (backup)",
       "mode": "regulator",
-      "at": "2026-10-30T06:27:37.923Z",
+      "at": "2026-10-31T06:23:15.073Z",
       "fc_status": 200,
       "outcome": "ok",
       "upstream_status": 200,
@@ -262,13 +279,13 @@
         },
         {
           "name": "Citrus Check Inns Limited",
-          "order_type": "public-notice",
+          "order_type": "other",
           "is_listed_entity": false,
           "snippet": "PUBLIC NOTICE IN THE MATTER OF CITRUS CHECK INNS LIMITED AND ROYAL TWINKLE STAR CLUB PVT. LTD FOR REFUND (PHASE-II)"
         },
         {
-          "name": "Royal Twinkle Star Club Pvt. Ltd.",
-          "order_type": "public-notice",
+          "name": "Royal Twinkle Star Club Pvt. Ltd",
+          "order_type": "other",
           "is_listed_entity": false,
           "snippet": "PUBLIC NOTICE IN THE MATTER OF CITRUS CHECK INNS LIMITED AND ROYAL TWINKLE STAR CLUB PVT. LTD FOR REFUND (PHASE-II)"
         }
