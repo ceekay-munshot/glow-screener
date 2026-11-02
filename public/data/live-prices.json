@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T12:29:05.485Z",
+  "generated_at": "2026-11-02T20:08:32.432Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 3,
@@ -12,11 +12,11 @@
       "dayLow": 1951.5,
       "week52High": 2251,
       "week52Low": 761,
-      "ma50": 1950.99,
-      "ma200": 1320.2,
-      "vol10d": 62290,
-      "marketCap": 20992728367.03,
-      "yearlyChangePct": 136.29
+      "ma50": 1951.15,
+      "ma200": 1321.9,
+      "vol10d": 69446,
+      "marketCap": 20992729344,
+      "yearlyChangePct": 0
     },
     "SHREEPUSHK": {
       "current": 569.95,
@@ -24,13 +24,13 @@
       "prevClose": 610,
       "dayHigh": 633,
       "dayLow": 565,
-      "week52High": 612.2,
+      "week52High": 633,
       "week52Low": 272.45,
-      "ma50": 488.87,
-      "ma200": 392.37,
-      "vol10d": 117813,
-      "marketCap": 18430867380.2,
-      "yearlyChangePct": 50.84
+      "ma50": 490.97,
+      "ma200": 392.64,
+      "vol10d": 138237,
+      "marketCap": 18430866985.45,
+      "yearlyChangePct": 0
     },
     "BHAGERIA": {
       "current": 379.85,
@@ -40,11 +40,11 @@
       "dayLow": 361.2,
       "week52High": 415.8,
       "week52Low": 127.51,
-      "ma50": 325.2,
-      "ma200": 214.37,
-      "vol10d": 321032,
-      "marketCap": 16578242039.38,
-      "yearlyChangePct": 72.6
+      "ma50": 327.67,
+      "ma200": 214.57,
+      "vol10d": 335424,
+      "marketCap": 16578241773,
+      "yearlyChangePct": 0
     }
   }
 }
