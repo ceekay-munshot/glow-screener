@@ -1,64 +1,7 @@
 {
-  "generated_at": "2026-11-06T11:31:40.843Z",
+  "generated_at": "2026-11-06T12:09:18.782Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
-  "ticker_count": 4,
-  "prices": {
-    "BENARAS": {
-      "current": 10182,
-      "open": 10200,
-      "prevClose": 10250,
-      "dayHigh": 10251,
-      "dayLow": 10113,
-      "week52High": 11499,
-      "week52Low": 9965,
-      "ma50": 10308.3,
-      "ma200": 10300.82,
-      "vol10d": 67,
-      "marketCap": 13236600000,
-      "yearlyChangePct": 0.44
-    },
-    "GALAPREC": {
-      "current": 1165.4,
-      "open": 1146.1,
-      "prevClose": 1148.2,
-      "dayHigh": 1174.9,
-      "dayLow": 1106,
-      "week52High": 1260,
-      "week52Low": 671.2,
-      "ma50": 1072.01,
-      "ma200": 938.57,
-      "vol10d": 21806,
-      "marketCap": 14935999792.9,
-      "yearlyChangePct": 56.11
-    },
-    "MACPOWER": {
-      "current": 2299,
-      "open": 2331.6,
-      "prevClose": 2291.6,
-      "dayHigh": 2335.9,
-      "dayLow": 2127.1,
-      "week52High": 2300,
-      "week52Low": 761,
-      "ma50": 1971.06,
-      "ma200": 1344.65,
-      "vol10d": 75472,
-      "marketCap": 22999563840,
-      "yearlyChangePct": 194.46
-    },
-    "WINDLAS": {
-      "current": 994.4,
-      "open": 914,
-      "prevClose": 921.25,
-      "dayHigh": 1059.8,
-      "dayLow": 889,
-      "week52High": 1181.9,
-      "week52Low": 697.4,
-      "ma50": 1010.8,
-      "ma200": 871.06,
-      "vol10d": 74325,
-      "marketCap": 20520666621.41,
-      "yearlyChangePct": 5.91
-    }
-  }
+  "ticker_count": 0,
+  "prices": {}
 }
