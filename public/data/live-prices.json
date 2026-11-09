@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T12:55:17.104Z",
+  "generated_at": "2026-11-09T20:33:50.084Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 7,
@@ -12,11 +12,11 @@
       "dayLow": 366.5,
       "week52High": 415.8,
       "week52Low": 127.51,
-      "ma50": 340.42,
-      "ma200": 219.28,
-      "vol10d": 327173,
+      "ma50": 343.92,
+      "ma200": 220.43,
+      "vol10d": 352301,
       "marketCap": 17287459964.38,
-      "yearlyChangePct": 78.56
+      "yearlyChangePct": 98.02
     },
     "KANPRPLA": {
       "current": 257.81,
@@ -26,11 +26,11 @@
       "dayLow": 245.68,
       "week52High": 283.14,
       "week52Low": 151.25,
-      "ma50": 248.92,
-      "ma200": 210.64,
-      "vol10d": 22492,
+      "ma50": 248.82,
+      "ma200": 210.88,
+      "vol10d": 21760,
       "marketCap": 6310920102.22,
-      "yearlyChangePct": 15.99
+      "yearlyChangePct": 25.32
     },
     "GALAPREC": {
       "current": 1163.8,
@@ -40,11 +40,11 @@
       "dayLow": 1146,
       "week52High": 1260,
       "week52Low": 671.2,
-      "ma50": 1073.78,
-      "ma200": 940.73,
-      "vol10d": 24055,
+      "ma50": 1076.25,
+      "ma200": 941.85,
+      "vol10d": 21925,
       "marketCap": 14915494185.79,
-      "yearlyChangePct": 59.55
+      "yearlyChangePct": 60.87
     },
     "VINSYS": {
       "current": 619,
@@ -58,7 +58,7 @@
       "ma200": 439.76,
       "vol10d": 17350,
       "marketCap": 9130161483,
-      "yearlyChangePct": 58.72
+      "yearlyChangePct": 58.17
     },
     "BENARAS": {
       "current": 10297,
@@ -68,11 +68,11 @@
       "dayLow": 10208,
       "week52High": 11499,
       "week52Low": 9965,
-      "ma50": 10307.92,
-      "ma200": 10298.7,
-      "vol10d": 65,
+      "ma50": 10309.86,
+      "ma200": 10298.67,
+      "vol10d": 59,
       "marketCap": 13386100000,
-      "yearlyChangePct": -0.23
+      "yearlyChangePct": 0.9
     },
     "PRIZOR": {
       "current": 1485.5,
@@ -86,7 +86,7 @@
       "ma200": 763.39,
       "vol10d": 41890,
       "marketCap": 15881782056.5,
-      "yearlyChangePct": 378.58
+      "yearlyChangePct": 366.92
     },
     "KROSS": {
       "current": 298.8,
@@ -96,11 +96,11 @@
       "dayLow": 295.05,
       "week52High": 326.4,
       "week52Low": 150.52,
-      "ma50": 254.46,
-      "ma200": 208.61,
-      "vol10d": 1483005,
+      "ma50": 256.08,
+      "ma200": 209.11,
+      "vol10d": 1793484,
       "marketCap": 19723614487.82,
-      "yearlyChangePct": 65.64
+      "yearlyChangePct": 71.83
     }
   }
 }
