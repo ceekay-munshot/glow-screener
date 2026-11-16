@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T12:48:34.924Z",
+  "generated_at": "2026-11-16T20:10:19.755Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 6,
@@ -12,11 +12,11 @@
       "dayLow": 248.2,
       "week52High": 283.14,
       "week52Low": 151.25,
-      "ma50": 247.73,
-      "ma200": 212.14,
-      "vol10d": 11757,
-      "marketCap": 6529272736.27,
-      "yearlyChangePct": 23.75
+      "ma50": 247.43,
+      "ma200": 212.31,
+      "vol10d": 18261,
+      "marketCap": 6529272467.34,
+      "yearlyChangePct": 0
     },
     "ARIES": {
       "current": 526.75,
@@ -24,13 +24,13 @@
       "prevClose": 501.7,
       "dayHigh": 526.75,
       "dayLow": 511.75,
-      "week52High": 524.75,
+      "week52High": 526.75,
       "week52Low": 285.35,
-      "ma50": 473.99,
-      "ma200": 384.03,
-      "vol10d": 11119,
+      "ma50": 474.3,
+      "ma200": 384.48,
+      "vol10d": 13907,
       "marketCap": 6850035568.25,
-      "yearlyChangePct": 36.33
+      "yearlyChangePct": 0
     },
     "DIFFNKG": {
       "current": 434.5,
@@ -40,11 +40,11 @@
       "dayLow": 433.45,
       "week52High": 519.9,
       "week52Low": 216.8,
-      "ma50": 432.34,
-      "ma200": 353.43,
-      "vol10d": 115463,
+      "ma50": 431.42,
+      "ma200": 353.88,
+      "vol10d": 115398,
       "marketCap": 16131359535.5,
-      "yearlyChangePct": 31.67
+      "yearlyChangePct": 0
     },
     "NGLFINE": {
       "current": 2899.9,
@@ -54,11 +54,11 @@
       "dayLow": 2878.8,
       "week52High": 3602,
       "week52Low": 1271,
-      "ma50": 2799.72,
-      "ma200": 2650.02,
-      "vol10d": 5963,
-      "marketCap": 17915651194.28,
-      "yearlyChangePct": 123.54
+      "ma50": 2802.62,
+      "ma200": 2655.79,
+      "vol10d": 6446,
+      "marketCap": 17915651797.6,
+      "yearlyChangePct": 0
     },
     "SCPL": {
       "current": 675.95,
@@ -66,13 +66,13 @@
       "prevClose": 672.05,
       "dayHigh": 697,
       "dayLow": 661,
-      "week52High": 690,
+      "week52High": 697,
       "week52Low": 190.03,
-      "ma50": 617.15,
-      "ma200": 480.68,
-      "vol10d": 10358,
-      "marketCap": 7097475128.17,
-      "yearlyChangePct": 191.61
+      "ma50": 616.6,
+      "ma200": 481.57,
+      "vol10d": 13531,
+      "marketCap": 7097475000,
+      "yearlyChangePct": 0
     },
     "PANACHE": {
       "current": 772.45,
@@ -80,13 +80,13 @@
       "prevClose": 757.35,
       "dayHigh": 772.45,
       "dayLow": 770,
-      "week52High": 757.35,
+      "week52High": 772.45,
       "week52Low": 237.7,
-      "ma50": 593.9,
-      "ma200": 428.82,
-      "vol10d": 8849,
-      "marketCap": 12370014495.48,
-      "yearlyChangePct": 71.37
+      "ma50": 595.42,
+      "ma200": 429.64,
+      "vol10d": 13348,
+      "marketCap": 12370014300,
+      "yearlyChangePct": 0
     }
   }
 }
