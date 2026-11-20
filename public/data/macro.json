@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-19T08:05:02.351Z",
+  "generated_at": "2026-11-20T07:55:51.170Z",
   "source": "Yahoo Finance (live) + NSE (live sentiment) + macro-context.json (slow-changing)",
   "live": {
     "crude_brent": {
-      "latest": 89.3,
+      "latest": 89.67,
       "latest_unit": "$/bbl",
-      "pct_change_30d": -17.94,
+      "pct_change_30d": -20.77,
       "trend": "falling",
       "history_bars": 26
     },
     "usdinr": {
-      "latest": 93.24,
+      "latest": 92.86,
       "latest_unit": "₹/$",
-      "pct_change_30d": -1.56,
+      "pct_change_30d": -1.54,
       "trend": "stable",
       "history_bars": 26
     },
     "india_vix": {
-      "latest": 16.16,
+      "latest": 17.43,
       "latest_unit": "",
-      "pct_change_30d": 9.43,
+      "pct_change_30d": 11.18,
       "trend": "rising",
       "history_bars": 24
     }
@@ -45,12 +45,12 @@
   "sentiment": {
     "_note": "Market-wide sentiment signals. FII/DII flow + market breadth are auto-computed by scrape-macro.mjs; these seed values are deliberately neutral so the dashboard never shows an asserted signal before live data is computed.",
     "fii_net_positive_last_20d": "yes",
-    "fii_signal_note": "FII net positive in 16 of last 20 reported trading days (auto-computed from rolling daily snapshots).",
+    "fii_signal_note": "FII net positive in 17 of last 20 reported trading days (auto-computed from rolling daily snapshots).",
     "put_call_ratio": 0.96,
     "put_call_ratio_note": "Latest NSE option-chain PCR (refreshed weekly by routine). Source: NSE Nifty 50 option chain aggregate (total put OI / total call OI) via NiftyInvest and NiftyTrader, as of June 4, 2026. Call OI 13.73 Cr, Put OI 13.14 Cr; PCR ≈ 0.957., as of 2026-06-04.",
     "market_breadth_ad_ratio": 0.53,
-    "market_breadth_note": "338 advances vs 637 declines across 990 Nifty 500 stocks (computed from Yahoo OHLCV).",
-    "fii_positive_days": 16,
+    "market_breadth_note": "338 advances vs 639 declines across 993 Nifty 500 stocks (computed from Yahoo OHLCV).",
+    "fii_positive_days": 17,
     "fii_total_days": 20
   },
   "sector_themes": {
