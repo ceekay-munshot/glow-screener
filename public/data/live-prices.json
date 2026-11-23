@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T14:43:52.753Z",
+  "generated_at": "2026-11-23T21:57:33.899Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 5,
@@ -12,11 +12,11 @@
       "dayLow": 257.63,
       "week52High": 315.4,
       "week52Low": 137.5,
-      "ma50": 257.99,
-      "ma200": 202.87,
-      "vol10d": 701190,
-      "marketCap": 11851916431.69,
-      "yearlyChangePct": 85.73
+      "ma50": 257.09,
+      "ma200": 203.05,
+      "vol10d": 847772,
+      "marketCap": 11851916022,
+      "yearlyChangePct": 0
     },
     "ARIES": {
       "current": 530.1,
@@ -26,11 +26,11 @@
       "dayLow": 512.9,
       "week52High": 563.95,
       "week52Low": 285.35,
-      "ma50": 478.7,
-      "ma200": 389.84,
-      "vol10d": 18117,
-      "marketCap": 6893599786.41,
-      "yearlyChangePct": 52.94
+      "ma50": 478.61,
+      "ma200": 390.17,
+      "vol10d": 17261,
+      "marketCap": 6893600103.9,
+      "yearlyChangePct": 0
     },
     "DIFFNKG": {
       "current": 424.05,
@@ -40,11 +40,11 @@
       "dayLow": 417.6,
       "week52High": 519.9,
       "week52Low": 216.8,
-      "ma50": 428.65,
-      "ma200": 357.9,
-      "vol10d": 97698,
-      "marketCap": 15743389675.75,
-      "yearlyChangePct": 38.97
+      "ma50": 428.36,
+      "ma200": 358.5,
+      "vol10d": 92686,
+      "marketCap": 15743390128.95,
+      "yearlyChangePct": 0
     },
     "SCPL": {
       "current": 707.8,
@@ -52,13 +52,13 @@
       "prevClose": 635.5,
       "dayHigh": 749,
       "dayLow": 636.95,
-      "week52High": 697,
+      "week52High": 749,
       "week52Low": 190.03,
-      "ma50": 618.69,
-      "ma200": 489.65,
-      "vol10d": 13756,
-      "marketCap": 7431899871.83,
-      "yearlyChangePct": 204.3
+      "ma50": 617.81,
+      "ma200": 490.61,
+      "vol10d": 30453,
+      "marketCap": 7431900000,
+      "yearlyChangePct": 0
     },
     "MODIS": {
       "current": 460.25,
@@ -66,13 +66,13 @@
       "prevClose": 455.3,
       "dayHigh": 470.2,
       "dayLow": 455.35,
-      "week52High": 464,
+      "week52High": 470.2,
       "week52Low": 276,
-      "ma50": 393.43,
-      "ma200": 360.02,
-      "vol10d": 69643,
+      "ma50": 393.78,
+      "ma200": 360.25,
+      "vol10d": 68762,
       "marketCap": 9016849800,
-      "yearlyChangePct": 25.17
+      "yearlyChangePct": 0
     }
   }
 }
