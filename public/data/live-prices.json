@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T14:54:39.064Z",
+  "generated_at": "2026-11-24T20:33:51.359Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 6,
@@ -16,7 +16,7 @@
       "ma200": 203.45,
       "vol10d": 847814,
       "marketCap": 11851916431.69,
-      "yearlyChangePct": 101.69
+      "yearlyChangePct": 104.55
     },
     "ARIES": {
       "current": 530.1,
@@ -30,7 +30,7 @@
       "ma200": 390.87,
       "vol10d": 17261,
       "marketCap": 6893599786.41,
-      "yearlyChangePct": 52.63
+      "yearlyChangePct": 51.59
     },
     "DIFFNKG": {
       "current": 424.05,
@@ -44,7 +44,7 @@
       "ma200": 358.82,
       "vol10d": 92686,
       "marketCap": 15743389675.75,
-      "yearlyChangePct": 42.68
+      "yearlyChangePct": 42.39
     },
     "GRCL": {
       "current": 638.9,
@@ -58,7 +58,7 @@
       "ma200": 514.64,
       "vol10d": 2425,
       "marketCap": 3666008340.09,
-      "yearlyChangePct": 72.21
+      "yearlyChangePct": 64.28
     },
     "SCPL": {
       "current": 707.8,
@@ -72,7 +72,7 @@
       "ma200": 491.7,
       "vol10d": 30453,
       "marketCap": 7431899871.83,
-      "yearlyChangePct": 237.11
+      "yearlyChangePct": 238.22
     },
     "MODIS": {
       "current": 460.25,
@@ -86,7 +86,7 @@
       "ma200": 360.75,
       "vol10d": 68762,
       "marketCap": 9016849800,
-      "yearlyChangePct": 23.42
+      "yearlyChangePct": 24.27
     }
   }
 }
