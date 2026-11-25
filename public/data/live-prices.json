@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T14:27:54.970Z",
+  "generated_at": "2026-11-25T19:51:24.499Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 5,
@@ -10,13 +10,13 @@
       "prevClose": 166.8,
       "dayHigh": 194.49,
       "dayLow": 161.94,
-      "week52High": 169.95,
+      "week52High": 194.49,
       "week52Low": 82.18,
-      "ma50": 140.66,
-      "ma200": 124.56,
-      "vol10d": 2847269,
-      "marketCap": 15565369143.42,
-      "yearlyChangePct": 16.95
+      "ma50": 140.93,
+      "ma200": 124.63,
+      "vol10d": 4347834,
+      "marketCap": 15565368893.8,
+      "yearlyChangePct": 0
     },
     "ARIES": {
       "current": 520.1,
@@ -26,11 +26,11 @@
       "dayLow": 515,
       "week52High": 563.95,
       "week52Low": 285.35,
-      "ma50": 479.64,
-      "ma200": 390.87,
-      "vol10d": 17261,
-      "marketCap": 6763556396.41,
-      "yearlyChangePct": 51.59
+      "ma50": 479.51,
+      "ma200": 391.16,
+      "vol10d": 17077,
+      "marketCap": 6763556713.9,
+      "yearlyChangePct": 0
     },
     "DIFFNKG": {
       "current": 423.05,
@@ -40,11 +40,11 @@
       "dayLow": 418.55,
       "week52High": 519.9,
       "week52Low": 216.8,
-      "ma50": 428.28,
-      "ma200": 358.82,
-      "vol10d": 92686,
-      "marketCap": 15706263416.75,
-      "yearlyChangePct": 42.39
+      "ma50": 428.03,
+      "ma200": 359.42,
+      "vol10d": 91016,
+      "marketCap": 15706263869.95,
+      "yearlyChangePct": 0
     },
     "COMSYN": {
       "current": 277.72,
@@ -54,11 +54,11 @@
       "dayLow": 275.62,
       "week52High": 315.4,
       "week52Low": 137.5,
-      "ma50": 257.6,
-      "ma200": 203.45,
-      "vol10d": 847814,
-      "marketCap": 11650965035.21,
-      "yearlyChangePct": 104.55
+      "ma50": 256.71,
+      "ma200": 203.63,
+      "vol10d": 884216,
+      "marketCap": 11650964984,
+      "yearlyChangePct": 0
     },
     "HMVL": {
       "current": 99.79,
@@ -68,11 +68,11 @@
       "dayLow": 95.4,
       "week52High": 108.16,
       "week52Low": 55.2,
-      "ma50": 80.04,
-      "ma200": 77.7,
-      "vol10d": 63127,
-      "marketCap": 7336044054.89,
-      "yearlyChangePct": 42.82
+      "ma50": 80.03,
+      "ma200": 77.74,
+      "vol10d": 44832,
+      "marketCap": 7336043987.59,
+      "yearlyChangePct": 0
     }
   }
 }
