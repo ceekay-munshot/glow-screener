@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T13:55:04.174Z",
+  "generated_at": "2026-11-27T19:24:11.096Z",
   "source": "Munshot quote API (fastapi.muns.io/stock-data)",
   "note": "Live intraday snapshot per basket ticker. dayHigh/dayLow drive intraday target/SL touch detection; current is the latest traded price.",
   "ticker_count": 7,
@@ -12,11 +12,11 @@
       "dayLow": 157.05,
       "week52High": 184.81,
       "week52Low": 94.2,
-      "ma50": 139.47,
-      "ma200": 120.49,
-      "vol10d": 2759688,
-      "marketCap": 19655263186.06,
-      "yearlyChangePct": 10.18
+      "ma50": 139.7,
+      "ma200": 120.48,
+      "vol10d": 1909429,
+      "marketCap": 19655264054.96,
+      "yearlyChangePct": 0
     },
     "BHARATSE": {
       "current": 210.4,
@@ -26,11 +26,11 @@
       "dayLow": 206,
       "week52High": 263.18,
       "week52Low": 133.6,
-      "ma50": 206.83,
-      "ma200": 198.96,
-      "vol10d": 74294,
-      "marketCap": 13213119616.7,
-      "yearlyChangePct": 12.84
+      "ma50": 206.61,
+      "ma200": 199.2,
+      "vol10d": 77948,
+      "marketCap": 13213120000,
+      "yearlyChangePct": 0
     },
     "KAMDHENU": {
       "current": 38.37,
@@ -40,11 +40,11 @@
       "dayLow": 36.66,
       "week52High": 43.7,
       "week52Low": 16.15,
-      "ma50": 37.42,
-      "ma200": 29.96,
-      "vol10d": 703128,
-      "marketCap": 10815850408.92,
-      "yearlyChangePct": 41.19
+      "ma50": 37.38,
+      "ma200": 30,
+      "vol10d": 817001,
+      "marketCap": 10815850710,
+      "yearlyChangePct": 0
     },
     "ARIES": {
       "current": 524.6,
@@ -54,11 +54,11 @@
       "dayLow": 523,
       "week52High": 563.95,
       "week52Low": 285.35,
-      "ma50": 481.75,
-      "ma200": 392.94,
-      "vol10d": 16971,
-      "marketCap": 6822075921.91,
-      "yearlyChangePct": 58.9
+      "ma50": 481.87,
+      "ma200": 393.3,
+      "vol10d": 17199,
+      "marketCap": 6822076239.4,
+      "yearlyChangePct": 0
     },
     "HMVL": {
       "current": 102.97,
@@ -68,11 +68,11 @@
       "dayLow": 95.6,
       "week52High": 108.16,
       "week52Low": 55.2,
-      "ma50": 80.82,
-      "ma200": 77.98,
-      "vol10d": 43596,
-      "marketCap": 7569821208.11,
-      "yearlyChangePct": 47.55
+      "ma50": 80.84,
+      "ma200": 78.01,
+      "vol10d": 47869,
+      "marketCap": 7569821118.37,
+      "yearlyChangePct": 0
     },
     "COMSYN": {
       "current": 271.93,
@@ -82,11 +82,11 @@
       "dayLow": 269.02,
       "week52High": 315.4,
       "week52Low": 137.5,
-      "ma50": 256.68,
-      "ma200": 204.55,
-      "vol10d": 854159,
-      "marketCap": 11408061438.73,
-      "yearlyChangePct": 92.04
+      "ma50": 255.81,
+      "ma200": 204.75,
+      "vol10d": 830286,
+      "marketCap": 11408061746,
+      "yearlyChangePct": 0
     },
     "MODIS": {
       "current": 455.45,
@@ -94,13 +94,13 @@
       "prevClose": 444.4,
       "dayHigh": 480,
       "dayLow": 441.15,
-      "week52High": 470.2,
+      "week52High": 480,
       "week52Low": 276,
-      "ma50": 398.03,
-      "ma200": 361.95,
-      "vol10d": 60673,
-      "marketCap": 8922812279.15,
-      "yearlyChangePct": 22.66
+      "ma50": 398.7,
+      "ma200": 362.11,
+      "vol10d": 76684,
+      "marketCap": 8922812040,
+      "yearlyChangePct": 0
     }
   }
 }
